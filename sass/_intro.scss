@@ -1,10 +1,62 @@
-.intro{
-    padding-top: 114px;
+ .intro{
+  margin-top: 60px;
+  margin-bottom: 110px;
+ }
+ 
+ .intro__wrap{
     display: flex;
-    padding-left: 11vw;
-    padding-bottom: 100px;
+
+    &::before{
+      content: "";
+      z-index: -2;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-image: url("images/lightening.png");
+      background-repeat: no-repeat;
   }
-  
+}
+
+.intro__img{
+  width: 100vw;
+  position: absolute;
+  z-index: -5;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+/*.intro::before {
+  content: "";
+  z-index: -5;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url("images/background.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}*/
+
+ /* .intro__text::before{
+    content: "";
+    z-index: -5;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("images/lightening.png");
+    background-position: top left;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+  }*/
+
   .intro__text{
     height: 500px;
     display: flex;
@@ -32,7 +84,8 @@
   }
   
   .intro__list{
-    width: 416px;
+    max-width: 416px;
+    padding-left: 40px;
     list-style: none;
     font-weight: 600;
     font-size: 26px;
@@ -40,9 +93,10 @@
   
   .intro__item{
     position: relative;
+    list-style-image: url("images/mark.svg");
   }
   
-  .intro__item::before{
+  /*.intro__item::before{
     display: flex;
     flex-direction: column;
     content: '✔';
@@ -50,13 +104,13 @@
     top: 0;
     left: -30px;
     color: var(--black);
-  }
+  }*/
   
   .intro__group{
     display: flex;
+    align-items: center;
     width: 500px;
     gap: 30px;
-    vertical-align: middle;
   }
   
   .intro__button{
@@ -70,17 +124,15 @@
     border-radius: 8px;
     cursor: pointer;
   }
-  
+
   .button__wrap{
     padding-left: 20vw;
     padding-top: 10vh;
   }
   
   .button__video{
-    padding-top: 100px;
     position: relative;
-    width: 180px;
-    height: 210px;
+    padding: 150px 30px 30px;
     color: var(--white);
     font-size: 18px;
     font-weight: 700;

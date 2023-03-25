@@ -1,6 +1,7 @@
 .order{
-    padding-left: 8vw;
     background-color: var(--gray);
+    width: 90vw;
+    margin-bottom: 150px;
   }
   
   .order__title{
@@ -48,11 +49,11 @@
     padding-top: 50px;
   }
   
-  .order__item:nth-child(4){
+  .order__item:nth-child(4n){
     border-right: none;
   }
   
-  .order__item:nth-child(8){
+  .order__item:hover{
     border: none;
     background-color: var(--white);
     border-radius: 22px;
@@ -62,11 +63,20 @@
   .order__text{
     width: 280px;
     padding-left: 40px;
-    padding-top: 144px;
+    padding-top: 40px;
     font-size: 18px;
   }
+
+  .order__span{
+    display: flex;
+    border: 1px dashed var(--red);
+    margin-top: 80px;
+    margin-left: 110px;
+    width: 200px;
+    height: 1px;
+}
   
-  .order__text::before{
+  /*.order__text::before{
     content: "";
     position: absolute;
     z-index: 1;
@@ -76,4 +86,4 @@
     left: 100px;
     background-image: url(images/dotted.svg);
     background-repeat: no-repeat;
-  }
+  }*/

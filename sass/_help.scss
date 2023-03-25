@@ -1,0 +1,200 @@
+.help{
+    display: flex;
+    width: 1426px;
+    height: 851px;
+    background-image: url(images/background-help.png);
+    margin-bottom: 150px;
+  }
+
+  .help__form{
+    position: relative;
+    padding-left: 40px;
+    margin-left: 50px;
+    margin-top: 100px;
+    width: 550px;
+    height: 525px;
+    background-color: var(--white);
+    border-radius: 22px;
+    box-shadow: 0 0 10px;
+  }
+
+  .help__form::before{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 790px;
+    height: 350px;
+    background-image: url(images/audi.png);
+    background-repeat: no-repeat;
+    top: 470px;
+    left: -160px;
+  }
+
+  .help__title{
+    font-size: 50px;
+    font-weight: 700;
+    width: 490px;
+  }
+
+  .help__description{
+    font-size: 18px;
+    font-weight: 500;
+    width: 350px;
+  }
+
+  .form-input{
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    width: 449px;
+    height: 72px;
+    border-radius: 14px;
+    margin-bottom: 16px;
+  }
+
+  .help__button{
+    cursor: pointer;
+    position: relative;
+    z-index: 5;
+    padding: 25px 40px;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--white);
+    background-color: var(--red);
+    border-radius: 14px;
+    border-color: transparent;
+    box-shadow: 0px 12px 60px var(--red);
+  }
+
+  .help__button::before{
+    content: "";
+    z-index: 5;
+    position: absolute;
+    width: 68px;
+    height: 59px;
+    right: -130px;
+    top: 0;
+    background-image: url("images/arrow.svg");
+    background-repeat: no-repeat;
+  }
+
+  .help__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .help__item{
+    position: relative;
+    width: 300px;
+    list-style: none;
+    padding-bottom: 121px;
+  }
+
+  .help__item:nth-child(1)::before{
+    content: "";
+    position: absolute;
+    z-index: 5;
+    width: 60px;
+    height: 60px;
+    top: -50px;
+    left: 10px;
+    background-image: url("images/help-first.svg");
+    background-repeat: no-repeat;
+  }
+
+  .help__item:nth-child(2)::before{
+    content: "";
+    position: absolute;
+    z-index: 5;
+    width: 60px;
+    height: 60px;
+    top: -50px;
+    left: 10px;
+    background-image: url("images/help-second.svg");
+    background-repeat: no-repeat;
+  }
+
+  .help__item:nth-child(3)::before{
+    content: "";
+    position: absolute;
+    z-index: 5;
+    width: 60px;
+    height: 60px;
+    top: -50px;
+    left: 10px;
+    background-image: url("images/help-third.svg");
+    background-repeat: no-repeat;
+  }
+
+  .help__item:nth-child(4)::before{
+    content: "";
+    position: absolute;
+    z-index: 5;
+    width: 60px;
+    height: 60px;
+    top: -50px;
+    left: 10px;
+    background-image: url("images/help-fourth.svg");
+    background-repeat: no-repeat;
+  }
+
+  .help__item:nth-child(5)::before{
+    content: "";
+    position: absolute;
+    z-index: 5;
+    width: 60px;
+    height: 60px;
+    top: -50px;
+    left: 10px;
+    background-image: url("images/help-fifth.svg");
+    background-repeat: no-repeat;
+  }
+
+  .help__item:nth-child(6)::before{
+    content: "";
+    position: absolute;
+    z-index: 5;
+    width: 60px;
+    height: 60px;
+    top: -50px;
+    left: 10px;
+    background-image: url("images/help-sixth.svg");
+    background-repeat: no-repeat;
+  }
+
+  .help__item:nth-child(7)::before{
+    content: "";
+    position: absolute;
+    z-index: 5;
+    width: 60px;
+    height: 60px;
+    top: -50px;
+    left: 10px;
+    background-image: url("images/help-seventh.svg");
+    background-repeat: no-repeat;
+  }
+
+  .help__item:nth-child(8)::before{
+    content: "";
+    position: absolute;
+    z-index: 5;
+    width: 60px;
+    height: 60px;
+    top: -50px;
+    left: 10px;
+    background-image: url("images/help-eighth.svg");
+    background-repeat: no-repeat;
+  }
+
+  .help__text::before{
+    content: "";
+    position: absolute;
+    z-index: 5;
+    width: 60px;
+    height: 60px;
+    top: -60px;
+    background-image: url("images/help-rectangle.svg");
+    background-repeat: no-repeat;
+  }
