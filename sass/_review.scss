@@ -1,0 +1,36 @@
+.review{
+    margin-bottom: 140px;
+    &__title{
+        font-size: 50px;
+        font-weight: 700;
+    }
+    &__description{
+        margin-bottom: 44px;
+    }
+    &__description::before{
+        content: "";
+        position: absolute;
+        z-index: 2;
+        width: 460px;
+        height: 10px;
+        color: red;
+        background-color: red;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 620px;
+        border-radius: 3px;
+    }
+    &__button{
+        position: absolute;
+        z-index: 3;
+        width: 155px;
+        height: 155px;
+        border-radius: 80px;
+        border: none;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 160px;
+        background-image: url("images/button.svg");
+        cursor: pointer;
+    }
+}

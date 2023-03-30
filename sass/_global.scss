@@ -6,6 +6,7 @@
   --pink: #D6A7AF;
   --light__pink:#FEE5E9;
   --gray: #F4F6F8;
+  --dark__gray: #EEEEEE;
   --accent-color: var(--red);
 }
 
@@ -21,11 +22,13 @@ html{
   img{
     max-width: 100%;
   }
-
-body{
-  max-width: 1400px;
+.container{
+  max-width: 1480px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+body{
 }
 
 main {

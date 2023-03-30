@@ -1,6 +1,9 @@
 .example{
     background-color: var(--gray);
     margin-bottom: 100px;
+    &__container{
+        padding-top: 100px;
+    }
 }
 .example__title{
     width: 800px;
@@ -9,8 +12,8 @@
 }
 
 .example__list{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     list-style: none;
     padding: 0;
 }
@@ -20,9 +23,8 @@
     flex-direction: column;
     justify-content: space-between;
     background-color: var(--white);
-    width: 430px;
     height: 390px;
-    box-shadow: 0 0 10px;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
     border-radius: 36px;
     padding: 30px;
     margin: 0 15px 15px 0;
@@ -53,9 +55,9 @@
 
 .price__wrap{
     display: flex;
+    flex-direction: column;
     justify-content: flex-end;
-    align-items: center;
-    gap: 50px;
+    align-items: end;
 }
 
 .example__price{
@@ -67,12 +69,14 @@
     color: var(--accent-color);
 }
 
-.example__text{
-    font-size: 30px;
+.example__wrap{
+    display: flex;
+    align-items: center;
 }
 
 .example__description{
-    padding: 25px 0;
+    font-size: 30px;
+    padding: 0 50px;
     position: relative;
     &::before{
         content: "";
@@ -82,8 +86,8 @@
         height: 5px;
         background-color: var(--red);
         border-radius: 1px;
-        left: -70px;
-        bottom: 40px;
+        left: -30px;
+        bottom: 15px;
 
     }
 }
