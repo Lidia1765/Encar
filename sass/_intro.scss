@@ -1,6 +1,5 @@
  .intro{
   margin-top: 60px;
-  margin-bottom: 110px;
  }
  
  .intro__wrap{
@@ -58,10 +57,16 @@
   }*/
 
   .intro__text{
-    height: 500px;
+    width: 700px;
+    height: 595px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.64);
+    border-radius: 24px;
+    padding: 20px 40px;
+    border: 2px solid var(--white);
+    margin-bottom: 10px;
   }
   
   .intro__title{
@@ -70,17 +75,6 @@
     font-size: 70px;
     font-weight: 800;
     margin: 0;
-  }
-  
-  .intro__title::before{
-    content: "";
-    position: absolute;
-    z-index: -1;
-    width: 709px;
-    height: 595px;
-    left: -50px;
-    top: -30px;
-    background-image: url(images/rectangle.png);
   }
   
   .intro__list{
@@ -116,12 +110,11 @@
   .intro__button{
     font-weight: 700;
     font-size: 18px;
-    width: 300px;
-    height: 80px;
     color: var(--white);
     background-color: var(--red);
     border-color: transparent;
     border-radius: 8px;
+    padding: 30px 30px;
     cursor: pointer;
   }
 
@@ -133,6 +126,7 @@
   .button__video{
     position: relative;
     padding: 150px 30px 30px;
+    width: 180px;
     color: var(--white);
     font-size: 18px;
     font-weight: 700;
@@ -153,3 +147,26 @@
     background-image: url(images/vector-video.svg);
     background-repeat: no-repeat;
   }
+
+  @media (max-width: 1300px){
+    .intro{
+      &__text{
+        height: auto;
+      }
+      &__title{
+        font-size: 40px;
+      }
+      &__list{
+        font-size: 18px;
+      }
+      &__button{
+      font-size: 14px;
+      padding: 15px 15px;
+      }
+      }
+      .button__video{
+        font-size: 14px;
+        padding: 130px 15px 15px;
+      }
+  }
+  

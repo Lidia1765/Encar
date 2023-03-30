@@ -1,0 +1,47 @@
+.contact{
+    margin-bottom: 160px;
+    &__title{
+        font-size: 50px;
+        font-weight: 700;
+    }
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__map{
+        width: 600px;
+        height: 320px;
+        border-radius: 36px;
+    }
+    &__text{
+        font-size: 30px;
+        font-weight: 500;
+    }
+    &__phone{
+        font-size: 30px;
+        font-weight: 600;
+    }
+    &__description{
+        padding-left: 20px;
+    }
+    &__description::before{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 16px;
+    height: 22px;
+    background-image: url(images/map.svg);
+    background-repeat: no-repeat;
+    margin-left: -25px;
+    }
+}
+
+.text__wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.map__container{
+    border-radius: 36px;
+    border: 7px solid rgba(250, 0, 44, 0.2);
+    padding: 25px;
+}

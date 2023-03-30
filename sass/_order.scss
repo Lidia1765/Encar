@@ -1,8 +1,9 @@
 .order{
-    background-color: var(--gray);
-    width: 90vw;
+  background-color: var(--gray);
+  &__container{
     margin-bottom: 150px;
   }
+}
   
   .order__title{
     padding-top: 100px;
@@ -30,10 +31,11 @@
   .order__item{
     position: relative;
     border: 1px dashed var(--pink);
-    width: 373px;
+    width: 360px;
     height: 246px;
     border-top: none;
     border-left: none;
+    padding: 50px 40px;
   }
   
   .order__item::before{
@@ -45,8 +47,6 @@
     text-align: center;
     font-size: 60px;
     font-weight: 700;
-    padding-left: 40px;
-    padding-top: 50px;
   }
   
   .order__item:nth-child(4n){
@@ -57,23 +57,22 @@
     border: none;
     background-color: var(--white);
     border-radius: 22px;
-    box-shadow: 0 0 10px;
+    box-shadow: 0px 2px 50px rgba(35, 37, 38, 0.07);
   }
   
   .order__text{
     width: 280px;
-    padding-left: 40px;
-    padding-top: 40px;
     font-size: 18px;
+    padding-top: 60px;
   }
 
   .order__span{
     display: flex;
     border: 1px dashed var(--red);
-    margin-top: 80px;
-    margin-left: 110px;
     width: 200px;
     height: 1px;
+    margin-left: 60px;
+    margin-top: 40px;
 }
   
   /*.order__text::before{
