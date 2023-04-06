@@ -1,9 +1,19 @@
 .help__container{
     display: flex;
+    justify-content: space-between;
     width: 1426px;
-    height: 851px;
-    background-image: url(images/background-help.png);
-    margin-bottom: 150px;
+    height: auto;
+    margin-bottom: 250px;
+    &::before{
+      content: "";
+      position: absolute;
+      z-index: -5;
+      width: 1400px;
+      height: 100%;
+      left: 200px;
+      background-image: url(images/background-help.png);
+      background-repeat: no-repeat;;
+    }
   }
 
   .help__form{
@@ -26,7 +36,7 @@
     background-image: url(images/audi.png);
     background-repeat: no-repeat;
     top: 470px;
-    left: -160px;
+    left: -150px;
   }
 
   .help__title{
@@ -39,6 +49,17 @@
     font-size: 18px;
     font-weight: 500;
     width: 350px;
+  }
+  .help__description::before{
+    content: "";
+    position: absolute;
+    z-index: 5;
+    width: 1154px;
+    height: 100%;
+    background-image: url(images/road.png);
+    background-repeat: no-repeat;
+    top: 545px;
+    left: -170px;
   }
 
   .form-input{
@@ -78,10 +99,14 @@
   }
 
   .help__list{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    //display: flex;
+    //flex-wrap: wrap;
+    //justify-content: center;
+    gap: 40px;
+    margin-bottom: 50px;
+    margin-top: -30px;
   }
 
   .help__item{
@@ -89,6 +114,12 @@
     width: 300px;
     list-style: none;
     padding-bottom: 121px;
+  }
+  .help__item:nth-last-child(2){
+    padding: 0;
+  }
+  .help__item:nth-last-child(1){
+    padding: 0;
   }
 
   .help__item:nth-child(1)::before{
@@ -210,3 +241,140 @@
     background-position: center;
     border-radius: 10px;
   }
+  .help__form-mobile{
+    display: none;
+  }
+ 
+@media (max-width: 1400px){
+  .help{
+    &__container{
+      justify-content: flex-start;
+      padding: 0;
+      width: auto;
+    }
+    &__container::before{
+      left: 0;
+      width: 100%;
+    }
+    &__item{
+      width: 150px;
+      padding-bottom: 50px;
+    }
+  }
+} 
+@media (max-width:1000px){
+  .help{
+    &__container{
+      width: 95vw;
+      display: block;
+      margin-right: 20px;
+    }
+    &__container::before{
+      background: none;
+    }
+    &__title-mobile{
+      font-size: 24px;
+    }
+    &__description-mobile{
+      font-size: 14px;
+      position: relative;
+    }
+    &__description-mobile::before{
+      content: "";
+      position: absolute;
+      z-index: 2;
+      width: 359px;
+      height: 310px;
+      background-image: url("images/background-help-mobile.png");
+      background-repeat: no-repeat;  
+      left: -20px; 
+      top: 30px;
+    }
+    &__form{
+      display: none;
+    }
+    &__list{
+      grid-template-columns: 1fr;
+      padding: 0;
+      gap: 10px;
+      width: 100%;
+      margin: 0;
+    }
+    &__item{
+      width: 95%;
+      margin-left: 10px;
+      box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.12);
+      border-radius: 16px;
+      padding: 96px 10px 20px 20px;
+    }
+    &__item:nth-child(1n)::before{
+      top: 20px;
+      left: 20px;
+    }
+    &__item:nth-last-child(2){
+      padding: 96px 10px 20px 20px;
+    }
+    &__item:nth-last-child(1){
+      padding: 96px 10px 20px 20px;
+    }
+    &__form-mobile{
+      padding-left: 16px;
+      padding-top: 60px;
+    }
+    &__button{
+      box-shadow: 0px 12px 60px rgba(250, 0, 44, 0.4);
+      width: 100%;
+      max-width: 450px;
+    }
+    &__button::before{
+      display: none;
+    }
+    &__background-mobile{
+      position: relative;
+    }
+    &__background-mobile::before{
+    content: "";
+    position: absolute;
+    z-index: 0;
+    width: 355px;
+    height: 290px;
+    background-image: url("images/road-mobile.png");
+    background-repeat: no-repeat; 
+    bottom: -310px;
+    left: -17px;
+  }
+  .form-input{
+    z-index: 5;
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+  }
+  .form-body{
+    position: relative;
+  }
+  .form-body::before{
+      content: "";
+      position: absolute;
+      z-index: 4;
+      width: 355px;
+      height: 510px;
+      background-image: url("images/audi-mobile.png");
+      background-repeat: no-repeat;  
+      bottom: -270px;
+      left: -25px;
+    }
+}
+}
+@media (max-width:390px){
+  .help{
+    &__container{
+      margin-bottom: 60px;
+    }
+    &__background-mobile::before{
+      bottom: -300px;
+    }
+  .form-body::before{
+    bottom: -255px;
+  }
+}
+}
