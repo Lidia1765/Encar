@@ -14,6 +14,8 @@ html{
   font-family: 'Montserrat', sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
 }
 
 *, *:before, *:after {
@@ -29,6 +31,7 @@ html{
 }
 
 body{
+  margin: 0;
 }
 
 main {

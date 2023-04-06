@@ -1,5 +1,5 @@
 .consultation{
-
+    background-color: var(--white);
     &__container{
         position: relative;
     width: 1440px;
@@ -30,6 +30,7 @@
         font-size: 16px;
         width: 550px;
         padding-bottom: 50px;
+        margin: 0;
     }
     &__button{
         background-color: var(--red);
@@ -44,4 +45,68 @@
 }
 .title--accent{
     color: var(--accent-color);
+}
+
+@media (max-width:1400px){
+    .consultation{
+        &__container{
+            width: auto;
+        }
+    }
+}
+@media (max-width:1350px){
+    .consultation{
+        &__container::before{
+            display: none;
+        }
+    }
+}
+@media (max-width:760px){
+    .consultation{
+        &__container{
+            height: auto;
+        }
+        &__title{
+            font-size: 24px;
+        }
+        &__description{
+            width: auto;
+        }
+    }
+}
+@media (max-width:450px){
+    .consultation{
+        &__container{
+            background: none;
+            border: none;
+            padding: 16px;
+        }
+        &__background{
+            position: absolute;
+            z-index: -3;
+            top: 190px;
+            width: 360px;
+            height: 305px;
+            left: 0;
+            background-image: url("images/background-consultation-mobile.png");
+            background-repeat: no-repeat;
+        }
+        &__button::before{   
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 350px;
+        height: 330px;
+        background-image: url(images/hyundai-mobile.png);
+        background-repeat: no-repeat;
+        left: 0;
+        bottom: -140px;
+        }
+        &__title{
+            width: 300px;
+        }
+        &__description{
+            width: 300px;
+        }
+    }
 }

@@ -24,8 +24,7 @@
 }
 
 .popular__wrap{
-    display: inline;
-    justify-content: space-between;
+    margin-bottom: 25px;
 }
 
 .popular__text{
@@ -38,17 +37,17 @@
 .popular__line{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .popular__span{
-    border: 1px dashed var(--black);
-    width: 200px;
+    border: 0.5px dashed #C1C1C1;
+    width: 100%;
     height: 1px;
-    margin-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    //height: 190px;
+    margin: 0 5px;
 }
 
 .popular__price{
@@ -77,10 +76,36 @@
 
 .price__button{
     font-weight: 700;
+    width: 100%;
     padding: 25px 115px;
     background-color: var(--red);
     border: none;
     border-radius: 14px;
     color: var(--white);
     cursor: pointer;
+}
+@media (max-width: 1200px){
+    .popular__group{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        padding-top: 34px;
+    }
+    .group__span{
+        width: 10px;
+        height: 10px;
+        background-color: var(--red);
+        border-radius: 5px;
+    }
+    
+}
+@media (max-width: 450px){
+    .popular{
+        &__container{
+            margin-bottom: 40px;
+        }
+        &__title{
+            font-size: 24px;
+        }
+    }
 }

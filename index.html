@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
 
@@ -19,7 +19,16 @@
     <div class="main-container">
       <header class="header">
         <div class="header__container container">
-          <img src="images/logo.png" alt="Логотип компании Encar" />
+          <button class="nav__button">
+            <span class="nav__span"></span>
+            <span class="nav__span"></span>
+            <span class="nav__span"></span>
+          </button>
+          <img
+            class="header__logo"
+            src="images/logo.png"
+            alt="Логотип компании Encar"
+          />
           <nav class="nav">
             <a href="/" class="nav__link">Авто из Кореи</a>
             <a href="/" class="nav__link">Авто из Казахстана</a>
@@ -37,6 +46,10 @@
             <div class="intro__wrap">
               <div class="intro__text">
                 <h1 class="intro__title">АВТОМОБИЛИ ПОД ЗАКАЗ</h1>
+                <h1 class="intro__title title--mobile">
+                  АВТО <br />
+                  ПОД ЗАКАЗ
+                </h1>
                 <ul class="intro__list">
                   <li class="intro__item item">
                     <p>Из Южной Кореи</p>
@@ -67,6 +80,25 @@
                     />
                   </a>
                 </div>
+                <button type="button" class="intro__button-mobile">
+                  Получить консультацию
+                </button>
+                <div class="intro__group-mobile">
+                  <a href="/">
+                    <img
+                      class="intro__media-mobile"
+                      src="images/telegram.svg"
+                      alt="Телегрм"
+                    />
+                  </a>
+                  <a href="/">
+                    <img
+                      class="intro__media-mobile media-mobile--youtube"
+                      src="images/Youtube.svg"
+                      alt="Ютуб"
+                    />
+                  </a>
+                </div>
               </div>
               <div class="button__wrap">
                 <button type="button" class="button__video">
@@ -74,6 +106,7 @@
                 </button>
               </div>
             </div>
+            <div class="intro__background"></div>
             <img class="intro__img" src="images/background.png" alt="" />
           </div>
         </section>
@@ -83,41 +116,65 @@
             <p class="order__description">из Южной Кореи в компании EncarRUS</p>
             <ol class="order__list list">
               <li class="order__item item">
-                <span class="order__span"></span>
+                <div class="wrap__number">
+                  <img class="order__number" src="images/one.svg" alt="" />
+                  <span class="order__span"></span>
+                </div>
                 <p class="order__text text">Предварительная консультация</p>
               </li>
               <li class="order__item item">
-                <span class="order__span"></span>
+                <div class="wrap__number">
+                  <img class="order__number" src="images/two.svg" alt="" />
+                  <span class="order__span"></span>
+                </div>
                 <p class="order__text text">Заключение договора</p>
               </li>
               <li class="order__item item">
-                <span class="order__span"></span>
+                <div class="wrap__number">
+                  <img class="order__number" src="images/three.svg" alt="" />
+                  <span class="order__span"></span>
+                </div>
                 <p class="order__text text">
                   Подбор подходящих вариантов на площадках исходя из бюджета
                 </p>
               </li>
               <li class="order__item item">
-                <span class="order__span"></span>
+                <div class="wrap__number">
+                  <img class="order__number" src="images/four.svg" alt="" />
+                  <span class="order__span"></span>
+                </div>
                 <p class="order__text text">
                   Выездная диагностика понравившегося варианта
                 </p>
               </li>
               <li class="order__item item">
-                <span class="order__span"></span>
+                <div class="wrap__number">
+                  <img class="order__number" src="images/five.svg" alt="" />
+                  <span class="order__span"></span>
+                </div>
                 <p class="order__text text">
                   Фото и видео отчет на а/м достойные вашего внимания
                 </p>
               </li>
               <li class="order__item item">
-                <span class="order__span"></span>
+                <div class="wrap__number">
+                  <img class="order__number" src="images/six.svg" alt="" />
+                  <span class="order__span"></span>
+                </div>
                 <p class="order__text text">Оплата а/м в Корею</p>
               </li>
               <li class="order__item item">
-                <span class="order__span"></span>
+                <div class="wrap__number">
+                  <img class="order__number" src="images/seven.svg" alt="" />
+                  <span class="order__span"></span>
+                </div>
                 <p class="order__text text">Доставка а/м в порт Владивосток</p>
               </li>
               <li class="order__item item">
-                <span class="order__span"></span>
+                <div class="wrap__number">
+                  <img class="order__number" src="images/eight.svg" alt="" />
+                  <span class="order__span"></span>
+                </div>
                 <p class="order__text text">
                   Растаможка автомобиля, получение ПТС и оставка до Вашего дома
                 </p>
@@ -127,6 +184,7 @@
         </section>
         <section class="help">
           <div class="help__container container">
+            <div class="help__background"></div>
             <div class="help__form">
               <h2 class="help__title">Помощь на всех этапах покупки</h2>
               <p class="help__description">
@@ -196,6 +254,31 @@
                 </li>
               </ul>
             </div>
+            <div class="help__form-mobile">
+              <h2 class="help__title-mobile">Помощь на всех этапах покупки</h2>
+              <p class="help__description-mobile">
+                Оставьте заявку и наш менеджер перезвонит вам через 15 минут
+              </p>
+              <form class="form" action="/register" method="post">
+                <div class="form-body">
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="name"
+                    class="form-input"
+                    placeholder="+7 ( )"
+                    required="required"
+                    aria-label="+7"
+                  />
+                </div>
+                <div class="form-footer">
+                  <button type="submit" class="help__button button">
+                    Получить консультацию
+                  </button>
+                  <div class="help__background-mobile"></div>
+                </div>
+              </form>
+            </div>
           </div>
         </section>
         <section class="popular">
@@ -215,22 +298,22 @@
                       <div class="popular__line">
                         <span>Пробег</span>
                         <span class="popular__span"></span>
-                        <span>До 90 тыс. км.</span>
+                        <span>До&nbsp90&nbspтыс.&nbspкм.</span>
                       </div>
                       <div class="popular__line">
-                        <span>Год выпуска</span>
+                        <span>Год&nbspвыпуска</span>
                         <span class="popular__span"></span>
                         <span>2018</span>
                       </div>
                       <div class="popular__line">
                         <span>Мощность</span>
                         <span class="popular__span"></span>
-                        <span>163 л.с.</span>
+                        <span>163&nbspл.с.</span>
                       </div>
                       <div class="popular__line">
                         <span>Двигатель</span>
                         <span class="popular__span"></span>
-                        <span>2.0 л</span>
+                        <span>2.0&nbspл</span>
                       </div>
                       <div class="popular__line">
                         <span>Коробка</span>
@@ -271,22 +354,22 @@
                       <div class="popular__line">
                         <span>Пробег</span>
                         <span class="popular__span"></span>
-                        <span>До 90 тыс. км.</span>
+                        <span>До&nbsp90&nbspтыс.&nbspкм.</span>
                       </div>
                       <div class="popular__line">
-                        <span>Год выпуска</span>
+                        <span>Год&nbspвыпуска</span>
                         <span class="popular__span"></span>
                         <span>2018</span>
                       </div>
                       <div class="popular__line">
                         <span>Мощность</span>
                         <span class="popular__span"></span>
-                        <span>163 л.с.</span>
+                        <span>163&nbspл.с.</span>
                       </div>
                       <div class="popular__line">
                         <span>Двигатель</span>
                         <span class="popular__span"></span>
-                        <span>2.0 л</span>
+                        <span>2.0&nbspл</span>
                       </div>
                       <div class="popular__line">
                         <span>Коробка</span>
@@ -327,22 +410,22 @@
                       <div class="popular__line">
                         <span>Пробег</span>
                         <span class="popular__span"></span>
-                        <span>До 90 тыс. км.</span>
+                        <span>До&nbsp90&nbspтыс.&nbspкм.</span>
                       </div>
                       <div class="popular__line">
-                        <span>Год выпуска</span>
+                        <span>Год&nbspвыпуска</span>
                         <span class="popular__span"></span>
                         <span>2018</span>
                       </div>
                       <div class="popular__line">
                         <span>Мощность</span>
                         <span class="popular__span"></span>
-                        <span>163 л.с.</span>
+                        <span>163&nbspл.с.</span>
                       </div>
                       <div class="popular__line">
                         <span>Двигатель</span>
                         <span class="popular__span"></span>
-                        <span>2.0 л</span>
+                        <span>2.0&nbspл</span>
                       </div>
                       <div class="popular__line">
                         <span>Коробка</span>
@@ -371,6 +454,11 @@
                 </article>
               </li>
             </ul>
+            <div class="popular__group">
+              <span class="group__span"></span>
+              <span class="group__span"></span>
+              <span class="group__span"></span>
+            </div>
           </div>
         </section>
         <section class="example">
@@ -458,43 +546,23 @@
           <div class="benefit__container container">
             <h2 class="benefit__title">Преимущества покупки авто из Кореи</h2>
             <div class="benefit__wrap">
-              <div>
-                <ul class="benefit__list list">
-                  <li class="benefit__item">Честный пробег</li>
-                  <li class="benefit__item">Сервисное обслуживание</li>
-                  <li class="benefit__item">Выездная диагностика</li>
-                  <li class="benefit__item">Прозрачная история а/м</li>
-                  <li class="benefit__item">
-                    Разнообразие двигателей и трансмиссий
-                  </li>
-                  <li class="benefit__item">Выездная диагностика</li>
-                  <li class="benefit__item">Стоимость автомобиля</li>
-                  <li class="benefit__item">Качество сборки</li>
-                  <li class="benefit__item">Богатые комплектации</li>
-                  <li class="benefit__item">Европейские автомобили</li>
-                  <li class="benefit__item">Американские автомобили</li>
-                  <li class="benefit__item">Коммерческий транспорт</li>
-                  <li class="benefit__item">Русификация меню</li>
-                </ul>
-              </div>
-              <article class="benefit__article">
-                <img
-                  class="benefit__img"
-                  src="images/kia-white.png"
-                  alt="KIA"
-                />
-                <p class="benefit__text">Честный пробег</p>
-                <p class="benefit__description">
-                  Скрутить пробег в Корее нельзя, т.к. это уголовное
-                  преступление и никто не будет с этим связываться + пробег
-                  легко проверить через базы страховых компаний
-                </p>
-                <button type="button" class="benefit__button"></button>
-                <button
-                  type="button"
-                  class="benefit__button button--right"
-                ></button>
-              </article>
+              <ul class="benefit__list list">
+                <li class="benefit__item">Честный пробег</li>
+                <li class="benefit__item">Сервисное обслуживание</li>
+                <li class="benefit__item">Выездная диагностика</li>
+                <li class="benefit__item">Прозрачная история а/м</li>
+                <li class="benefit__item">
+                  Разнообразие двигателей и трансмиссий
+                </li>
+                <li class="benefit__item">Выездная диагностика</li>
+                <li class="benefit__item">Стоимость автомобиля</li>
+                <li class="benefit__item">Качество сборки</li>
+                <li class="benefit__item">Богатые комплектации</li>
+                <li class="benefit__item">Европейские автомобили</li>
+                <li class="benefit__item">Американские автомобили</li>
+                <li class="benefit__item">Коммерческий транспорт</li>
+                <li class="benefit__item">Русификация меню</li>
+              </ul>
               <div class="article__container">
                 <article class="benefit__article">
                   <img
@@ -712,7 +780,30 @@
                     class="benefit__button button--right"
                   ></button>
                 </article>
+                <article class="benefit__article">
+                  <img
+                    class="benefit__img"
+                    src="images/kia-white.png"
+                    alt="KIA"
+                  />
+                  <p class="benefit__text">Честный пробег</p>
+                  <p class="benefit__description">
+                    Скрутить пробег в Корее нельзя, т.к. это уголовное
+                    преступление и никто не будет с этим связываться + пробег
+                    легко проверить через базы страховых компаний
+                  </p>
+                  <button type="button" class="benefit__button"></button>
+                  <button
+                    type="button"
+                    class="benefit__button button--right"
+                  ></button>
+                </article>
               </div>
+            </div>
+            <div class="popular__group">
+              <span class="group__span"></span>
+              <span class="group__span"></span>
+              <span class="group__span"></span>
             </div>
           </div>
         </section>
@@ -722,7 +813,18 @@
             <p class="review__description">
               Как выглядит осмотр авто на примере Hyundai Palisade
             </p>
-            <img class="review__img" src="images/speedometer.png" alt="" />
+            <div class="review__wrap">
+              <img
+                class="review__img"
+                src="images/speedometer.png"
+                alt="Спидометр"
+              />
+              <img
+                class="review__img-mobile"
+                src="images/speedometer-mobile.png"
+                alt="Спидометр"
+              />
+            </div>
             <button type="button" class="review__button"></button>
           </div>
         </section>
@@ -780,6 +882,7 @@
         </section>
         <section class="consultation">
           <div class="consultation__container container">
+            <div class="consultation__background"></div>
             <h2 class="consultation__title">
               Получите бесплатную консультацию от наших экспертов
               <span class="title--accent"> EncarRUS</span>
@@ -841,19 +944,19 @@
         </section>
         <footer class="footer">
           <div class="footer__container container">
-            <div>
-              <img
-                class="footer__img"
-                src="images/logo.png"
-                alt="Логотип компании Encar"
-              />
-              <p class="footer__copyright">
-                © 2022 EncarRUS. Все права защищены, согласно ГК РФ ст. 1225 -
-                1551 об авторском праве. Любое копирование материалов сайта и
-                элементов включая изображения строго запрещены.
-              </p>
-            </div>
-            <div>
+            <div class="footer__wrap">
+              <div>
+                <img
+                  class="footer__img"
+                  src="images/logo.png"
+                  alt="Логотип компании Encar"
+                />
+                <p class="footer__copyright">
+                  © 2022 EncarRUS. Все права защищены, согласно ГК РФ ст. 1225 -
+                  1551 об авторском праве. Любое копирование материалов сайта и
+                  элементов включая изображения строго запрещены.
+                </p>
+              </div>
               <ul class="footer__list list">
                 <li class="footer__item">
                   <a href="/" class="footer__link">Авто из Кореи</a>
@@ -867,6 +970,8 @@
                 <li class="footer__item">
                   <a href="/" class="footer__link">Авто из Китая</a>
                 </li>
+              </ul>
+              <ul class="footer__list list">
                 <li class="footer__item">
                   <a href="/" class="footer__link">Главная</a>
                 </li>
@@ -879,11 +984,34 @@
               </ul>
             </div>
             <address>
-              <a href="tel:+78000111111" class="phone__link">
+              <a href="tel:+78000111111" class="footer__phone">
                 +7 (800) 011-11-11</a
               >
               <p class="footer__text">Москва, ул. Семеновская д 14 офис 122</p>
             </address>
+            <ul class="footer__list-mobile">
+              <li class="footer__item">
+                <a href="/" class="footer__link">Авто из Кореи</a>
+              </li>
+              <li class="footer__item">
+                <a href="/" class="footer__link">Авто из Казахстана</a>
+              </li>
+              <li class="footer__item">
+                <a href="/" class="footer__link">Авто из ОАЭ</a>
+              </li>
+              <li class="footer__item">
+                <a href="/" class="footer__link">Авто из Китая</a>
+              </li>
+              <li class="footer__item">
+                <a href="/" class="footer__link">Главная</a>
+              </li>
+              <li class="footer__item">
+                <a href="/" class="footer__link">О нас</a>
+              </li>
+              <li class="footer__item">
+                <a href="/" class="footer__link">Контакты</a>
+              </li>
+            </ul>
           </div>
         </footer>
       </main>

@@ -23,6 +23,7 @@
     }
     &__description{
         padding-left: 20px;
+        position: relative;
     }
     &__description::before{
     content: "";
@@ -32,7 +33,8 @@
     height: 22px;
     background-image: url(images/map.svg);
     background-repeat: no-repeat;
-    margin-left: -25px;
+    left: 0;
+    bottom: 0;
     }
 }
 
@@ -44,4 +46,49 @@
     border-radius: 36px;
     border: 7px solid rgba(250, 0, 44, 0.2);
     padding: 25px;
+}
+
+@media (max-width:1370px){
+    .contact{
+        
+        &__wrap{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        &__map{
+            width: 100%;
+        }
+    }
+    
+}
+
+@media (max-width:700px){
+    .contact{
+        &__container{
+            margin-top: 177px;
+            }
+            &__text{
+                font-size: 20px;
+            }
+            &__phone{
+                font-size: 20px;
+            }
+    }
+    .text__wrap{
+        display: flex;
+        flex-direction: column;
+    }
+    .map__container{
+        padding: 10px;
+    }
+}
+
+    @media (max-width:370px){
+        .contact{
+            margin-bottom: 30px;
+        &__title{
+            font-size: 24px;
+        }
+    }
 }

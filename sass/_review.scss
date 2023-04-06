@@ -1,5 +1,7 @@
 .review{
-    margin-bottom: 140px;
+    background-color: #F4F6F8;
+    padding-bottom: 40px;
+    padding-top: 40px;
     &__title{
         font-size: 50px;
         font-weight: 700;
@@ -7,21 +9,29 @@
     &__description{
         margin-bottom: 44px;
     }
-    &__description::before{
+    &__wrap{
+        position: relative;
+    }
+    &__wrap::before{
         content: "";
         position: absolute;
-        z-index: 2;
+        z-index: 5;
         width: 460px;
         height: 10px;
-        color: red;
         background-color: red;
         left: 50%;
         transform: translateX(-50%);
-        margin-top: 620px;
+        top: calc(100% + 15px);
         border-radius: 3px;
     }
+    
+    
     &__button{
-        position: absolute;
+        position: relative;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         z-index: 3;
         width: 155px;
         height: 155px;
@@ -29,8 +39,45 @@
         border: none;
         left: 50%;
         transform: translateX(-50%);
-        margin-top: 160px;
+        top: -350px;
         background-image: url("images/button.svg");
+        background-repeat: no-repeat;
         cursor: pointer;
+    }
+    &__img-mobile{
+        display: none;
+    }
+}
+
+@media (max-width: 1000px){
+    .review{
+        &__button{
+            width: 80px;
+            height: 80px;
+            top: -200px;
+            background-image: url("images/button-mobile.svg");
+        }
+        &__wrap::before{
+            width: 146px;
+            height: 5px;
+        }
+    }
+}
+@media (max-width: 660px){
+    .review__title{
+        font-size: 24px;
+    }
+    .review__description{
+        font-size: 16px;
+    }
+    .review__button{
+        top: -130px;
+    }
+    .review__img{
+        display: none;
+    }
+    .review__img-mobile{
+        display: block;
+        border-radius: 24px;
     }
 }

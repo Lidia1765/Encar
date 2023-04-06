@@ -17,16 +17,20 @@
         height: 150px;
         padding: 0;
     }
+    &__wrap{
+        display: flex;
+    }
     &__item{
         font-weight: 500;
         margin-bottom: 16px;
-        margin-right: 90px;
+        margin-left: 90px;
     }
     &__link{
         text-decoration: none;
         color: var(--black);
     }
     &__text{
+        font-style: normal;
         font-size: 16px;
         font-family: 'Montserrat', sans-serif;
         font-size: 16px;
@@ -42,5 +46,49 @@
         height: 22px;
         background-image: url("images/map.svg");
         margin-left: -20px;
+    }
+    &__phone{
+        position: relative;
+        padding: 20px 30px 20px 30px;
+        border-radius: 8px;
+        text-decoration: none;
+        text-align: center;
+        width: 300px;
+        font-weight: 600;
+        color: var(--white);
+        background-color: var(--red);
+    }
+    &__list-mobile{
+        display: none;
+    }
+}
+
+@media (max-width: 1150px){
+    .footer{
+        padding-bottom: 30px;
+        &__container{
+            display: flex;
+            flex-direction: column;
+        }
+        &__list{
+            display: none;
+        }
+        &__list-mobile{
+            display: block;
+            list-style: none;
+            padding: 0;
+            
+        }
+        &__item{
+            width: 200px;
+            margin-left: 0;
+        }
+        &__copyright{
+            margin-bottom: 40px;
+            width: auto;
+        }
+        &__phone{
+            font-style: normal;
+        }
     }
 }
