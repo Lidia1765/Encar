@@ -1,17 +1,21 @@
+.help{
+  margin-bottom: 350px;
+}
 .help__container{
+  position: relative;
     display: flex;
     justify-content: space-between;
-    width: 1426px;
+    width: 100%;
     height: auto;
     margin-bottom: 250px;
     &::before{
       content: "";
       position: absolute;
       z-index: -5;
-      width: 1400px;
+      width: 100%;
       height: 100%;
-      left: 200px;
-      background-image: url(images/background-help.png);
+      //left: 200px;
+      //background-image: url(images/background-help.png);
       background-repeat: no-repeat;;
     }
   }
@@ -19,6 +23,7 @@
   .help__form{
     position: relative;
     padding: 40px 40px;
+    z-index: -1;
     height: 525px;
     margin-left: 50px;
     margin-top: 100px;
@@ -30,25 +35,32 @@
   .help__form::before{
     content: "";
     position: absolute;
-    z-index: 1;
+    z-index: -1;
     width: 790px;
     height: 350px;
     background-image: url(images/audi.png);
     background-repeat: no-repeat;
     top: 470px;
-    left: -150px;
+    left: -220px;
   }
 
   .help__title{
     font-size: 50px;
     font-weight: 700;
     width: 490px;
+    margin: 0;
   }
 
   .help__description{
     font-size: 18px;
     font-weight: 500;
     width: 350px;
+    margin-bottom: 36px;
+    margin-top: 24px;
+  }
+
+  .help__text{
+    margin-top: 16px;
   }
   .help__description::before{
     content: "";
@@ -56,7 +68,7 @@
     z-index: 5;
     width: 1154px;
     height: 100%;
-    background-image: url(images/road.png);
+    //background-image: url(images/road.png);
     background-repeat: no-repeat;
     top: 545px;
     left: -170px;
@@ -99,149 +111,50 @@
   }
 
   .help__list{
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    //display: flex;
-    //flex-wrap: wrap;
-    //justify-content: center;
-    gap: 40px;
-    margin-bottom: 50px;
-    margin-top: -30px;
+    gap: 50px 80px;
+    bottom: -100px;
   }
 
   .help__item{
     position: relative;
     width: 300px;
     list-style: none;
-    padding-bottom: 121px;
   }
-  .help__item:nth-last-child(2){
-    padding: 0;
-  }
-  .help__item:nth-last-child(1){
-    padding: 0;
-  }
-
-  .help__item:nth-child(1)::before{
-    content: "";
-    position: absolute;
-    z-index: 5;
+  .help__img{
     width: 60px;
     height: 60px;
-    top: -60px;
-    left: 10px;
-    background-image: url("images/help-first.svg");
-    background-repeat: no-repeat;
+    padding: 10px;
     border: 3px solid rgba(250, 0, 44, 0.15);
-    background-position: center;
-    border-radius: 10px;
-  }
-
-  .help__item:nth-child(2)::before{
-    content: "";
-    position: absolute;
-    z-index: 5;
-    width: 60px;
-    height: 60px;
-    top: -60px;
-    left: 10px;
-    background-image: url("images/help-second.svg");
-    background-repeat: no-repeat;
-    border: 3px solid rgba(250, 0, 44, 0.15);
-    background-position: center;
-    border-radius: 10px;
-  }
-
-  .help__item:nth-child(3)::before{
-    content: "";
-    position: absolute;
-    z-index: 5;
-    width: 60px;
-    height: 60px;
-    top: -60px;
-    left: 10px;
-    background-image: url("images/help-third.svg");
-    background-repeat: no-repeat;
-    border: 3px solid rgba(250, 0, 44, 0.15);
-    background-position: center;
-    border-radius: 10px;
-  }
-
-  .help__item:nth-child(4)::before{
-    content: "";
-    position: absolute;
-    z-index: 5;
-    width: 60px;
-    height: 60px;
-    top: -60px;
-    left: 10px;
-    background-image: url("images/help-fourth.svg");
-    background-repeat: no-repeat;
-    border: 3px solid rgba(250, 0, 44, 0.15);
-    background-position: center;
-    border-radius: 10px;
-  }
-
-  .help__item:nth-child(5)::before{
-    content: "";
-    position: absolute;
-    z-index: 5;
-    width: 60px;
-    height: 60px;
-    top: -60px;
-    left: 10px;
-    background-image: url("images/help-fifth.svg");
-    background-repeat: no-repeat;
-    border: 3px solid rgba(250, 0, 44, 0.15);
-    background-position: center;
-    border-radius: 10px;
-  }
-
-  .help__item:nth-child(6)::before{
-    content: "";
-    position: absolute;
-    z-index: 5;
-    width: 60px;
-    height: 60px;
-    top: -60px;
-    left: 10px;
-    background-image: url("images/help-sixth.svg");
-    background-repeat: no-repeat;
-    border: 3px solid rgba(250, 0, 44, 0.15);
-    background-position: center;
-    border-radius: 10px;
-  }
-
-  .help__item:nth-child(7)::before{
-    content: "";
-    position: absolute;
-    z-index: 5;
-    width: 60px;
-    height: 60px;
-    top: -60px;
-    left: 10px;
-    background-image: url("images/help-seventh.svg");
-    background-repeat: no-repeat;
-    border: 3px solid rgba(250, 0, 44, 0.15);
-    background-position: center;
-    border-radius: 10px;
-  }
-
-  .help__item:nth-child(8)::before{
-    content: "";
-    position: absolute;
-    z-index: 5;
-    width: 60px;
-    height: 60px;
-    top: -60px;
-    left: 10px;
-    background-image: url("images/help-eighth.svg");
-    background-repeat: no-repeat;
-    border: 3px solid rgba(250, 0, 44, 0.15);
-    background-position: center;
     border-radius: 10px;
   }
   .help__form-mobile{
+    display: none;
+  }
+
+  .group__backgrounds{
+    position: absolute;
+    z-index: -5;
+  }
+  .background__landscape{
+    position: relative;
+    z-index: -3;
+  }
+  .background__road{
+    position: relative;
+    z-index: -2;
+    top: -215px;
+    left: -140px;
+  }
+  .background__auto{
+    position: relative;
+    z-index: 2;
+    top: -670px;
+    left: -120px;
+  }
+  .group__backgrounds-mobile{
     display: none;
   }
  
@@ -262,7 +175,12 @@
     }
   }
 } 
-@media (max-width:1000px){
+@media (max-width:1300px){
+  .background__auto{
+    display: none;
+  }
+}
+@media (max-width:1050px){
   .help{
     &__container{
       width: 95vw;
@@ -279,7 +197,7 @@
       font-size: 14px;
       position: relative;
     }
-    &__description-mobile::before{
+    /*&__description-mobile::before{
       content: "";
       position: absolute;
       z-index: 2;
@@ -289,7 +207,7 @@
       background-repeat: no-repeat;  
       left: -20px; 
       top: 30px;
-    }
+    }*/
     &__form{
       display: none;
     }
@@ -318,8 +236,9 @@
       padding: 96px 10px 20px 20px;
     }
     &__form-mobile{
+      display: block;
       padding-left: 16px;
-      padding-top: 60px;
+      margin-top: 136px;
     }
     &__button{
       box-shadow: 0px 12px 60px rgba(250, 0, 44, 0.4);
@@ -332,7 +251,7 @@
     &__background-mobile{
       position: relative;
     }
-    &__background-mobile::before{
+    /*&__background-mobile::before{
     content: "";
     position: absolute;
     z-index: 0;
@@ -342,6 +261,9 @@
     background-repeat: no-repeat; 
     bottom: -310px;
     left: -17px;
+  }*/
+  &__description-mobile{
+    margin-bottom: 16px;
   }
   .form-input{
     z-index: 5;
@@ -352,7 +274,7 @@
   .form-body{
     position: relative;
   }
-  .form-body::before{
+ /* .form-body::before{
       content: "";
       position: absolute;
       z-index: 4;
@@ -362,19 +284,71 @@
       background-repeat: no-repeat;  
       bottom: -270px;
       left: -25px;
-    }
+    }*/
 }
+.group__backgrounds{
+  display: none;
+}
+.group__backgrounds-mobile{
+  display: block;
+  position: absolute;
+}
+.background__landscape-mobile{
+  position: relative;
+  top: -150px;
+  z-index: -3;
+}
+.background__road-mobile{
+  position: relative;
+  top: -55px;
+  z-index: -2;
+  left: -365px;
+}
+.background__auto-mobile{
+  position: relative;
+  z-index: -1;
+  top: -620px;
+}
+}
+@media (max-width:755px){
+  .group__backgrounds-mobile{
+    display: block;
+    position: absolute;
+  }
+  .background__landscape-mobile{
+    position: relative;
+    top: -150px;
+    z-index: -3;
+  }
+  .background__road-mobile{
+    position: relative;
+    top: -280px;
+    z-index: -2;
+  }
+  .background__auto-mobile{
+    position: relative;
+    z-index: -1;
+    top: -850px;
+  }
 }
 @media (max-width:390px){
   .help{
     &__container{
       margin-bottom: 60px;
     }
-    &__background-mobile::before{
+    /*&__background-mobile::before{
       bottom: -300px;
-    }
+    }*/
   .form-body::before{
     bottom: -255px;
   }
 }
+.background__auto-mobile{
+  top: -850px;
+}
+}
+@media (max-width:360px){
+  .background__auto-mobile{
+    top: -810px;
+  }
 }
