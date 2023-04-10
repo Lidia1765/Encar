@@ -58,6 +58,13 @@ a {
   background-color: transparent;
 }
 
+p {
+  margin: 0;
+}
+
+p + p{
+  margin-top: 20px;
+}
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */

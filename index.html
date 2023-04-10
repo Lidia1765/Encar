@@ -107,7 +107,22 @@
               </div>
             </div>
             <div class="intro__background"></div>
-            <img class="intro__img" src="images/background.png" alt="" />
+            <picture>
+              <source
+                media="(min-width: 1920px)"
+                srcset="
+                  images/background.png   1x,
+                  images/background@2.png 2x,
+                  images/background@3.png 3x
+                "
+              />
+              <img
+                class="intro__img"
+                src="images/background.png"
+                alt="автомобиль"
+                loading="eager"
+              />
+            </picture>
           </div>
         </section>
         <section class="order">
@@ -117,21 +132,57 @@
             <ol class="order__list list">
               <li class="order__item item">
                 <div class="wrap__number">
-                  <img class="order__number" src="images/one.svg" alt="" />
+                  <svg
+                    class="order__number"
+                    width="19"
+                    height="42"
+                    viewBox="0 0 19 42"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18.54 -2.86102e-06V42H8.82V7.8H0.42V-2.86102e-06H18.54Z"
+                      fill="#FA002C"
+                    />
+                  </svg>
                   <span class="order__span"></span>
                 </div>
                 <p class="order__text text">Предварительная консультация</p>
               </li>
               <li class="order__item item">
                 <div class="wrap__number">
-                  <img class="order__number" src="images/two.svg" alt="" />
+                  <svg
+                    class="order__number"
+                    width="34"
+                    height="43"
+                    viewBox="0 0 34 43"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M33.7201 35.08V43H1.98012V36.7L18.1801 21.4C19.9001 19.76 21.0601 18.36 21.6601 17.2C22.2601 16 22.5601 14.82 22.5601 13.66C22.5601 11.98 21.9801 10.7 20.8201 9.82C19.7001 8.9 18.0401 8.44 15.8401 8.44C14.0001 8.44 12.3401 8.8 10.8601 9.52C9.38012 10.2 8.14012 11.24 7.14012 12.64L0.0601221 8.08C1.70012 5.64 3.96012 3.74 6.84012 2.38C9.72012 0.979999 13.0201 0.279999 16.7401 0.279999C19.8601 0.279999 22.5801 0.799999 24.9001 1.84C27.2601 2.84 29.0801 4.28 30.3601 6.16C31.6801 8 32.3401 10.18 32.3401 12.7C32.3401 14.98 31.8601 17.12 30.9001 19.12C29.9401 21.12 28.0801 23.4 25.3201 25.96L15.6601 35.08H33.7201Z"
+                      fill="#FA002C"
+                    />
+                  </svg>
                   <span class="order__span"></span>
                 </div>
                 <p class="order__text text">Заключение договора</p>
               </li>
               <li class="order__item item">
                 <div class="wrap__number">
-                  <img class="order__number" src="images/three.svg" alt="" />
+                  <svg
+                    class="order__number"
+                    width="35"
+                    height="43"
+                    viewBox="0 0 35 43"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M22.96 17.1C26.64 17.7 29.46 19.08 31.42 21.24C33.38 23.36 34.36 26 34.36 29.16C34.36 31.6 33.72 33.86 32.44 35.94C31.16 37.98 29.2 39.62 26.56 40.86C23.96 42.1 20.76 42.72 16.96 42.72C14 42.72 11.08 42.34 8.20002 41.58C5.36002 40.78 2.94002 39.66 0.940015 38.22L4.72002 30.78C6.32002 31.98 8.16002 32.92 10.24 33.6C12.36 34.24 14.52 34.56 16.72 34.56C19.16 34.56 21.08 34.1 22.48 33.18C23.88 32.22 24.58 30.88 24.58 29.16C24.58 25.72 21.96 24 16.72 24H12.28V17.58L20.92 7.8H3.04002V-2.86102e-06H32.44V6.3L22.96 17.1Z"
+                      fill="#FA002C"
+                    />
+                  </svg>
                   <span class="order__span"></span>
                 </div>
                 <p class="order__text text">
@@ -140,7 +191,19 @@
               </li>
               <li class="order__item item">
                 <div class="wrap__number">
-                  <img class="order__number" src="images/four.svg" alt="" />
+                  <svg
+                    class="order__number"
+                    width="40"
+                    height="42"
+                    viewBox="0 0 40 42"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M39.8 33.18H32.96V42H23.48V33.18H0.860031V26.64L20.66 -2.86102e-06H30.86L12.5 25.26H23.78V17.4H32.96V25.26H39.8V33.18Z"
+                      fill="#FA002C"
+                    />
+                  </svg>
                   <span class="order__span"></span>
                 </div>
                 <p class="order__text text">
@@ -149,7 +212,20 @@
               </li>
               <li class="order__item item">
                 <div class="wrap__number">
-                  <img class="order__number" src="images/five.svg" alt="" />
+                  <svg
+                    class="order__number"
+                    width="35"
+                    height="43"
+                    viewBox="0 0 35 43"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.74 15.78C22.66 15.78 27.02 16.96 29.82 19.32C32.66 21.68 34.08 24.84 34.08 28.8C34.08 31.36 33.44 33.7 32.16 35.82C30.88 37.9 28.92 39.58 26.28 40.86C23.68 42.1 20.46 42.72 16.62 42.72C13.66 42.72 10.74 42.34 7.86 41.58C5.02 40.78 2.6 39.66 0.6 38.22L4.44 30.78C6.04 31.98 7.88 32.92 9.96 33.6C12.04 34.24 14.18 34.56 16.38 34.56C18.82 34.56 20.74 34.08 22.14 33.12C23.54 32.16 24.24 30.82 24.24 29.1C24.24 27.3 23.5 25.94 22.02 25.02C20.58 24.1 18.06 23.64 14.46 23.64H3.72L5.88 -2.86102e-06H31.5V7.8H13.98L13.32 15.78H16.74Z"
+                      fill="#FA002C"
+                    />
+                  </svg>
+
                   <span class="order__span"></span>
                 </div>
                 <p class="order__text text">
@@ -158,21 +234,57 @@
               </li>
               <li class="order__item item">
                 <div class="wrap__number">
-                  <img class="order__number" src="images/six.svg" alt="" />
+                  <svg
+                    class="order__number"
+                    width="36"
+                    height="44"
+                    viewBox="0 0 36 44"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20.5601 16.66C23.2401 16.66 25.6801 17.2 27.8801 18.28C30.0801 19.36 31.8201 20.9 33.1001 22.9C34.3801 24.86 35.0201 27.14 35.0201 29.74C35.0201 32.54 34.3201 35 32.9201 37.12C31.5201 39.24 29.6001 40.88 27.1601 42.04C24.7601 43.16 22.0801 43.72 19.1201 43.72C13.2401 43.72 8.64012 41.92 5.32012 38.32C2.00012 34.72 0.340122 29.58 0.340122 22.9C0.340122 18.14 1.24012 14.06 3.04012 10.66C4.84012 7.26 7.34012 4.68 10.5401 2.92C13.7801 1.16 17.5201 0.279999 21.7601 0.279999C24.0001 0.279999 26.1401 0.539998 28.1801 1.06C30.2601 1.54 32.0201 2.24 33.4601 3.16L29.8601 10.3C27.7801 8.9 25.1601 8.2 22.0001 8.2C18.4401 8.2 15.6201 9.24 13.5401 11.32C11.4601 13.4 10.3401 16.42 10.1801 20.38C12.6601 17.9 16.1201 16.66 20.5601 16.66ZM18.5801 36.46C20.6601 36.46 22.3401 35.9 23.6201 34.78C24.9401 33.66 25.6001 32.14 25.6001 30.22C25.6001 28.3 24.9401 26.78 23.6201 25.66C22.3401 24.5 20.6201 23.92 18.4601 23.92C16.3401 23.92 14.6001 24.52 13.2401 25.72C11.8801 26.88 11.2001 28.38 11.2001 30.22C11.2001 32.06 11.8601 33.56 13.1801 34.72C14.5001 35.88 16.3001 36.46 18.5801 36.46Z"
+                      fill="#FA002C"
+                    />
+                  </svg>
                   <span class="order__span"></span>
                 </div>
                 <p class="order__text text">Оплата а/м в Корею</p>
               </li>
               <li class="order__item item">
                 <div class="wrap__number">
-                  <img class="order__number" src="images/seven.svg" alt="" />
+                  <svg
+                    class="order__number"
+                    width="35"
+                    height="42"
+                    viewBox="0 0 35 42"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M34.22 -2.86102e-06V6.3L18.62 42H8.06002L23.12 7.92H9.20002V14.76H0.560015V-2.86102e-06H34.22Z"
+                      fill="#FA002C"
+                    />
+                  </svg>
                   <span class="order__span"></span>
                 </div>
                 <p class="order__text text">Доставка а/м в порт Владивосток</p>
               </li>
               <li class="order__item item">
                 <div class="wrap__number">
-                  <img class="order__number" src="images/eight.svg" alt="" />
+                  <svg
+                    class="order__number"
+                    width="36"
+                    height="44"
+                    viewBox="0 0 36 44"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M29.08 20.92C31.16 21.96 32.74 23.32 33.82 25C34.94 26.68 35.5 28.62 35.5 30.82C35.5 33.42 34.76 35.7 33.28 37.66C31.8 39.58 29.72 41.08 27.04 42.16C24.36 43.2 21.26 43.72 17.74 43.72C14.22 43.72 11.12 43.2 8.44003 42.16C5.80003 41.08 3.74003 39.58 2.26003 37.66C0.820031 35.7 0.100031 33.42 0.100031 30.82C0.100031 28.62 0.640031 26.68 1.72003 25C2.84003 23.32 4.42003 21.96 6.46003 20.92C4.90003 19.96 3.70003 18.76 2.86003 17.32C2.02003 15.84 1.60003 14.16 1.60003 12.28C1.60003 9.84 2.28003 7.72 3.64003 5.92C5.00003 4.12 6.90003 2.74 9.34003 1.78C11.78 0.779999 14.58 0.279999 17.74 0.279999C20.94 0.279999 23.76 0.779999 26.2 1.78C28.68 2.74 30.6 4.12 31.96 5.92C33.32 7.72 34 9.84 34 12.28C34 14.16 33.58 15.84 32.74 17.32C31.9 18.76 30.68 19.96 29.08 20.92ZM17.74 7.42C15.78 7.42 14.2 7.9 13 8.86C11.84 9.78 11.26 11.06 11.26 12.7C11.26 14.3 11.84 15.56 13 16.48C14.16 17.4 15.74 17.86 17.74 17.86C19.74 17.86 21.34 17.4 22.54 16.48C23.74 15.56 24.34 14.3 24.34 12.7C24.34 11.06 23.74 9.78 22.54 8.86C21.34 7.9 19.74 7.42 17.74 7.42ZM17.74 36.58C20.18 36.58 22.1 36.04 23.5 34.96C24.94 33.84 25.66 32.36 25.66 30.52C25.66 28.68 24.94 27.22 23.5 26.14C22.1 25.06 20.18 24.52 17.74 24.52C15.34 24.52 13.44 25.06 12.04 26.14C10.64 27.22 9.94003 28.68 9.94003 30.52C9.94003 32.4 10.64 33.88 12.04 34.96C13.44 36.04 15.34 36.58 17.74 36.58Z"
+                      fill="#FA002C"
+                    />
+                  </svg>
                   <span class="order__span"></span>
                 </div>
                 <p class="order__text text">
@@ -212,42 +324,222 @@
             <div>
               <ul class="help__list list">
                 <li class="help__item item">
+                  <svg
+                    class="help__img"
+                    width="34"
+                    height="31"
+                    viewBox="0 0 34 31"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M2.85218 12.5264H8.58635V29.251H2.85218C2.32436 29.251 1.89648 28.675 1.89648 27.9645V13.8129C1.89648 13.1024 2.32436 12.5264 2.85218 12.5264Z"
+                      stroke="#FA002C"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M8.58615 13.7807L14.1047 3.08846C14.92 1.50871 16.8616 0.889062 18.4413 1.7044C18.7364 1.85673 19.0062 2.05381 19.2411 2.28866C20.182 3.22961 20.7106 4.5058 20.7106 5.8365V10.8539H29.4925C30.212 10.8539 30.897 11.1629 31.3732 11.7023C31.8494 12.2418 32.071 12.9598 31.9818 13.6738L30.1003 27.0535C29.9433 28.3089 28.8761 29.251 27.6109 29.251H8.58615"
+                      stroke="#FA002C"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
                   <p class="help__text text">
                     Подберем лучший вариант авто по наилучшей стоимости
                   </p>
                 </li>
                 <li class="help__item item">
+                  <svg
+                    class="help__img"
+                    width="36"
+                    height="36"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.50098 30.6V5.4C4.50098 4.90294 4.90392 4.5 5.40098 4.5H30.601C31.0981 4.5 31.501 4.90294 31.501 5.4V30.6C31.501 31.0971 31.0981 31.5 30.601 31.5H5.40098C4.90392 31.5 4.50098 31.0971 4.50098 30.6Z"
+                      stroke="#FA002C"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M22.501 12.75C21.4735 11.7225 19.664 11.0078 18.001 10.9631M13.501 22.5C14.4677 23.789 16.2652 24.5241 18.001 24.5865M18.001 10.9631C16.0223 10.9098 14.251 11.805 14.251 14.25C14.251 18.75 22.501 16.5 22.501 21C22.501 23.5665 20.3053 24.6693 18.001 24.5865M18.001 10.9631V8.25M18.001 24.5865V27.75"
+                      stroke="#FA002C"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
                   <p class="help__text text">
                     Поможем купить валюту по выгодному курсу и подскажем как
                     перевести деньги за рубеж
                   </p>
                 </li>
                 <li class="help__item item">
+                  <svg
+                    class="help__img"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 30 30"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M25.0557 29.6406H5.08691C3.98702 29.6395 2.9325 29.2021 2.15476 28.4243C1.37702 27.6466 0.939593 26.5921 0.938477 25.4922V15.2969C0.939593 14.197 1.37702 13.1425 2.15476 12.3647C2.9325 11.587 3.98702 11.1496 5.08691 11.1484H12.1083C12.6491 11.1484 13.1678 10.9336 13.5502 10.5512C13.9326 10.1688 14.1474 9.65017 14.1474 9.10938C14.1485 8.00948 14.5859 6.95496 15.3637 6.17722C16.1414 5.39948 17.1959 4.96205 18.2958 4.96094H25.0557C26.1556 4.96205 27.2101 5.39948 27.9878 6.17722C28.7656 6.95496 29.203 8.00948 29.2041 9.10938V25.4922C29.2028 26.592 28.7653 27.6464 27.9876 28.4241C27.2099 29.2018 26.1555 29.6393 25.0557 29.6406ZM5.08691 13.2578C4.54612 13.2578 4.02748 13.4726 3.64508 13.855C3.26268 14.2374 3.04785 14.7561 3.04785 15.2969V25.4922C3.04785 26.033 3.26268 26.5516 3.64508 26.934C4.02748 27.3164 4.54612 27.5312 5.08691 27.5312H25.0557C25.5965 27.5312 26.1151 27.3164 26.4975 26.934C26.8799 26.5516 27.0947 26.033 27.0947 25.4922V9.10938C27.0947 8.56858 26.8799 8.04994 26.4975 7.66754C26.1151 7.28514 25.5965 7.07031 25.0557 7.07031H18.2958C17.755 7.07031 17.2364 7.28514 16.854 7.66754C16.4716 8.04994 16.2568 8.56858 16.2568 9.10938C16.2555 10.2092 15.818 11.2636 15.0403 12.0413C14.2626 12.819 13.2082 13.2565 12.1083 13.2578H5.08691Z"
+                      fill="#FA002C"
+                    />
+                    <path
+                      d="M5.50879 12.5911C5.22907 12.5911 4.9608 12.4799 4.76301 12.2822C4.56522 12.0844 4.4541 11.8161 4.4541 11.5364V1.76294C4.4541 1.48322 4.56522 1.21496 4.76301 1.01716C4.9608 0.81937 5.22907 0.708252 5.50879 0.708252H24.6338C24.9135 0.708252 25.1818 0.81937 25.3796 1.01716C25.5774 1.21496 25.6885 1.48322 25.6885 1.76294V5.34888C25.6885 5.6286 25.5774 5.89686 25.3796 6.09465C25.1818 6.29245 24.9135 6.40356 24.6338 6.40356C24.3541 6.40356 24.0858 6.29245 23.888 6.09465C23.6902 5.89686 23.5791 5.6286 23.5791 5.34888V2.81763H6.56348V11.5364C6.56348 11.8161 6.45236 12.0844 6.25457 12.2822C6.05677 12.4799 5.78851 12.5911 5.50879 12.5911Z"
+                      fill="#FA002C"
+                    />
+                  </svg>
                   <p class="help__text text">
                     Подготовим все документы для таможни в РФ
                   </p>
                 </li>
                 <li class="help__item item">
+                  <svg
+                    class="help__img"
+                    width="36"
+                    height="36"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.0803 2.97737L5.58034 8.94033C4.91722 9.28417 4.50098 9.96888 4.50098 10.7158V21.7355C4.50098 21.9111 4.52163 22.0836 4.57442 22.251C5.94658 26.6041 13.0964 33.5 18.001 33.5C22.8493 33.5 29.8916 25.8212 31.378 22.3163C31.4659 22.1092 31.501 21.8851 31.501 21.6601V10.7158C31.501 9.96888 31.0847 9.28417 30.4216 8.94033L18.9216 2.97737C18.3443 2.67804 17.6576 2.67804 17.0803 2.97737Z"
+                      stroke="#FA002C"
+                      stroke-width="2.5"
+                    />
+                    <path
+                      d="M13.334 18.3334L16.4374 21.3334L23.334 14.6667"
+                      stroke="#FA002C"
+                      stroke-width="2.5"
+                    />
+                  </svg>
                   <p class="help__text text">
                     Организуем перевозку и страхование груза
                   </p>
                 </li>
                 <li class="help__item item">
+                  <svg
+                    class="help__img"
+                    width="36"
+                    height="36"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M31.001 31H5.00098C3.89641 31 3.00098 30.1046 3.00098 29V11.625C3.00098 10.5204 3.89641 9.625 5.00098 9.625H9.88987C10.9944 9.625 11.8899 8.72957 11.8899 7.625V6C11.8899 4.89543 12.7853 4 13.8899 4H22.1121C23.2167 4 24.1121 4.89543 24.1121 6V7.625C24.1121 8.72957 25.0075 9.625 26.1121 9.625H31.001C32.1055 9.625 33.001 10.5204 33.001 11.625V29C33.001 30.1046 32.1055 31 31.001 31Z"
+                      stroke="#FA002C"
+                      stroke-width="2.5"
+                    />
+                    <circle
+                      cx="18.001"
+                      cy="20"
+                      r="6"
+                      stroke="#FA002C"
+                      stroke-width="2.5"
+                    />
+                  </svg>
                   <p class="help__text text">
                     Предоставим фото и видео отчет автомобиля
                   </p>
                 </li>
                 <li class="help__item item">
+                  <svg
+                    class="help__img"
+                    width="36"
+                    height="36"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.501 28.5C23.1284 28.5 28.501 23.1274 28.501 16.5C28.501 9.87258 23.1284 4.5 16.501 4.5C9.87356 4.5 4.50098 9.87258 4.50098 16.5C4.50098 23.1274 9.87356 28.5 16.501 28.5Z"
+                      stroke="#FA002C"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M31.5006 31.5001L24.9756 24.9751"
+                      stroke="#FA002C"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
                   <p class="help__text text">
                     Наш эксперт тщательно осмотрит понравившийся экземпляр
                   </p>
                 </li>
                 <li class="help__item item">
+                  <svg
+                    class="help__img"
+                    width="36"
+                    height="36"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.334 21.3333L22.6673 11.3333"
+                      stroke="#FA002C"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M13.501 14C14.3294 14 15.001 13.3284 15.001 12.5C15.001 11.6716 14.3294 11 13.501 11C12.6725 11 12.001 11.6716 12.001 12.5C12.001 13.3284 12.6725 14 13.501 14Z"
+                      stroke="#FA002C"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M22.501 22C23.3294 22 24.001 21.3284 24.001 20.5C24.001 19.6716 23.3294 19 22.501 19C21.6725 19 21.001 19.6716 21.001 20.5C21.001 21.3284 21.6725 22 22.501 22Z"
+                      stroke="#FA002C"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M6.00098 33.3334V6.07416C6.00098 5.17045 6.3622 4.30377 7.00518 3.66475C7.64816 3.02574 8.52023 2.66675 9.42955 2.66675H26.5724C27.4817 2.66675 28.3538 3.02574 28.9968 3.66475C29.6398 4.30377 30.001 5.17045 30.001 6.07416V33.3334L24.8581 29.926L21.4295 33.3334L18.001 29.926L14.5724 33.3334L11.1438 29.926L6.00098 33.3334Z"
+                      stroke="#FA002C"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
                   <p class="help__text text">
                     Оптимизируем налоговые автомобили
                   </p>
                 </li>
                 <li class="help__item item">
+                  <svg
+                    class="help__img"
+                    width="36"
+                    height="36"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.501 31.5V25M12.501 18.5V7.5C12.501 6.39543 13.3964 5.5 14.501 5.5H23.001C24.501 5.5 29.1189 6.5 29.0807 12C29.0494 16.5 26.001 18.5 23.001 18.5H12.501ZM12.501 18.5H6.50098M12.501 18.5V25M12.501 25H6.50098M12.501 25H24.001"
+                      stroke="#FA002C"
+                      stroke-width="2.5"
+                    />
+                  </svg>
                   <p class="help__text text">
                     Полностью русифицируем автомобиль
                   </p>
@@ -279,6 +571,40 @@
                 </div>
               </form>
             </div>
+            <div class="group__backgrounds">
+              <span>
+                <img
+                  class="background__landscape"
+                  src="images/background-help.png"
+                  alt=""
+              /></span>
+              <span>
+                <img class="background__road" src="images/road.png" alt=""
+              /></span>
+              <span>
+                <img class="background__auto" src="images/audi.png" alt=""
+              /></span>
+            </div>
+            <div class="group__backgrounds-mobile">
+              <span>
+                <img
+                  class="background__landscape-mobile"
+                  src="images/background-help-mobile.png"
+                  alt=""
+              /></span>
+              <span>
+                <img
+                  class="background__road-mobile"
+                  src="images/road-mobile.png"
+                  alt=""
+              /></span>
+              <span>
+                <img
+                  class="background__auto-mobile"
+                  src="images/audi-mobile.png"
+                  alt=""
+              /></span>
+            </div>
           </div>
         </section>
         <section class="popular">
@@ -298,27 +624,27 @@
                       <div class="popular__line">
                         <span>Пробег</span>
                         <span class="popular__span"></span>
-                        <span>До&nbsp90&nbspтыс.&nbspкм.</span>
+                        <span><b> До&nbsp90&nbspтыс.&nbspкм.</b></span>
                       </div>
                       <div class="popular__line">
                         <span>Год&nbspвыпуска</span>
                         <span class="popular__span"></span>
-                        <span>2018</span>
+                        <span><b> 2018 </b></span>
                       </div>
                       <div class="popular__line">
                         <span>Мощность</span>
                         <span class="popular__span"></span>
-                        <span>163&nbspл.с.</span>
+                        <span><b> 163&nbspл.с.</b></span>
                       </div>
                       <div class="popular__line">
                         <span>Двигатель</span>
                         <span class="popular__span"></span>
-                        <span>2.0&nbspл</span>
+                        <span><b> 2.0&nbspл</b></span>
                       </div>
                       <div class="popular__line">
                         <span>Коробка</span>
                         <span class="popular__span"></span>
-                        <span>Автомат</span>
+                        <span><b> Автомат</b></span>
                       </div>
                     </div>
                   </div>
@@ -354,27 +680,27 @@
                       <div class="popular__line">
                         <span>Пробег</span>
                         <span class="popular__span"></span>
-                        <span>До&nbsp90&nbspтыс.&nbspкм.</span>
+                        <span><b> До&nbsp90&nbspтыс.&nbspкм.</b></span>
                       </div>
                       <div class="popular__line">
                         <span>Год&nbspвыпуска</span>
                         <span class="popular__span"></span>
-                        <span>2018</span>
+                        <span><b> 2018 </b></span>
                       </div>
                       <div class="popular__line">
                         <span>Мощность</span>
                         <span class="popular__span"></span>
-                        <span>163&nbspл.с.</span>
+                        <span><b> 163&nbspл.с.</b></span>
                       </div>
                       <div class="popular__line">
                         <span>Двигатель</span>
                         <span class="popular__span"></span>
-                        <span>2.0&nbspл</span>
+                        <span><b> 2.0&nbspл</b></span>
                       </div>
                       <div class="popular__line">
                         <span>Коробка</span>
                         <span class="popular__span"></span>
-                        <span>Автомат</span>
+                        <span><b> Автомат</b></span>
                       </div>
                     </div>
                   </div>
@@ -410,27 +736,27 @@
                       <div class="popular__line">
                         <span>Пробег</span>
                         <span class="popular__span"></span>
-                        <span>До&nbsp90&nbspтыс.&nbspкм.</span>
+                        <span><b> До&nbsp90&nbspтыс.&nbspкм.</b></span>
                       </div>
                       <div class="popular__line">
                         <span>Год&nbspвыпуска</span>
                         <span class="popular__span"></span>
-                        <span>2018</span>
+                        <span><b> 2018 </b></span>
                       </div>
                       <div class="popular__line">
                         <span>Мощность</span>
                         <span class="popular__span"></span>
-                        <span>163&nbspл.с.</span>
+                        <span><b> 163&nbspл.с.</b></span>
                       </div>
                       <div class="popular__line">
                         <span>Двигатель</span>
                         <span class="popular__span"></span>
-                        <span>2.0&nbspл</span>
+                        <span><b> 2.0&nbspл</b></span>
                       </div>
                       <div class="popular__line">
                         <span>Коробка</span>
                         <span class="popular__span"></span>
-                        <span>Автомат</span>
+                        <span><b> Автомат</b></span>
                       </div>
                     </div>
                   </div>

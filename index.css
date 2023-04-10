@@ -60,6 +60,14 @@ a {
   background-color: transparent;
 }
 
+p {
+  margin: 0;
+}
+
+p + p {
+  margin-top: 20px;
+}
+
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
@@ -208,16 +216,21 @@ template {
   display: none;
 }
 
-.header__container {
+.header {
   position: absolute;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  top: 0;
+}
+.header__container {
   display: flex;
   gap: 28px;
   align-items: center;
   justify-content: space-between;
   margin: auto;
   padding: 0;
-  top: 0;
-  left: 8vw;
 }
 
 .nav {
@@ -240,12 +253,13 @@ template {
 }
 
 .phone__link {
+  display: block;
   position: relative;
   padding: 20px 30px 20px 30px;
   border-radius: 8px;
   text-decoration: none;
   text-align: center;
-  width: 300px;
+  width: 20%;
   font-weight: 600;
   color: var(--white);
   background-color: var(--red);
@@ -297,10 +311,15 @@ template {
     background-color: var(--red);
   }
 }
+.help {
+  margin-bottom: 350px;
+}
+
 .help__container {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  width: 1426px;
+  width: 100%;
   height: auto;
   margin-bottom: 250px;
 }
@@ -308,16 +327,15 @@ template {
   content: "";
   position: absolute;
   z-index: -5;
-  width: 1400px;
+  width: 100%;
   height: 100%;
-  left: 200px;
-  background-image: url(images/background-help.png);
   background-repeat: no-repeat;
 }
 
 .help__form {
   position: relative;
   padding: 40px 40px;
+  z-index: -1;
   height: 525px;
   margin-left: 50px;
   margin-top: 100px;
@@ -329,25 +347,32 @@ template {
 .help__form::before {
   content: "";
   position: absolute;
-  z-index: 1;
+  z-index: -1;
   width: 790px;
   height: 350px;
   background-image: url(images/audi.png);
   background-repeat: no-repeat;
   top: 470px;
-  left: -150px;
+  left: -220px;
 }
 
 .help__title {
   font-size: 50px;
   font-weight: 700;
   width: 490px;
+  margin: 0;
 }
 
 .help__description {
   font-size: 18px;
   font-weight: 500;
   width: 350px;
+  margin-bottom: 36px;
+  margin-top: 24px;
+}
+
+.help__text {
+  margin-top: 16px;
 }
 
 .help__description::before {
@@ -356,7 +381,6 @@ template {
   z-index: 5;
   width: 1154px;
   height: 100%;
-  background-image: url(images/road.png);
   background-repeat: no-repeat;
   top: 545px;
   left: -170px;
@@ -399,149 +423,56 @@ template {
 }
 
 .help__list {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  margin-bottom: 50px;
-  margin-top: -30px;
+  gap: 50px 80px;
+  bottom: -100px;
 }
 
 .help__item {
   position: relative;
   width: 300px;
   list-style: none;
-  padding-bottom: 121px;
 }
 
-.help__item:nth-last-child(2) {
-  padding: 0;
-}
-
-.help__item:nth-last-child(1) {
-  padding: 0;
-}
-
-.help__item:nth-child(1)::before {
-  content: "";
-  position: absolute;
-  z-index: 5;
+.help__img {
   width: 60px;
   height: 60px;
-  top: -60px;
-  left: 10px;
-  background-image: url("images/help-first.svg");
-  background-repeat: no-repeat;
+  padding: 10px;
   border: 3px solid rgba(250, 0, 44, 0.15);
-  background-position: center;
-  border-radius: 10px;
-}
-
-.help__item:nth-child(2)::before {
-  content: "";
-  position: absolute;
-  z-index: 5;
-  width: 60px;
-  height: 60px;
-  top: -60px;
-  left: 10px;
-  background-image: url("images/help-second.svg");
-  background-repeat: no-repeat;
-  border: 3px solid rgba(250, 0, 44, 0.15);
-  background-position: center;
-  border-radius: 10px;
-}
-
-.help__item:nth-child(3)::before {
-  content: "";
-  position: absolute;
-  z-index: 5;
-  width: 60px;
-  height: 60px;
-  top: -60px;
-  left: 10px;
-  background-image: url("images/help-third.svg");
-  background-repeat: no-repeat;
-  border: 3px solid rgba(250, 0, 44, 0.15);
-  background-position: center;
-  border-radius: 10px;
-}
-
-.help__item:nth-child(4)::before {
-  content: "";
-  position: absolute;
-  z-index: 5;
-  width: 60px;
-  height: 60px;
-  top: -60px;
-  left: 10px;
-  background-image: url("images/help-fourth.svg");
-  background-repeat: no-repeat;
-  border: 3px solid rgba(250, 0, 44, 0.15);
-  background-position: center;
-  border-radius: 10px;
-}
-
-.help__item:nth-child(5)::before {
-  content: "";
-  position: absolute;
-  z-index: 5;
-  width: 60px;
-  height: 60px;
-  top: -60px;
-  left: 10px;
-  background-image: url("images/help-fifth.svg");
-  background-repeat: no-repeat;
-  border: 3px solid rgba(250, 0, 44, 0.15);
-  background-position: center;
-  border-radius: 10px;
-}
-
-.help__item:nth-child(6)::before {
-  content: "";
-  position: absolute;
-  z-index: 5;
-  width: 60px;
-  height: 60px;
-  top: -60px;
-  left: 10px;
-  background-image: url("images/help-sixth.svg");
-  background-repeat: no-repeat;
-  border: 3px solid rgba(250, 0, 44, 0.15);
-  background-position: center;
-  border-radius: 10px;
-}
-
-.help__item:nth-child(7)::before {
-  content: "";
-  position: absolute;
-  z-index: 5;
-  width: 60px;
-  height: 60px;
-  top: -60px;
-  left: 10px;
-  background-image: url("images/help-seventh.svg");
-  background-repeat: no-repeat;
-  border: 3px solid rgba(250, 0, 44, 0.15);
-  background-position: center;
-  border-radius: 10px;
-}
-
-.help__item:nth-child(8)::before {
-  content: "";
-  position: absolute;
-  z-index: 5;
-  width: 60px;
-  height: 60px;
-  top: -60px;
-  left: 10px;
-  background-image: url("images/help-eighth.svg");
-  background-repeat: no-repeat;
-  border: 3px solid rgba(250, 0, 44, 0.15);
-  background-position: center;
   border-radius: 10px;
 }
 
 .help__form-mobile {
+  display: none;
+}
+
+.group__backgrounds {
+  position: absolute;
+  z-index: -5;
+}
+
+.background__landscape {
+  position: relative;
+  z-index: -3;
+}
+
+.background__road {
+  position: relative;
+  z-index: -2;
+  top: -215px;
+  left: -140px;
+}
+
+.background__auto {
+  position: relative;
+  z-index: 2;
+  top: -670px;
+  left: -120px;
+}
+
+.group__backgrounds-mobile {
   display: none;
 }
 
@@ -560,7 +491,47 @@ template {
     padding-bottom: 50px;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1300px) {
+  .background__auto {
+    display: none;
+  }
+}
+@media (max-width: 1050px) {
+  .help {
+    /*&__description-mobile::before{
+      content: "";
+      position: absolute;
+      z-index: 2;
+      width: 359px;
+      height: 310px;
+      background-image: url("images/background-help-mobile.png");
+      background-repeat: no-repeat;  
+      left: -20px; 
+      top: 30px;
+    }*/
+    /*&__background-mobile::before{
+      content: "";
+      position: absolute;
+      z-index: 0;
+      width: 355px;
+      height: 290px;
+      background-image: url("images/road-mobile.png");
+      background-repeat: no-repeat; 
+      bottom: -310px;
+      left: -17px;
+    }*/
+    /* .form-body::before{
+         content: "";
+         position: absolute;
+         z-index: 4;
+         width: 355px;
+         height: 510px;
+         background-image: url("images/audi-mobile.png");
+         background-repeat: no-repeat;  
+         bottom: -270px;
+         left: -25px;
+       }*/
+  }
   .help__container {
     width: 95vw;
     display: block;
@@ -575,17 +546,6 @@ template {
   .help__description-mobile {
     font-size: 14px;
     position: relative;
-  }
-  .help__description-mobile::before {
-    content: "";
-    position: absolute;
-    z-index: 2;
-    width: 359px;
-    height: 310px;
-    background-image: url("images/background-help-mobile.png");
-    background-repeat: no-repeat;
-    left: -20px;
-    top: 30px;
   }
   .help__form {
     display: none;
@@ -615,8 +575,9 @@ template {
     padding: 96px 10px 20px 20px;
   }
   .help__form-mobile {
+    display: block;
     padding-left: 16px;
-    padding-top: 60px;
+    margin-top: 136px;
   }
   .help__button {
     box-shadow: 0px 12px 60px rgba(250, 0, 44, 0.4);
@@ -629,16 +590,8 @@ template {
   .help__background-mobile {
     position: relative;
   }
-  .help__background-mobile::before {
-    content: "";
-    position: absolute;
-    z-index: 0;
-    width: 355px;
-    height: 290px;
-    background-image: url("images/road-mobile.png");
-    background-repeat: no-repeat;
-    bottom: -310px;
-    left: -17px;
+  .help__description-mobile {
+    margin-bottom: 16px;
   }
   .help .form-input {
     z-index: 5;
@@ -649,32 +602,75 @@ template {
   .help .form-body {
     position: relative;
   }
-  .help .form-body::before {
-    content: "";
+  .group__backgrounds {
+    display: none;
+  }
+  .group__backgrounds-mobile {
+    display: block;
     position: absolute;
-    z-index: 4;
-    width: 355px;
-    height: 510px;
-    background-image: url("images/audi-mobile.png");
-    background-repeat: no-repeat;
-    bottom: -270px;
-    left: -25px;
+  }
+  .background__landscape-mobile {
+    position: relative;
+    top: -150px;
+    z-index: -3;
+  }
+  .background__road-mobile {
+    position: relative;
+    top: -55px;
+    z-index: -2;
+    left: -365px;
+  }
+  .background__auto-mobile {
+    position: relative;
+    z-index: -1;
+    top: -620px;
+  }
+}
+@media (max-width: 755px) {
+  .group__backgrounds-mobile {
+    display: block;
+    position: absolute;
+  }
+  .background__landscape-mobile {
+    position: relative;
+    top: -150px;
+    z-index: -3;
+  }
+  .background__road-mobile {
+    position: relative;
+    top: -280px;
+    z-index: -2;
+  }
+  .background__auto-mobile {
+    position: relative;
+    z-index: -1;
+    top: -850px;
   }
 }
 @media (max-width: 390px) {
+  .help {
+    /*&__background-mobile::before{
+      bottom: -300px;
+    }*/
+  }
   .help__container {
     margin-bottom: 60px;
-  }
-  .help__background-mobile::before {
-    bottom: -300px;
   }
   .help .form-body::before {
     bottom: -255px;
   }
+  .background__auto-mobile {
+    top: -850px;
+  }
+}
+@media (max-width: 360px) {
+  .background__auto-mobile {
+    top: -810px;
+  }
 }
 .intro {
-  margin-top: 13vh;
-  margin-bottom: 7vh;
+  padding-top: 13vh;
+  padding-bottom: 7vh;
 }
 
 .intro__wrap {
@@ -688,19 +684,18 @@ template {
   height: 100%;
   top: 0;
   left: 0;
-  background-image: url("images/lightening.png");
-  background-repeat: no-repeat;
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 .intro__img {
-  width: 100vw;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: absolute;
   z-index: -5;
   top: 0;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+  left: 0;
 }
 
 /*.intro::before {
@@ -837,10 +832,6 @@ template {
 }
 
 @media (max-width: 1400px) {
-  .intro {
-    margin-top: 8vh;
-    margin-bottom: 0;
-  }
   .intro__text {
     justify-content: flex-start;
   }
@@ -876,9 +867,6 @@ template {
 @media (max-width: 1150px) {
   .button__wrap {
     display: none;
-  }
-  .intro {
-    margin-top: 90px;
   }
   .intro__wrap {
     display: block;
@@ -978,6 +966,7 @@ template {
   font-size: 24px;
   font-weight: 500;
   padding-bottom: 70px;
+  padding-top: 16px;
 }
 
 .order__list {
@@ -1013,7 +1002,7 @@ template {
 .order__text {
   width: 280px;
   font-size: 18px;
-  padding-top: 24px;
+  margin-top: 34px;
 }
 
 .wrap__number {
@@ -1155,7 +1144,7 @@ template {
 .popular__line {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .popular__span {
@@ -1166,18 +1155,20 @@ template {
   flex-direction: column;
   justify-content: space-around;
   margin: 0 5px;
+  margin-bottom: 0.5em;
 }
 
 .popular__price {
   display: flex;
   justify-content: space-between;
   padding-bottom: 20px;
-  border-top: 1px solid;
+  border-top: 2px solid #C1C1C1;
 }
 
 .price__title {
   font-size: 25px;
   font-weight: 500;
+  margin-top: 16px;
 }
 
 .title--red {
@@ -1186,9 +1177,10 @@ template {
 }
 
 .price__text {
-  padding-left: 30px;
+  padding-left: 20px;
+  padding-bottom: 16px;
   background-color: var(--light__pink);
-  border-radius: 24px 0 0 24px;
+  border-radius: 40px 0 0 40px;
   margin-top: -2px;
 }
 
@@ -1660,7 +1652,7 @@ template {
   margin-top: 15px;
 }
 
-details[open]::before {
+details::before {
   content: "";
   position: absolute;
   width: 4px;
@@ -1669,6 +1661,18 @@ details[open]::before {
   background-color: var(--red);
   margin-left: -60px;
   margin-top: 6px;
+}
+
+details[open]::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 23px;
+  border-radius: 1px;
+  background-color: var(--white);
+  margin-left: -60px;
+  margin-top: 6px;
+  z-index: -2;
 }
 
 @media (max-width: 1000px) {
@@ -1954,6 +1958,7 @@ details[open]::before {
   margin-left: -20px;
 }
 .footer__phone {
+  display: block;
   position: relative;
   padding: 20px 30px 20px 30px;
   border-radius: 8px;

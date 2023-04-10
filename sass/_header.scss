@@ -1,14 +1,19 @@
-  .header__container {
+  .header{
     position: absolute;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    top: 0;
+    &__container {
     display: flex;
     gap: 28px;
     align-items: center;
     justify-content: space-between;
     margin: auto;
     padding: 0;
-    top: 0;
-    left: 8vw;
   }
+}
 
   .nav{
     display: flex;
@@ -30,12 +35,13 @@
   }
   
   .phone__link{
+    display: block;
     position: relative;
     padding: 20px 30px 20px 30px;
     border-radius: 8px;
     text-decoration: none;
     text-align: center;
-    width: 300px;
+    width: 20%;
     font-weight: 600;
     color: var(--white);
     background-color: var(--red);
