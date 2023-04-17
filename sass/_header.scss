@@ -1,10 +1,9 @@
   .header{
     position: absolute;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
+    left: 0;
     top: 0;
+    width: 100%;
+    z-index: 10;
     &__container {
     display: flex;
     gap: 28px;
@@ -35,9 +34,9 @@
   }
   
   .phone__link{
-    display: block;
+    display: flex;
     position: relative;
-    padding: 20px 30px 20px 30px;
+    padding: 20px 30px 20px 50px;
     border-radius: 8px;
     text-decoration: none;
     text-align: center;
@@ -49,11 +48,12 @@
 
   .phone__link::before{
     content: "";
+    display: block;
     z-index: 5;
     position: absolute;
     width: 16px;
     height: 16px;
-    left: 10px;
+    left: 25px;
     background-image: url("images/phone.svg");
     background-repeat: no-repeat;
   }

@@ -41,7 +41,7 @@
 
 .item__title{
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .item__description{
@@ -50,6 +50,7 @@
 }
 
 .item__price{
+    font-weight: 600;
     font-size: 60px;
     margin: 0;
     bottom: -50px;
@@ -95,6 +96,9 @@
         bottom: 15px;
 
     }
+}
+.description--top::before{
+    left: -10px;
 }
 
 @media (max-width: 1300px){

@@ -1,8 +1,5 @@
 .order{
   background-color: var(--gray);
-  &__container{
-    margin-bottom: 150px;
-  }
 }
   
   .order__title{
@@ -69,7 +66,7 @@
     height: 1px;
 }
   
-@media (max-width:1400px){
+@media (max-width:1480px){
   .order{
     &__list{
       grid-template-columns: 1fr 1fr 1fr;
@@ -120,6 +117,9 @@
     }
     &__item:nth-child(3){
       border-right: none;
+    }
+    &__item:nth-child(8){
+      border: none;
     }
     &__item:hover{
       border-left:2px dashed var(--pink);
