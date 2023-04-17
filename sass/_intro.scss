@@ -1,6 +1,7 @@
  .intro{
   padding-top: 13vh;
   padding-bottom: 7vh;
+  position: relative;
  }
  
  .intro__wrap{
@@ -8,7 +9,7 @@
 
     &::before{
       content: "";
-      z-index: -2;
+      z-index: -4;
       position: absolute;
       width: 100%;
       height: 100%;
@@ -88,6 +89,7 @@
   .intro__item{
     position: relative;
     list-style-image: url("images/mark.svg");
+    padding-top: 18px;
     &:nth-child(1)::before{
       content: "";
       z-index: 5;
@@ -106,6 +108,7 @@
     align-items: center;
     width: 500px;
     gap: 30px;
+    padding-top: 16px;
   }
   
   .intro__button{
@@ -265,12 +268,20 @@
       width: auto;
     }
     .intro__group-mobile{
+      display: block;
+      height: auto;
       display: flex;
+      flex-direction: column;
       padding-top: 17px;
       justify-content: center;
       gap: 18px;
     }
+    .group__media-mobile{
+      display: flex;
+      justify-content: center;
+    }
     .intro__media-mobile{
+      display: block;
       background: rgba(255, 255, 255, 0.3);
       border: 2px solid var(--white);
       border-radius: 8px;
@@ -280,7 +291,8 @@
       padding: 20px 13px;
     }
     .intro__button-mobile{
-      padding: 23px 47px;
+      display: block;
+      padding: 23px 28px;
     font-weight: 700;
     font-size: 18px;
     color: var(--white);

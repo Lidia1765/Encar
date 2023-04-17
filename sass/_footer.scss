@@ -53,11 +53,23 @@
         padding: 20px 30px 20px 30px;
         border-radius: 8px;
         text-decoration: none;
+        font-style: normal;
         text-align: center;
-        width: 300px;
+        width: 236px;
         font-weight: 600;
         color: var(--white);
         background-color: var(--red);
+    }
+    &__phone::before{
+            content: "";
+            display: block;
+            z-index: 5;
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            left: 25px;
+            background-image: url("images/phone.svg");
+            background-repeat: no-repeat;
     }
     &__list-mobile{
         display: none;

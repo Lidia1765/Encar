@@ -1,6 +1,6 @@
 .review{
     background-color: #F4F6F8;
-    padding-bottom: 40px;
+    padding-bottom: 140px;
     padding-top: 40px;
     &__title{
         font-size: 50px;
@@ -24,10 +24,8 @@
         top: calc(100% + 15px);
         border-radius: 3px;
     }
-    
-    
     &__button{
-        position: relative;
+        position: absolute;
         margin: 0;
         display: flex;
         flex-direction: column;
@@ -38,8 +36,8 @@
         border-radius: 80px;
         border: none;
         left: 50%;
-        transform: translateX(-50%);
-        top: -350px;
+        transform: translate(-50%, -50%);
+        top: 50%;
         background-image: url("images/button.svg");
         background-repeat: no-repeat;
         cursor: pointer;
@@ -54,7 +52,6 @@
         &__button{
             width: 80px;
             height: 80px;
-            top: -200px;
             background-image: url("images/button-mobile.svg");
         }
         &__wrap::before{
@@ -70,9 +67,8 @@
     .review__description{
         font-size: 16px;
     }
-    .review__button{
-        top: -130px;
-    }
+}
+@media (max-width:370px){    
     .review__img{
         display: none;
     }

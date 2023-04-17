@@ -1,5 +1,6 @@
 .consultation{
     background-color: var(--white);
+    margin-bottom: 110px;
     &__container{
         position: relative;
     width: 1440px;
@@ -9,7 +10,6 @@
     border: 7px solid #E7E7E7;
     border-radius: 36px;
     padding: 30px 60px;
-    margin-bottom: 110px;
     }
     &__container::before{
     content: "";

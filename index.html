@@ -80,25 +80,6 @@
                     />
                   </a>
                 </div>
-                <button type="button" class="intro__button-mobile">
-                  Получить консультацию
-                </button>
-                <div class="intro__group-mobile">
-                  <a href="/">
-                    <img
-                      class="intro__media-mobile"
-                      src="images/telegram.svg"
-                      alt="Телегрм"
-                    />
-                  </a>
-                  <a href="/">
-                    <img
-                      class="intro__media-mobile media-mobile--youtube"
-                      src="images/Youtube.svg"
-                      alt="Ютуб"
-                    />
-                  </a>
-                </div>
               </div>
               <div class="button__wrap">
                 <button type="button" class="button__video">
@@ -106,15 +87,32 @@
                 </button>
               </div>
             </div>
+            <div class="intro__group-mobile">
+              <button type="button" class="intro__button-mobile">
+                Получить консультацию
+              </button>
+              <div class="group__media-mobile">
+                <a href="/">
+                  <img
+                    class="intro__media-mobile"
+                    src="images/telegram.svg"
+                    alt="Телегрм"
+                  />
+                </a>
+                <a href="/">
+                  <img
+                    class="intro__media-mobile media-mobile--youtube"
+                    src="images/Youtube.svg"
+                    alt="Ютуб"
+                  />
+                </a>
+              </div>
+            </div>
             <div class="intro__background"></div>
             <picture>
               <source
                 media="(min-width: 1920px)"
-                srcset="
-                  images/background.png   1x,
-                  images/background@2.png 2x,
-                  images/background@3.png 3x
-                "
+                srcset="images/background@2.png 2x, images/background@3.png 3x"
               />
               <img
                 class="intro__img"
@@ -296,7 +294,15 @@
         </section>
         <section class="help">
           <div class="help__container container">
-            <div class="help__background"></div>
+            <div class="group__backgrounds">
+              <img
+                class="background__landscape"
+                src="images/background-help.png"
+                alt=""
+              />
+              <img class="background__road" src="images/road.png" alt="" />
+              <img class="background__auto" src="images/audi.png" alt="" />
+            </div>
             <div class="help__form">
               <h2 class="help__title">Помощь на всех этапах покупки</h2>
               <p class="help__description">
@@ -567,43 +573,25 @@
                   <button type="submit" class="help__button button">
                     Получить консультацию
                   </button>
-                  <div class="help__background-mobile"></div>
                 </div>
               </form>
             </div>
-            <div class="group__backgrounds">
-              <span>
-                <img
-                  class="background__landscape"
-                  src="images/background-help.png"
-                  alt=""
-              /></span>
-              <span>
-                <img class="background__road" src="images/road.png" alt=""
-              /></span>
-              <span>
-                <img class="background__auto" src="images/audi.png" alt=""
-              /></span>
-            </div>
             <div class="group__backgrounds-mobile">
-              <span>
-                <img
-                  class="background__landscape-mobile"
-                  src="images/background-help-mobile.png"
-                  alt=""
-              /></span>
-              <span>
-                <img
-                  class="background__road-mobile"
-                  src="images/road-mobile.png"
-                  alt=""
-              /></span>
-              <span>
-                <img
-                  class="background__auto-mobile"
-                  src="images/audi-mobile.png"
-                  alt=""
-              /></span>
+              <img
+                class="background__landscape-mobile"
+                src="images/background-help-mobile.png"
+                alt=""
+              />
+              <img
+                class="background__road-mobile"
+                src="images/road-mobile.png"
+                alt=""
+              />
+              <img
+                class="background__auto-mobile"
+                src="images/audi-mobile.png"
+                alt=""
+              />
             </div>
           </div>
         </section>
@@ -618,44 +606,46 @@
                     src="images/kia-white.png"
                     alt="KIA K5"
                   />
-                  <h1>KIA K5 (Optima)</h1>
+                  <h1 class="popular__item-title">KIA K5 (Optima)</h1>
                   <div class="popular__wrap">
                     <div class="popular__text text">
                       <div class="popular__line">
                         <span>Пробег</span>
                         <span class="popular__span"></span>
-                        <span><b> До&nbsp90&nbspтыс.&nbspкм.</b></span>
+                        <span class="span__wrap">
+                          До&nbsp90&nbspтыс.&nbspкм.</span
+                        >
                       </div>
                       <div class="popular__line">
                         <span>Год&nbspвыпуска</span>
                         <span class="popular__span"></span>
-                        <span><b> 2018 </b></span>
+                        <span class="span__wrap"> 2018</span>
                       </div>
                       <div class="popular__line">
                         <span>Мощность</span>
                         <span class="popular__span"></span>
-                        <span><b> 163&nbspл.с.</b></span>
+                        <span class="span__wrap"> 163&nbspл.с.</span>
                       </div>
                       <div class="popular__line">
                         <span>Двигатель</span>
                         <span class="popular__span"></span>
-                        <span><b> 2.0&nbspл</b></span>
+                        <span class="span__wrap"> 2.0&nbspл</span>
                       </div>
                       <div class="popular__line">
                         <span>Коробка</span>
                         <span class="popular__span"></span>
-                        <span><b> Автомат</b></span>
+                        <span class="span__wrap"> Автомат</span>
                       </div>
                     </div>
                   </div>
                   <div class="popular__price">
-                    <div>
+                    <div class="price__text">
                       <p class="price__title title">1 890 000 ₽</p>
                       <p class="price__description">
                         Цена на вторичном рынке в РФ
                       </p>
                     </div>
-                    <div class="price__text">
+                    <div class="price__text-accent">
                       <p class="price__title title title--red">1 540 000 ₽</p>
                       <p class="price__description">
                         Цена из Кореи во Владивостоке
@@ -674,44 +664,46 @@
                     src="images/kia-blue.png"
                     alt="KIA K5"
                   />
-                  <h1>KIA K5 (Optima)</h1>
+                  <h1 class="popular__item-title">KIA K5 (Optima)</h1>
                   <div class="popular__wrap">
                     <div class="popular__text text">
                       <div class="popular__line">
                         <span>Пробег</span>
                         <span class="popular__span"></span>
-                        <span><b> До&nbsp90&nbspтыс.&nbspкм.</b></span>
+                        <span class="span__wrap">
+                          До&nbsp90&nbspтыс.&nbspкм.</span
+                        >
                       </div>
                       <div class="popular__line">
                         <span>Год&nbspвыпуска</span>
                         <span class="popular__span"></span>
-                        <span><b> 2018 </b></span>
+                        <span class="span__wrap"> 2018 </span>
                       </div>
                       <div class="popular__line">
                         <span>Мощность</span>
                         <span class="popular__span"></span>
-                        <span><b> 163&nbspл.с.</b></span>
+                        <span class="span__wrap"> 163&nbspл.с.</span>
                       </div>
                       <div class="popular__line">
                         <span>Двигатель</span>
                         <span class="popular__span"></span>
-                        <span><b> 2.0&nbspл</b></span>
+                        <span class="span__wrap"> 2.0&nbspл</span>
                       </div>
                       <div class="popular__line">
                         <span>Коробка</span>
                         <span class="popular__span"></span>
-                        <span><b> Автомат</b></span>
+                        <span class="span__wrap"> Автомат</span>
                       </div>
                     </div>
                   </div>
                   <div class="popular__price">
-                    <div>
+                    <div class="price__text">
                       <p class="price__title title">1 890 000 ₽</p>
                       <p class="price__description">
                         Цена на вторичном рынке в РФ
                       </p>
                     </div>
-                    <div class="price__text">
+                    <div class="price__text-accent">
                       <p class="price__title title title--red">1 540 000 ₽</p>
                       <p class="price__description">
                         Цена из Кореи во Владивостоке
@@ -730,44 +722,46 @@
                     src="images/kia-white.png"
                     alt="KIA K5"
                   />
-                  <h1>KIA K5 (Optima)</h1>
+                  <h1 class="popular__item-title">KIA K5 (Optima)</h1>
                   <div class="popular__wrap">
                     <div class="popular__text text">
                       <div class="popular__line">
                         <span>Пробег</span>
                         <span class="popular__span"></span>
-                        <span><b> До&nbsp90&nbspтыс.&nbspкм.</b></span>
+                        <span class="span__wrap">
+                          До&nbsp90&nbspтыс.&nbspкм.</span
+                        >
                       </div>
                       <div class="popular__line">
                         <span>Год&nbspвыпуска</span>
                         <span class="popular__span"></span>
-                        <span><b> 2018 </b></span>
+                        <span class="span__wrap"> 2018 </span>
                       </div>
                       <div class="popular__line">
                         <span>Мощность</span>
                         <span class="popular__span"></span>
-                        <span><b> 163&nbspл.с.</b></span>
+                        <span class="span__wrap"> 163&nbspл.с.</span>
                       </div>
                       <div class="popular__line">
                         <span>Двигатель</span>
                         <span class="popular__span"></span>
-                        <span><b> 2.0&nbspл</b></span>
+                        <span class="span__wrap"> 2.0&nbspл</span>
                       </div>
                       <div class="popular__line">
                         <span>Коробка</span>
                         <span class="popular__span"></span>
-                        <span><b> Автомат</b></span>
+                        <span class="span__wrap"> Автомат</span>
                       </div>
                     </div>
                   </div>
                   <div class="popular__price">
-                    <div>
+                    <div class="price__text">
                       <p class="price__title title">1 890 000 ₽</p>
                       <p class="price__description">
                         Цена на вторичном рынке в РФ
                       </p>
                     </div>
-                    <div class="price__text">
+                    <div class="price__text-accent">
                       <p class="price__title title title--red">1 540 000 ₽</p>
                       <p class="price__description">
                         Цена из Кореи во Владивостоке
@@ -854,7 +848,7 @@
             </ul>
             <div class="price__wrap">
               <div class="example__wrap">
-                <p class="example__description">
+                <p class="example__description description--top">
                   Итоговая стоимость а/м под ключ
                 </p>
                 <p class="example__price price--active">3 280 000 руб</p>
@@ -902,11 +896,29 @@
                     преступление и никто не будет с этим связываться + пробег
                     легко проверить через базы страховых компаний
                   </p>
-                  <button type="button" class="benefit__button"></button>
+                </article>
+                <div class="benefit__buttons">
+                  <button
+                    type="button"
+                    class="benefit__button button--left"
+                  ></button>
                   <button
                     type="button"
                     class="benefit__button button--right"
                   ></button>
+                </div>
+                <article class="benefit__article">
+                  <img
+                    class="benefit__img"
+                    src="images/kia-white.png"
+                    alt="KIA"
+                  />
+                  <p class="benefit__text">Честный пробег</p>
+                  <p class="benefit__description">
+                    Скрутить пробег в Корее нельзя, т.к. это уголовное
+                    преступление и никто не будет с этим связываться + пробег
+                    легко проверить через базы страховых компаний
+                  </p>
                 </article>
                 <article class="benefit__article">
                   <img
@@ -920,11 +932,6 @@
                     преступление и никто не будет с этим связываться + пробег
                     легко проверить через базы страховых компаний
                   </p>
-                  <button type="button" class="benefit__button"></button>
-                  <button
-                    type="button"
-                    class="benefit__button button--right"
-                  ></button>
                 </article>
                 <article class="benefit__article">
                   <img
@@ -938,11 +945,6 @@
                     преступление и никто не будет с этим связываться + пробег
                     легко проверить через базы страховых компаний
                   </p>
-                  <button type="button" class="benefit__button"></button>
-                  <button
-                    type="button"
-                    class="benefit__button button--right"
-                  ></button>
                 </article>
                 <article class="benefit__article">
                   <img
@@ -956,11 +958,6 @@
                     преступление и никто не будет с этим связываться + пробег
                     легко проверить через базы страховых компаний
                   </p>
-                  <button type="button" class="benefit__button"></button>
-                  <button
-                    type="button"
-                    class="benefit__button button--right"
-                  ></button>
                 </article>
                 <article class="benefit__article">
                   <img
@@ -974,11 +971,6 @@
                     преступление и никто не будет с этим связываться + пробег
                     легко проверить через базы страховых компаний
                   </p>
-                  <button type="button" class="benefit__button"></button>
-                  <button
-                    type="button"
-                    class="benefit__button button--right"
-                  ></button>
                 </article>
                 <article class="benefit__article">
                   <img
@@ -992,11 +984,6 @@
                     преступление и никто не будет с этим связываться + пробег
                     легко проверить через базы страховых компаний
                   </p>
-                  <button type="button" class="benefit__button"></button>
-                  <button
-                    type="button"
-                    class="benefit__button button--right"
-                  ></button>
                 </article>
                 <article class="benefit__article">
                   <img
@@ -1010,11 +997,6 @@
                     преступление и никто не будет с этим связываться + пробег
                     легко проверить через базы страховых компаний
                   </p>
-                  <button type="button" class="benefit__button"></button>
-                  <button
-                    type="button"
-                    class="benefit__button button--right"
-                  ></button>
                 </article>
                 <article class="benefit__article">
                   <img
@@ -1028,11 +1010,6 @@
                     преступление и никто не будет с этим связываться + пробег
                     легко проверить через базы страховых компаний
                   </p>
-                  <button type="button" class="benefit__button"></button>
-                  <button
-                    type="button"
-                    class="benefit__button button--right"
-                  ></button>
                 </article>
                 <article class="benefit__article">
                   <img
@@ -1046,11 +1023,6 @@
                     преступление и никто не будет с этим связываться + пробег
                     легко проверить через базы страховых компаний
                   </p>
-                  <button type="button" class="benefit__button"></button>
-                  <button
-                    type="button"
-                    class="benefit__button button--right"
-                  ></button>
                 </article>
                 <article class="benefit__article">
                   <img
@@ -1064,11 +1036,6 @@
                     преступление и никто не будет с этим связываться + пробег
                     легко проверить через базы страховых компаний
                   </p>
-                  <button type="button" class="benefit__button"></button>
-                  <button
-                    type="button"
-                    class="benefit__button button--right"
-                  ></button>
                 </article>
                 <article class="benefit__article">
                   <img
@@ -1082,11 +1049,6 @@
                     преступление и никто не будет с этим связываться + пробег
                     легко проверить через базы страховых компаний
                   </p>
-                  <button type="button" class="benefit__button"></button>
-                  <button
-                    type="button"
-                    class="benefit__button button--right"
-                  ></button>
                 </article>
                 <article class="benefit__article">
                   <img
@@ -1100,29 +1062,6 @@
                     преступление и никто не будет с этим связываться + пробег
                     легко проверить через базы страховых компаний
                   </p>
-                  <button type="button" class="benefit__button"></button>
-                  <button
-                    type="button"
-                    class="benefit__button button--right"
-                  ></button>
-                </article>
-                <article class="benefit__article">
-                  <img
-                    class="benefit__img"
-                    src="images/kia-white.png"
-                    alt="KIA"
-                  />
-                  <p class="benefit__text">Честный пробег</p>
-                  <p class="benefit__description">
-                    Скрутить пробег в Корее нельзя, т.к. это уголовное
-                    преступление и никто не будет с этим связываться + пробег
-                    легко проверить через базы страховых компаний
-                  </p>
-                  <button type="button" class="benefit__button"></button>
-                  <button
-                    type="button"
-                    class="benefit__button button--right"
-                  ></button>
                 </article>
               </div>
             </div>
@@ -1140,6 +1079,7 @@
               Как выглядит осмотр авто на примере Hyundai Palisade
             </p>
             <div class="review__wrap">
+              <button type="button" class="review__button"></button>
               <img
                 class="review__img"
                 src="images/speedometer.png"
@@ -1151,7 +1091,6 @@
                 alt="Спидометр"
               />
             </div>
-            <button type="button" class="review__button"></button>
           </div>
         </section>
         <section class="answer">

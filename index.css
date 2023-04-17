@@ -218,11 +218,10 @@ template {
 
 .header {
   position: absolute;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+  left: 0;
   top: 0;
+  width: 100%;
+  z-index: 10;
 }
 .header__container {
   display: flex;
@@ -253,9 +252,9 @@ template {
 }
 
 .phone__link {
-  display: block;
+  display: flex;
   position: relative;
-  padding: 20px 30px 20px 30px;
+  padding: 20px 30px 20px 50px;
   border-radius: 8px;
   text-decoration: none;
   text-align: center;
@@ -267,11 +266,12 @@ template {
 
 .phone__link::before {
   content: "";
+  display: block;
   z-index: 5;
   position: absolute;
   width: 16px;
   height: 16px;
-  left: 10px;
+  left: 25px;
   background-image: url("images/phone.svg");
   background-repeat: no-repeat;
 }
@@ -321,39 +321,20 @@ template {
   justify-content: space-between;
   width: 100%;
   height: auto;
-  margin-bottom: 250px;
-}
-.help__container::before {
-  content: "";
-  position: absolute;
-  z-index: -5;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
+  padding-bottom: 100px;
+  padding-top: 100px;
 }
 
 .help__form {
   position: relative;
   padding: 40px 40px;
-  z-index: -1;
+  z-index: 2;
   height: 525px;
   margin-left: 50px;
   margin-top: 100px;
   background-color: var(--white);
   border-radius: 22px;
   box-shadow: 0px 2px 50px rgba(35, 37, 38, 0.07);
-}
-
-.help__form::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  width: 790px;
-  height: 350px;
-  background-image: url(images/audi.png);
-  background-repeat: no-repeat;
-  top: 470px;
-  left: -220px;
 }
 
 .help__title {
@@ -373,17 +354,6 @@ template {
 
 .help__text {
   margin-top: 16px;
-}
-
-.help__description::before {
-  content: "";
-  position: absolute;
-  z-index: 5;
-  width: 1154px;
-  height: 100%;
-  background-repeat: no-repeat;
-  top: 545px;
-  left: -170px;
 }
 
 .form-input {
@@ -427,7 +397,7 @@ template {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 50px 80px;
-  bottom: -100px;
+  padding-top: 100px;
 }
 
 .help__item {
@@ -448,28 +418,23 @@ template {
   display: none;
 }
 
-.group__backgrounds {
-  position: absolute;
-  z-index: -5;
-}
-
 .background__landscape {
-  position: relative;
+  position: absolute;
   z-index: -3;
 }
 
 .background__road {
-  position: relative;
+  position: absolute;
   z-index: -2;
-  top: -215px;
-  left: -140px;
+  bottom: -160px;
+  left: -110px;
 }
 
 .background__auto {
-  position: relative;
-  z-index: 2;
-  top: -670px;
-  left: -120px;
+  position: absolute;
+  z-index: 10;
+  bottom: -15px;
+  left: -85px;
 }
 
 .group__backgrounds-mobile {
@@ -490,10 +455,32 @@ template {
     width: 150px;
     padding-bottom: 50px;
   }
+  .help__list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .background__auto {
+    bottom: 40px;
+  }
+  .background__road {
+    bottom: -100px;
+  }
 }
 @media (max-width: 1300px) {
   .background__auto {
     display: none;
+  }
+  .background__road {
+    display: none;
+  }
+  .help__list {
+    gap: 30px 40px;
+  }
+  .help__item {
+    padding: 0;
+  }
+  .help__form {
+    width: 500px;
+    padding: 20px;
   }
 }
 @media (max-width: 1050px) {
@@ -509,28 +496,6 @@ template {
       left: -20px; 
       top: 30px;
     }*/
-    /*&__background-mobile::before{
-      content: "";
-      position: absolute;
-      z-index: 0;
-      width: 355px;
-      height: 290px;
-      background-image: url("images/road-mobile.png");
-      background-repeat: no-repeat; 
-      bottom: -310px;
-      left: -17px;
-    }*/
-    /* .form-body::before{
-         content: "";
-         position: absolute;
-         z-index: 4;
-         width: 355px;
-         height: 510px;
-         background-image: url("images/audi-mobile.png");
-         background-repeat: no-repeat;  
-         bottom: -270px;
-         left: -25px;
-       }*/
   }
   .help__container {
     width: 95vw;
@@ -671,6 +636,7 @@ template {
 .intro {
   padding-top: 13vh;
   padding-bottom: 7vh;
+  position: relative;
 }
 
 .intro__wrap {
@@ -678,7 +644,7 @@ template {
 }
 .intro__wrap::before {
   content: "";
-  z-index: -2;
+  z-index: -4;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -754,6 +720,7 @@ template {
 .intro__item {
   position: relative;
   list-style-image: url("images/mark.svg");
+  padding-top: 18px;
 }
 .intro__item:nth-child(1)::before {
   content: "";
@@ -772,6 +739,7 @@ template {
   align-items: center;
   width: 500px;
   gap: 30px;
+  padding-top: 16px;
 }
 
 .intro__button {
@@ -923,12 +891,20 @@ template {
     width: auto;
   }
   .intro__group-mobile {
+    display: block;
+    height: auto;
     display: flex;
+    flex-direction: column;
     padding-top: 17px;
     justify-content: center;
     gap: 18px;
   }
+  .group__media-mobile {
+    display: flex;
+    justify-content: center;
+  }
   .intro__media-mobile {
+    display: block;
     background: rgba(255, 255, 255, 0.3);
     border: 2px solid var(--white);
     border-radius: 8px;
@@ -938,7 +914,8 @@ template {
     padding: 20px 13px;
   }
   .intro__button-mobile {
-    padding: 23px 47px;
+    display: block;
+    padding: 23px 28px;
     font-weight: 700;
     font-size: 18px;
     color: var(--white);
@@ -949,9 +926,6 @@ template {
 }
 .order {
   background-color: var(--gray);
-}
-.order__container {
-  margin-bottom: 150px;
 }
 
 .order__title {
@@ -1019,7 +993,7 @@ template {
   height: 1px;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1480px) {
   .order__list {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -1064,6 +1038,9 @@ template {
   }
   .order__item:nth-child(3) {
     border-right: none;
+  }
+  .order__item:nth-child(8) {
+    border: none;
   }
   .order__item:hover {
     border-left: 2px dashed var(--pink);
@@ -1130,6 +1107,10 @@ template {
   margin-right: 30px;
 }
 
+.popular__item-title {
+  padding-left: 20px;
+}
+
 .popular__wrap {
   margin-bottom: 25px;
 }
@@ -1139,23 +1120,25 @@ template {
   flex-direction: column;
   justify-content: space-around;
   height: 190px;
+  padding-left: 20px;
 }
 
 .popular__line {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  width: 100%;
 }
 
 .popular__span {
   border: 0.5px dashed #C1C1C1;
-  width: 100%;
+  width: 70%;
   height: 1px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   margin: 0 5px;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.25em;
 }
 
 .popular__price {
@@ -1178,6 +1161,16 @@ template {
 
 .price__text {
   padding-left: 20px;
+}
+
+.span__wrap {
+  position: relative;
+  width: 120px;
+  font-weight: 600;
+}
+
+.price__text-accent {
+  padding-left: 20px;
   padding-bottom: 16px;
   background-color: var(--light__pink);
   border-radius: 40px 0 0 40px;
@@ -1193,6 +1186,7 @@ template {
   border-radius: 14px;
   color: var(--white);
   cursor: pointer;
+  box-shadow: 0px 12px 60px rgba(250, 0, 44, 0.4);
 }
 
 @media (max-width: 1200px) {
@@ -1261,7 +1255,7 @@ template {
 
 .item__title {
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .item__description {
@@ -1270,6 +1264,7 @@ template {
 }
 
 .item__price {
+  font-weight: 600;
   font-size: 60px;
   margin: 0;
   bottom: -50px;
@@ -1314,6 +1309,10 @@ template {
   border-radius: 1px;
   left: 0;
   bottom: 15px;
+}
+
+.description--top::before {
+  left: -10px;
 }
 
 @media (max-width: 1300px) {
@@ -1430,6 +1429,7 @@ template {
   display: none;
   position: relative;
   width: 460px;
+  height: 559px;
   box-shadow: 0px 2px 50px rgba(0, 0, 0, 0.12);
   border-radius: 36px;
   padding: 20px;
@@ -1450,25 +1450,36 @@ template {
   font-weight: 400;
   width: 400px;
 }
-.benefit__button {
-  width: 60px;
-  height: 60px;
-  border-radius: 30px;
-  border: 1px solid;
-  background-color: transparent;
-  margin-top: 70px;
-  margin-right: 15px;
-  background-image: url("images/arrow-left.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.benefit__buttons {
+  position: absolute;
+  margin-top: 470px;
+  margin-left: 32px;
 }
 .benefit__button:hover {
   color: var(--accent-color);
 }
 
+.button--left {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  border: 1px solid;
+  background-color: transparent;
+  background-image: url("images/arrow-left.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .button--right {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  border: 1px solid;
+  margin-left: 70px;
   background-image: url("images/arrow2.png");
   background-repeat: no-repeat;
+  background-color: transparent;
   background-position: center;
   color: black;
 }
@@ -1520,7 +1531,7 @@ template {
 }
 .review {
   background-color: #F4F6F8;
-  padding-bottom: 40px;
+  padding-bottom: 140px;
   padding-top: 40px;
 }
 .review__title {
@@ -1546,7 +1557,7 @@ template {
   border-radius: 3px;
 }
 .review__button {
-  position: relative;
+  position: absolute;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -1557,8 +1568,8 @@ template {
   border-radius: 80px;
   border: none;
   left: 50%;
-  transform: translateX(-50%);
-  top: -350px;
+  transform: translate(-50%, -50%);
+  top: 50%;
   background-image: url("images/button.svg");
   background-repeat: no-repeat;
   cursor: pointer;
@@ -1571,7 +1582,6 @@ template {
   .review__button {
     width: 80px;
     height: 80px;
-    top: -200px;
     background-image: url("images/button-mobile.svg");
   }
   .review__wrap::before {
@@ -1586,9 +1596,8 @@ template {
   .review__description {
     font-size: 16px;
   }
-  .review__button {
-    top: -130px;
-  }
+}
+@media (max-width: 370px) {
   .review__img {
     display: none;
   }
@@ -1683,6 +1692,9 @@ details[open]::before {
   .summary::before {
     margin-left: -35px;
   }
+  details::before {
+    margin-left: -25px;
+  }
   details[open]::before {
     margin-left: -25px;
   }
@@ -1717,6 +1729,7 @@ details[open]::before {
 }
 .consultation {
   background-color: var(--white);
+  margin-bottom: 110px;
 }
 .consultation__container {
   position: relative;
@@ -1727,7 +1740,6 @@ details[open]::before {
   border: 7px solid #E7E7E7;
   border-radius: 36px;
   padding: 30px 60px;
-  margin-bottom: 110px;
 }
 .consultation__container::before {
   content: "";
@@ -1963,11 +1975,23 @@ details[open]::before {
   padding: 20px 30px 20px 30px;
   border-radius: 8px;
   text-decoration: none;
+  font-style: normal;
   text-align: center;
-  width: 300px;
+  width: 236px;
   font-weight: 600;
   color: var(--white);
   background-color: var(--red);
+}
+.footer__phone::before {
+  content: "";
+  display: block;
+  z-index: 5;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 25px;
+  background-image: url("images/phone.svg");
+  background-repeat: no-repeat;
 }
 .footer__list-mobile {
   display: none;

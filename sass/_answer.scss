@@ -84,6 +84,9 @@ details[open]::before{
             margin-left: -35px;
         }
     }
+    details::before{
+        margin-left: -25px;
+    }
     details[open]::before{
         margin-left: -25px;
     }
