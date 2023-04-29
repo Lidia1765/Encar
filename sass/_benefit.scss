@@ -1,6 +1,7 @@
 .benefit{
     &__container{
     margin-bottom: 126px;
+    overflow: hidden;
     }
     &__title{
         font-size: 50px;
@@ -120,6 +121,13 @@
         }
         &__article{
             display: block;
+            height: auto;
+        }
+        &__buttons{
+            display: none;
+        }
+        &__text{
+            margin-top: 20px;
         }
     }
     .article__container{
@@ -138,6 +146,13 @@
         }
         &__article{
             width: 300px;
+            border-radius: 26px;
+            padding: 10px;
+            padding-bottom: 24px;
+        }
+        &__text{
+            font-size: 20px;
+            font-weight: 600;
         }
         &__description{
             font-size: 16px;
@@ -146,6 +161,9 @@
         }
         &__button{
             display: none;
+        }
+        &__img{
+            border-radius: 26px;
         }
     }
 }

@@ -111,15 +111,19 @@
       padding-bottom: 25px;
     }
     &__item::before{
-      content: url("images/point.svg");
+      content: "";
       position: absolute;
-      left: -3px;
+      width: 9px;
+      height: 9px;
+      background-color: var(--red);
+      border-radius: 50%;
+      left: -5px;
     }
     &__item:nth-child(3){
       border-right: none;
     }
     &__item:nth-child(8){
-      border: none;
+      border-color: transparent;
     }
     &__item:hover{
       border-left:2px dashed var(--pink);
@@ -140,7 +144,7 @@
   }
   .wrap__number{
     display: block;
-    width: auto;
+      width: 35px;
   }
 }
 

@@ -1,5 +1,6 @@
 .popular__container{
     margin-bottom: 100px;
+    overflow: hidden;
 }
 .popular__list{
     display: flex;
@@ -72,12 +73,13 @@
 
 .title--red{
     color: var(--red);
-    font-weight: 700;
+    font-weight: 800;
 }
 .price__text{
     padding-left: 20px;
 }
 .span__wrap{
+    flex-shrink: 0;
     position: relative;
     width: 120px;
     font-weight: 600;
@@ -94,7 +96,7 @@
 .price__button{
     font-weight: 700;
     width: 100%;
-    padding: 25px 115px;
+    padding: 25px 10px;
     background-color: var(--red);
     border: none;
     border-radius: 14px;
@@ -115,7 +117,23 @@
         background-color: var(--red);
         border-radius: 5px;
     }
-    
+    .popular__price{
+        display: flex;
+        flex-direction: column;
+    }
+    .price__text{
+        margin-bottom: 15px;
+    }
+    .price__text-accent{
+        border-radius: 0 40px 40px 0;
+    }
+    .price__description{
+        font-size: 14px;
+        margin-top: 5px;
+    }
+    .span__wrap{
+        flex-shrink: 2;
+    }
 }
 @media (max-width: 450px){
     .popular{
@@ -124,6 +142,9 @@
         }
         &__title{
             font-size: 24px;
+        }
+        &__item-title{
+            font-size: 20px;
         }
     }
 }

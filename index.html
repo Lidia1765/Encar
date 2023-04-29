@@ -19,6 +19,30 @@
     <div class="main-container">
       <header class="header">
         <div class="header__container container">
+          <!-- <div class="menu">
+            <div class="menu__container">
+              <div>
+                <img
+                  class="menu__logo"
+                  src="/images/logo.png"
+                  alt="Логотип компании Encar"
+                />
+                <button class="menu__button"></button>
+              </div>
+              <nav class="menu__nav">
+                <a href="/" class="menu__link">Авто из Кореи</a>
+                <a href="/" class="menu__link">Авто из Казахстана</a>
+                <a href="/" class="menu__link">Авто из ОАЭ</a>
+                <a href="/" class="menu__link">Авто из Китая</a>
+                <a href="/" class="menu__link">О нас</a>
+                <a href="/" class="menu__link">Контакты</a>
+              </nav>
+              <p class="menu__text">Москва, ул. Семеновская д 14 офис 122</p>
+              <a href="tel:+78000111111" class="menu__phone"
+                >+7 (800) 011-11-11</a
+              >
+            </div>
+          </div>-->
           <button class="nav__button">
             <span class="nav__span"></span>
             <span class="nav__span"></span>
@@ -74,7 +98,7 @@
                   </a>
                   <a href="/">
                     <img
-                      class="intro__media"
+                      class="intro__media media--youtube"
                       src="images/Youtube.svg"
                       alt="Ютуб"
                     />
@@ -87,7 +111,7 @@
                 </button>
               </div>
             </div>
-            <div class="intro__group-mobile">
+            <!-- <div class="intro__group-mobile">
               <button type="button" class="intro__button-mobile">
                 Получить консультацию
               </button>
@@ -107,7 +131,7 @@
                   />
                 </a>
               </div>
-            </div>
+            </div>-->
             <div class="intro__background"></div>
             <picture>
               <source
@@ -295,13 +319,34 @@
         <section class="help">
           <div class="help__container container">
             <div class="group__backgrounds">
-              <img
-                class="background__landscape"
-                src="images/background-help.png"
-                alt=""
-              />
-              <img class="background__road" src="images/road.png" alt="" />
-              <img class="background__auto" src="images/audi.png" alt="" />
+              <picture>
+                <source
+                  class="background__landscape-mobile"
+                  media="(max-width: 380px)"
+                  srcset="images/background-help-mobile.png"
+                />
+                <img
+                  class="background__landscape"
+                  src="images/background-help.png"
+                  alt=""
+                />
+              </picture>
+              <picture>
+                <source
+                  class="background__road-mobile"
+                  media="(max-width: 360px)"
+                  srcset="images/road-mobile.png"
+                />
+                <img class="background__road" src="images/road.png" alt="" />
+              </picture>
+              <picture>
+                <source
+                  class="background__auto-mobile"
+                  media="(max-width: 360px)"
+                  srcset="images/audi-mobile.png"
+                />
+                <img class="background__auto" src="images/audi.png" alt="" />
+              </picture>
             </div>
             <div class="help__form">
               <h2 class="help__title">Помощь на всех этапах покупки</h2>
@@ -552,7 +597,7 @@
                 </li>
               </ul>
             </div>
-            <div class="help__form-mobile">
+            <!-- <div class="help__form-mobile">
               <h2 class="help__title-mobile">Помощь на всех этапах покупки</h2>
               <p class="help__description-mobile">
                 Оставьте заявку и наш менеджер перезвонит вам через 15 минут
@@ -575,13 +620,23 @@
                   </button>
                 </div>
               </form>
-            </div>
+            </div>-->
             <div class="group__backgrounds-mobile">
-              <img
-                class="background__landscape-mobile"
-                src="images/background-help-mobile.png"
-                alt=""
-              />
+              <picture>
+                <source
+                  media="(min-width: 1920px)"
+                  srcset="
+                    images/background@2.png 2x,
+                    images/background@3.png 3x
+                  "
+                />
+                <img
+                  class="background__landscape-mobile"
+                  src="images/background-help-mobile.png"
+                  alt=""
+                />
+              </picture>
+
               <img
                 class="background__road-mobile"
                 src="images/road-mobile.png"
@@ -790,74 +845,86 @@
               <li class="example__item">
                 <div class="example__text">
                   <p class="item__title">Стоимость автомобиля в Корее</p>
-                  <p class="item__description">По курсу на день покупки</p>
+                  <p class="example__description">По курсу на день покупки</p>
                 </div>
-                <p class="item__price">50 млн вон</p>
+                <p class="example__price">
+                  <span class="item__number">50 млн вон</span>
+                </p>
               </li>
               <li class="example__item">
                 <div class="example__text">
                   <p class="item__title">Расходы в Корее</p>
-                  <p class="item__description">
+                  <p class="example__description">
                     Доставка а/м до порта Владивосток, стоянка, перегоны, снятие
                     а/м с учета, подготовка экспортных документов, растонировка
                     (снятие темной пленки с передней полусферы и лобового
                     стекла)
                   </p>
                 </div>
-                <p class="item__price">3,5 млн вон</p>
+                <p class="example__price">
+                  <span class="item__number">3,5</span> млн вон
+                </p>
               </li>
               <li class="example__item">
                 <div class="example__text">
                   <p class="item__title">Таможня</p>
-                  <p class="item__description">
+                  <p class="example__description">
                     Пошлина, СБКТС, получение ЭЛПТС, перегон, комиссия брокера
                   </p>
                 </div>
-                <p class="item__price">650 тыс руб</p>
+                <p class="example__price">
+                  <span class="item__number">650</span> тыс руб
+                </p>
               </li>
               <li class="example__item">
                 <div class="example__text">
                   <p class="item__title">Наша Комиссия</p>
-                  <p class="item__description">
+                  <p class="example__description">
                     За поиск а/м, организацию и сопровождение сделки
                   </p>
                 </div>
-                <p class="item__price">100 тыс руб</p>
+                <p class="example__price">
+                  <span class="item__number">100</span> тыс руб
+                </p>
               </li>
               <li class="example__item">
                 <div class="example__text">
                   <p class="item__title">Доставка до Москвы автовозом</p>
-                  <p class="item__description">
+                  <p class="example__description">
                     Стоимость зависит от габаритов авто и города отправки) + Вы
                     можете сами забрать а/м во Владивостоке, чтобы совершить
                     незабываемое путешествие по всей России
                   </p>
                 </div>
-                <p class="item__price">150 тыс вон</p>
+                <p class="example__price">
+                  <span class="item__number">150</span> тыс вон
+                </p>
               </li>
               <li class="example__item">
                 <div class="example__text">
                   <p class="item__title">Расходы в РФ</p>
-                  <p class="item__description">
+                  <p class="example__description">
                     Комиссия банка за конвертацию валюты и перевод средств за
                     рубеж
                   </p>
                 </div>
-                <p class="item__price">80 тыс руб</p>
+                <p class="example__price">
+                  <span class="item__number">80</span> тыс руб
+                </p>
               </li>
             </ul>
             <div class="price__wrap">
               <div class="example__wrap">
-                <p class="example__description description--top">
+                <p class="example__wrap-description description--top">
                   Итоговая стоимость а/м под ключ
                 </p>
-                <p class="example__price price--active">3 280 000 руб</p>
+                <p class="example__wrap-price price--active">3 280 000 руб</p>
               </div>
               <div class="example__wrap">
-                <p class="example__description">
+                <p class="example__wrap-description">
                   Стоимость аналогичного а/м в РФ
                 </p>
-                <p class="example__price">4 900 000 руб</p>
+                <p class="example__wrap-price">4 900 000 руб</p>
               </div>
             </div>
           </div>
@@ -1173,12 +1240,10 @@
                   frameborder="0"
                 ></iframe>
                 <div class="text__wrap">
-                  <div>
-                    <p class="contact__text">Филиал Москва</p>
-                    <p class="contact__description">
-                      Москва, ул. Семеновская д 14 офис 122
-                    </p>
-                  </div>
+                  <p class="contact__text">Филиал Москва</p>
+                  <p class="contact__description">
+                    Москва, ул. Семеновская д 14 офис 122
+                  </p>
                   <div class="contact__phone">
                     <p>+7 (800) 011-11-11</p>
                   </div>
@@ -1193,12 +1258,10 @@
                 >
                 </iframe>
                 <div class="text__wrap">
-                  <div>
-                    <p class="contact__text">Филиал Самара</p>
-                    <p class="contact__description">
-                      Самара, ул. Семеновская д 14 офис 122
-                    </p>
-                  </div>
+                  <p class="contact__text">Филиал Самара</p>
+                  <p class="contact__description">
+                    Самара, ул. Семеновская д 14 офис 122
+                  </p>
                   <div class="contact__phone">
                     <p>+7 (800) 011-11-11</p>
                   </div>
