@@ -17,7 +17,6 @@
     z-index: 2;
     height: 525px;
     margin-left: 50px;
-    margin-top: 100px;
     background-color: var(--white);
     border-radius: 22px;
     box-shadow: 0px 2px 50px rgba(35, 37, 38, 0.07);
@@ -49,6 +48,7 @@
     width: 449px;
     height: 72px;
     border-radius: 14px;
+    border-color: #C9C9C9;
     margin-bottom: 16px;
   }
 
@@ -83,7 +83,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px 80px;
-    padding-top: 100px;
+    margin: 0;
   }
 
   .help__item{
@@ -109,13 +109,13 @@
   .background__road{
     position: absolute;
     z-index: -2;
-    bottom: -160px;
+    bottom: -290px;
     left: -110px;
   }
   .background__auto{
     position: absolute;
     z-index: 10;
-    bottom: -15px;
+    bottom: -150px;
     left: -85px;
   }
   .group__backgrounds-mobile{
@@ -170,8 +170,10 @@
   .help{
     &__container{
       width: 95vw;
-      display: block;
+      //display: block;
       margin-right: 20px;
+      display: flex;
+      flex-direction: column-reverse;
     }
     &__container::before{
       background: none;
@@ -195,7 +197,12 @@
       top: 30px;
     }*/
     &__form{
-      display: none;
+      //display: none;
+      box-shadow: none;
+      margin-top: 60px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: transparent;
     }
     &__list{
       grid-template-columns: 1fr;
@@ -209,17 +216,17 @@
       margin-left: 10px;
       box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.12);
       border-radius: 16px;
-      padding: 96px 10px 20px 20px;
+      padding: 20px 10px 20px 20px;
     }
     &__item:nth-child(1n)::before{
       top: 20px;
       left: 20px;
     }
     &__item:nth-last-child(2){
-      padding: 96px 10px 20px 20px;
+      padding: 20px 10px 20px 20px;
     }
     &__item:nth-last-child(1){
-      padding: 96px 10px 20px 20px;
+      padding: 20px 10px 20px 20px;
     }
     &__form-mobile{
       display: block;
@@ -228,8 +235,7 @@
     }
     &__button{
       box-shadow: 0px 12px 60px rgba(250, 0, 44, 0.4);
-      width: 100%;
-      max-width: 450px;
+      width: 450px;
     }
     &__button::before{
       display: none;
@@ -243,8 +249,7 @@
   .form-input{
     z-index: 5;
     position: relative;
-    width: 100%;
-    max-width: 450px;
+    width: 450px;
   }
   .form-body{
     position: relative;
@@ -259,19 +264,23 @@
 }
 .background__landscape-mobile{
   position: relative;
-  top: -150px;
+  bottom: -600px;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: -3;
 }
 .background__road-mobile{
   position: relative;
-  top: -55px;
-  z-index: -2;
-  left: -365px;
+  bottom: -700px;
+  z-index: -2;  
+  left: -800px;
 }
 .background__auto-mobile{
   position: relative;
   z-index: -1;
-  top: -620px;
+  bottom: -130px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 }
 @media (max-width:755px){
@@ -281,18 +290,33 @@
   }
   .background__landscape-mobile{
     position: relative;
-    top: -150px;
+    bottom: -830px;
     z-index: -3;
   }
-  .background__road-mobile{
-    position: relative;
-    top: -280px;
-    z-index: -2;
+}
+@media (max-width:500px){
+  .help{
+    &__form{
+      padding: 10px;
+      width: auto;
+    }
+    &__title{
+      font-size: 24px;
+      width: 305px;
+    }
+    &__description{
+      font-size: 14px;
+    }
+    &__button{
+      width: 328px;
+    }
+    .form-input{
+      width: 328px;
+    }
+    
   }
-  .background__auto-mobile{
-    position: relative;
-    z-index: -1;
-    top: -850px;
+  .background__road-mobile{
+    left: 0;
   }
 }
 @media (max-width:390px){
@@ -307,12 +331,10 @@
     bottom: -255px;
   }
 }
-.background__auto-mobile{
-  top: -850px;
+.background__landscape-mobile{
+  bottom: -800px;
 }
+.background__road-mobile{
+  bottom: -680px;
 }
-@media (max-width:360px){
-  .background__auto-mobile{
-    top: -810px;
-  }
 }

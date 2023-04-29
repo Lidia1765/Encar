@@ -13,13 +13,11 @@
     }
     &__item{
         cursor: pointer;
-        border-bottom: 1px solid;
+        border-bottom: 1px solid #C2C2C2;
         padding: 36px 80px;
     }
     &__item:nth-child(5){
         border: none;
-    }
-    &__item::before{
     }
     &__text{
         position: relative;
@@ -42,6 +40,7 @@
 .summary{
     list-style: none;
     font-size: 30px;
+    margin-bottom: 15px;
     &::before{
         content: "";
         position: absolute;
@@ -114,7 +113,7 @@ details[open]::before{
         }
         &__text::before{
             margin-top: -65px;
-            margin-left: -10px;
+            margin-left: -20px;
             background-image: url("images/mark-answer-mobile.svg");
         }
     }

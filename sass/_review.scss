@@ -68,12 +68,17 @@
         font-size: 16px;
     }
 }
-@media (max-width:370px){    
+@media (max-width:370px){   
+    .review{
+        padding-bottom: 70px;
+    } 
     .review__img{
         display: none;
     }
     .review__img-mobile{
         display: block;
         border-radius: 24px;
+        width: 100vw;
+        height: 100%;
     }
 }

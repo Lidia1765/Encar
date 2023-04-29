@@ -35,7 +35,8 @@
     &__button{
         background-color: var(--red);
         border: none;
-        padding: 26px 44px;
+        width: 310px;
+        padding: 26px 10px;
         border-radius: 14px;
         color: var(--white); 
         font-weight: 700;
@@ -87,7 +88,7 @@
             top: 190px;
             width: 360px;
             height: 305px;
-            left: 0;
+            left: -15px;
             background-image: url("images/background-consultation-mobile.png");
             background-repeat: no-repeat;
         }
@@ -99,7 +100,7 @@
         height: 330px;
         background-image: url(images/hyundai-mobile.png);
         background-repeat: no-repeat;
-        left: 0;
+        left: -15px;
         bottom: -140px;
         }
         &__title{

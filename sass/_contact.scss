@@ -1,3 +1,8 @@
+.text__wrap{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 30px;
+}
 .contact{
     margin-bottom: 160px;
     &__title{
@@ -16,14 +21,20 @@
     &__text{
         font-size: 30px;
         font-weight: 500;
+        grid-column: 1;
+        grid-row: 1;
     }
     &__phone{
         font-size: 30px;
         font-weight: 600;
+        grid-column: 3;
+        grid-row: 1;
     }
     &__description{
         padding-left: 20px;
         position: relative;
+        grid-column: 1;
+        grid-row: 2;
     }
     &__description::before{
     content: "";
@@ -38,10 +49,7 @@
     }
 }
 
-.text__wrap{
-    display: flex;
-    justify-content: space-between;
-}
+
 .map__container{
     border-radius: 36px;
     border: 7px solid rgba(250, 0, 44, 0.2);
@@ -59,6 +67,23 @@
         &__map{
             width: 100%;
         }
+        &__text{
+            grid-column: 1;
+            grid-row: 1;
+        }
+        &__description{
+            grid-column: 1;
+            grid-row: 3;            
+        }
+        &__phone{
+            grid-column: 1;
+            grid-row: 2;
+            padding-top: 10px;
+        }
+        .text__wrap{
+            display: grid;
+        }
+        
     }
     
 }
@@ -89,6 +114,24 @@
             margin-bottom: 30px;
         &__title{
             font-size: 24px;
+        }
+        &__map{
+            border-radius: 12px;
+        }
+        &__text{
+            width: 100%;
+        }
+        &__description::before{
+            bottom: 10px;
+            left: -5px;
+        }
+        .map__container{
+            border-radius: 24px;
+            padding: 5px;
+        }
+        .text__wrap{
+            padding-left: 15px;
+            padding-bottom: 15px;
         }
     }
 }
