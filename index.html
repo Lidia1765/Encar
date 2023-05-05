@@ -19,12 +19,12 @@
     <div class="main-container">
       <header class="header">
         <div class="header__container container">
-          <!-- <div class="menu">
+          <div class="menu">
             <div class="menu__container">
               <div>
                 <img
                   class="menu__logo"
-                  src="/images/logo.png"
+                  src="images/logo.png"
                   alt="Логотип компании Encar"
                 />
                 <button class="menu__button"></button>
@@ -42,7 +42,7 @@
                 >+7 (800) 011-11-11</a
               >
             </div>
-          </div>-->
+          </div>
           <button class="nav__button">
             <span class="nav__span"></span>
             <span class="nav__span"></span>
@@ -321,9 +321,8 @@
             <div class="group__backgrounds">
               <picture>
                 <source
-                  class="background__landscape-mobile"
-                  media="(max-width: 380px)"
                   srcset="images/background-help-mobile.png"
+                  media="(max-width: 1050px)"
                 />
                 <img
                   class="background__landscape"
@@ -333,17 +332,15 @@
               </picture>
               <picture>
                 <source
-                  class="background__road-mobile"
-                  media="(max-width: 360px)"
                   srcset="images/road-mobile.png"
+                  media="(max-width: 1050px)"
                 />
                 <img class="background__road" src="images/road.png" alt="" />
               </picture>
               <picture>
                 <source
-                  class="background__auto-mobile"
-                  media="(max-width: 360px)"
                   srcset="images/audi-mobile.png"
+                  media="(max-width: 1050px)"
                 />
                 <img class="background__auto" src="images/audi.png" alt="" />
               </picture>
@@ -597,31 +594,7 @@
                 </li>
               </ul>
             </div>
-            <!-- <div class="help__form-mobile">
-              <h2 class="help__title-mobile">Помощь на всех этапах покупки</h2>
-              <p class="help__description-mobile">
-                Оставьте заявку и наш менеджер перезвонит вам через 15 минут
-              </p>
-              <form class="form" action="/register" method="post">
-                <div class="form-body">
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="name"
-                    class="form-input"
-                    placeholder="+7 ( )"
-                    required="required"
-                    aria-label="+7"
-                  />
-                </div>
-                <div class="form-footer">
-                  <button type="submit" class="help__button button">
-                    Получить консультацию
-                  </button>
-                </div>
-              </form>
-            </div>-->
-            <div class="group__backgrounds-mobile">
+            <!-- <div class="group__backgrounds-mobile">
               <picture>
                 <source
                   media="(min-width: 1920px)"
@@ -647,13 +620,13 @@
                 src="images/audi-mobile.png"
                 alt=""
               />
-            </div>
+            </div>-->
           </div>
         </section>
         <section class="popular">
           <div class="popular__container container">
             <h2 class="popular__title">Популярные а/м из Кореи</h2>
-            <ul class="popular__list">
+            <!--<ul class="popular__list">
               <li>
                 <article class="popular__item">
                   <img
@@ -828,11 +801,189 @@
                   </button>
                 </article>
               </li>
-            </ul>
-            <div class="popular__group">
-              <span class="group__span"></span>
-              <span class="group__span"></span>
-              <span class="group__span"></span>
+            </ul>-->
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <article class="popular__item">
+                    <img
+                      class="popular__img"
+                      src="images/kia-white.png"
+                      alt="KIA K5"
+                    />
+                    <h1 class="popular__item-title">KIA K5 (Optima)</h1>
+                    <div class="popular__wrap">
+                      <div class="popular__text text">
+                        <div class="popular__line">
+                          <span>Пробег</span>
+                          <span class="popular__span"></span>
+                          <span class="span__wrap">
+                            До&nbsp90&nbspтыс.&nbspкм.</span
+                          >
+                        </div>
+                        <div class="popular__line">
+                          <span>Год&nbspвыпуска</span>
+                          <span class="popular__span"></span>
+                          <span class="span__wrap"> 2018 </span>
+                        </div>
+                        <div class="popular__line">
+                          <span>Мощность</span>
+                          <span class="popular__span"></span>
+                          <span class="span__wrap"> 163&nbspл.с.</span>
+                        </div>
+                        <div class="popular__line">
+                          <span>Двигатель</span>
+                          <span class="popular__span"></span>
+                          <span class="span__wrap"> 2.0&nbspл</span>
+                        </div>
+                        <div class="popular__line">
+                          <span>Коробка</span>
+                          <span class="popular__span"></span>
+                          <span class="span__wrap"> Автомат</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="popular__price">
+                      <div class="price__text">
+                        <p class="price__title title">1 890 000 ₽</p>
+                        <p class="price__description">
+                          Цена на вторичном рынке в РФ
+                        </p>
+                      </div>
+                      <div class="price__text-accent">
+                        <p class="price__title title title--red">1 540 000 ₽</p>
+                        <p class="price__description">
+                          Цена из Кореи во Владивостоке
+                        </p>
+                      </div>
+                    </div>
+                    <button type="button" class="price__button button">
+                      Подобрать аналог
+                    </button>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article class="popular__item">
+                    <img
+                      class="popular__img"
+                      src="images/kia-blue.png"
+                      alt="KIA K5"
+                    />
+                    <h1 class="popular__item-title">KIA K5 (Optima)</h1>
+                    <div class="popular__wrap">
+                      <div class="popular__text text">
+                        <div class="popular__line">
+                          <span>Пробег</span>
+                          <span class="popular__span"></span>
+                          <span class="span__wrap">
+                            До&nbsp90&nbspтыс.&nbspкм.</span
+                          >
+                        </div>
+                        <div class="popular__line">
+                          <span>Год&nbspвыпуска</span>
+                          <span class="popular__span"></span>
+                          <span class="span__wrap"> 2018 </span>
+                        </div>
+                        <div class="popular__line">
+                          <span>Мощность</span>
+                          <span class="popular__span"></span>
+                          <span class="span__wrap"> 163&nbspл.с.</span>
+                        </div>
+                        <div class="popular__line">
+                          <span>Двигатель</span>
+                          <span class="popular__span"></span>
+                          <span class="span__wrap"> 2.0&nbspл</span>
+                        </div>
+                        <div class="popular__line">
+                          <span>Коробка</span>
+                          <span class="popular__span"></span>
+                          <span class="span__wrap"> Автомат</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="popular__price">
+                      <div class="price__text">
+                        <p class="price__title title">1 890 000 ₽</p>
+                        <p class="price__description">
+                          Цена на вторичном рынке в РФ
+                        </p>
+                      </div>
+                      <div class="price__text-accent">
+                        <p class="price__title title title--red">1 540 000 ₽</p>
+                        <p class="price__description">
+                          Цена из Кореи во Владивостоке
+                        </p>
+                      </div>
+                    </div>
+                    <button type="button" class="price__button button">
+                      Подобрать аналог
+                    </button>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article class="popular__item">
+                    <img
+                      class="popular__img"
+                      src="images/kia-white.png"
+                      alt="KIA K5"
+                    />
+                    <h1 class="popular__item-title">KIA K5 (Optima)</h1>
+                    <div class="popular__wrap">
+                      <div class="popular__text text">
+                        <div class="popular__line">
+                          <span>Пробег</span>
+                          <span class="popular__span"></span>
+                          <span class="span__wrap">
+                            До&nbsp90&nbspтыс.&nbspкм.</span
+                          >
+                        </div>
+                        <div class="popular__line">
+                          <span>Год&nbspвыпуска</span>
+                          <span class="popular__span"></span>
+                          <span class="span__wrap"> 2018 </span>
+                        </div>
+                        <div class="popular__line">
+                          <span>Мощность</span>
+                          <span class="popular__span"></span>
+                          <span class="span__wrap"> 163&nbspл.с.</span>
+                        </div>
+                        <div class="popular__line">
+                          <span>Двигатель</span>
+                          <span class="popular__span"></span>
+                          <span class="span__wrap"> 2.0&nbspл</span>
+                        </div>
+                        <div class="popular__line">
+                          <span>Коробка</span>
+                          <span class="popular__span"></span>
+                          <span class="span__wrap"> Автомат</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="popular__price">
+                      <div class="price__text">
+                        <p class="price__title title">1 890 000 ₽</p>
+                        <p class="price__description">
+                          Цена на вторичном рынке в РФ
+                        </p>
+                      </div>
+                      <div class="price__text-accent">
+                        <p class="price__title title title--red">1 540 000 ₽</p>
+                        <p class="price__description">
+                          Цена из Кореи во Владивостоке
+                        </p>
+                      </div>
+                    </div>
+                    <button type="button" class="price__button button">
+                      Подобрать аналог
+                    </button>
+                  </article>
+                </div>
+              </div>
+              <div class="swiper-pagination">
+                <span class="group__span"></span>
+                <span class="group__span"></span>
+                <span class="group__span"></span>
+              </div>
             </div>
           </div>
         </section>
@@ -950,7 +1101,7 @@
                 <li class="benefit__item">Коммерческий транспорт</li>
                 <li class="benefit__item">Русификация меню</li>
               </ul>
-              <div class="article__container">
+              <!-- <div class="article__container">
                 <article class="benefit__article">
                   <img
                     class="benefit__img"
@@ -1130,12 +1281,212 @@
                     легко проверить через базы страховых компаний
                   </p>
                 </article>
-              </div>
+              </div> -->
             </div>
             <div class="popular__group">
               <span class="group__span"></span>
               <span class="group__span"></span>
               <span class="group__span"></span>
+            </div>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <article class="benefit__article">
+                    <img
+                      class="benefit__img"
+                      src="images/kia-white.png"
+                      alt="KIA"
+                    />
+                    <p class="benefit__text">Честный пробег</p>
+                    <p class="benefit__description">
+                      Скрутить пробег в Корее нельзя, т.к. это уголовное
+                      преступление и никто не будет с этим связываться + пробег
+                      легко проверить через базы страховых компаний
+                    </p>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article class="benefit__article">
+                    <img
+                      class="benefit__img"
+                      src="images/kia-white.png"
+                      alt="KIA"
+                    />
+                    <p class="benefit__text">Честный пробег</p>
+                    <p class="benefit__description">
+                      Скрутить пробег в Корее нельзя, т.к. это уголовное
+                      преступление и никто не будет с этим связываться + пробег
+                      легко проверить через базы страховых компаний
+                    </p>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article class="benefit__article">
+                    <img
+                      class="benefit__img"
+                      src="images/kia-white.png"
+                      alt="KIA"
+                    />
+                    <p class="benefit__text">Честный пробег</p>
+                    <p class="benefit__description">
+                      Скрутить пробег в Корее нельзя, т.к. это уголовное
+                      преступление и никто не будет с этим связываться + пробег
+                      легко проверить через базы страховых компаний
+                    </p>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article class="benefit__article">
+                    <img
+                      class="benefit__img"
+                      src="images/kia-white.png"
+                      alt="KIA"
+                    />
+                    <p class="benefit__text">Честный пробег</p>
+                    <p class="benefit__description">
+                      Скрутить пробег в Корее нельзя, т.к. это уголовное
+                      преступление и никто не будет с этим связываться + пробег
+                      легко проверить через базы страховых компаний
+                    </p>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article class="benefit__article">
+                    <img
+                      class="benefit__img"
+                      src="images/kia-white.png"
+                      alt="KIA"
+                    />
+                    <p class="benefit__text">Честный пробег</p>
+                    <p class="benefit__description">
+                      Скрутить пробег в Корее нельзя, т.к. это уголовное
+                      преступление и никто не будет с этим связываться + пробег
+                      легко проверить через базы страховых компаний
+                    </p>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article class="benefit__article">
+                    <img
+                      class="benefit__img"
+                      src="images/kia-white.png"
+                      alt="KIA"
+                    />
+                    <p class="benefit__text">Честный пробег</p>
+                    <p class="benefit__description">
+                      Скрутить пробег в Корее нельзя, т.к. это уголовное
+                      преступление и никто не будет с этим связываться + пробег
+                      легко проверить через базы страховых компаний
+                    </p>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article class="benefit__article">
+                    <img
+                      class="benefit__img"
+                      src="images/kia-white.png"
+                      alt="KIA"
+                    />
+                    <p class="benefit__text">Честный пробег</p>
+                    <p class="benefit__description">
+                      Скрутить пробег в Корее нельзя, т.к. это уголовное
+                      преступление и никто не будет с этим связываться + пробег
+                      легко проверить через базы страховых компаний
+                    </p>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article class="benefit__article">
+                    <img
+                      class="benefit__img"
+                      src="images/kia-white.png"
+                      alt="KIA"
+                    />
+                    <p class="benefit__text">Честный пробег</p>
+                    <p class="benefit__description">
+                      Скрутить пробег в Корее нельзя, т.к. это уголовное
+                      преступление и никто не будет с этим связываться + пробег
+                      легко проверить через базы страховых компаний
+                    </p>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article class="benefit__article">
+                    <img
+                      class="benefit__img"
+                      src="images/kia-white.png"
+                      alt="KIA"
+                    />
+                    <p class="benefit__text">Честный пробег</p>
+                    <p class="benefit__description">
+                      Скрутить пробег в Корее нельзя, т.к. это уголовное
+                      преступление и никто не будет с этим связываться + пробег
+                      легко проверить через базы страховых компаний
+                    </p>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article class="benefit__article">
+                    <img
+                      class="benefit__img"
+                      src="images/kia-white.png"
+                      alt="KIA"
+                    />
+                    <p class="benefit__text">Честный пробег</p>
+                    <p class="benefit__description">
+                      Скрутить пробег в Корее нельзя, т.к. это уголовное
+                      преступление и никто не будет с этим связываться + пробег
+                      легко проверить через базы страховых компаний
+                    </p>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article class="benefit__article">
+                    <img
+                      class="benefit__img"
+                      src="images/kia-white.png"
+                      alt="KIA"
+                    />
+                    <p class="benefit__text">Честный пробег</p>
+                    <p class="benefit__description">
+                      Скрутить пробег в Корее нельзя, т.к. это уголовное
+                      преступление и никто не будет с этим связываться + пробег
+                      легко проверить через базы страховых компаний
+                    </p>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article class="benefit__article">
+                    <img
+                      class="benefit__img"
+                      src="images/kia-white.png"
+                      alt="KIA"
+                    />
+                    <p class="benefit__text">Честный пробег</p>
+                    <p class="benefit__description">
+                      Скрутить пробег в Корее нельзя, т.к. это уголовное
+                      преступление и никто не будет с этим связываться + пробег
+                      легко проверить через базы страховых компаний
+                    </p>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article class="benefit__article">
+                    <img
+                      class="benefit__img"
+                      src="images/kia-white.png"
+                      alt="KIA"
+                    />
+                    <p class="benefit__text">Честный пробег</p>
+                    <p class="benefit__description">
+                      Скрутить пробег в Корее нельзя, т.к. это уголовное
+                      преступление и никто не будет с этим связываться + пробег
+                      легко проверить через базы страховых компаний
+                    </p>
+                  </article>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
             </div>
           </div>
         </section>
@@ -1344,5 +1695,17 @@
         </footer>
       </main>
     </div>
+    <script>
+      document.querySelector(".nav__button").addEventListener("click", () => {
+        document.querySelector(".menu").classList.add("__open");
+      });
+      document.querySelector(".menu__button").addEventListener("click", () => {
+        document.querySelector(".menu").classList.remove("__open");
+      });
+    </script>
+    <script type="module">
+      import Swiper from "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js";
+      const swiper = new Swiper(".swiper");
+    </script>
   </body>
 </html>

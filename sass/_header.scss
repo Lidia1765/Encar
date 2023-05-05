@@ -57,7 +57,6 @@
     background-image: url("images/phone.svg");
     background-repeat: no-repeat;
   }
-
   .menu{
     display: none;
   }
@@ -99,15 +98,15 @@
     }
   }
   .menu{
-    display: block;
+    display: none;
     position: fixed;
     z-index: 20;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
     background-color: white;
-    padding: 0 50px;
-    padding-bottom: 50px;
+    padding: 0 500px;
+    padding-bottom: 50px;    
     &__logo{
       top: 15px;
       z-index: 25;
@@ -175,10 +174,11 @@
       background-repeat: no-repeat;
     }
   }
-}
-@media (max-width:500px){
-  .menu{
-    //left: 175px;
-    //padding: 0 20px 50px 20px;
+  .__open{
+    display: block;
+    
+    .nav__button{
+      display: none;
     }
+  }
 }
