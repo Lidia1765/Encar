@@ -77,10 +77,13 @@
 }
 @media (max-width:450px){
     .consultation{
+        margin-bottom: 250px;
         &__container{
             background: none;
             border: none;
-            padding: 16px;
+            padding: 0;
+            margin: 0 auto;
+            width: 328px;
         }
         &__background{
             position: absolute;
@@ -88,7 +91,8 @@
             top: 190px;
             width: 360px;
             height: 305px;
-            left: -15px;
+            left: 50%;
+            transform: translateX(-50%);
             background-image: url("images/background-consultation-mobile.png");
             background-repeat: no-repeat;
         }
@@ -101,7 +105,7 @@
         background-image: url(images/hyundai-mobile.png);
         background-repeat: no-repeat;
         left: -15px;
-        bottom: -140px;
+        bottom: -190px;
         }
         &__title{
             width: 300px;

@@ -1,6 +1,8 @@
 .popular__container{
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     overflow: hidden;
+    padding-bottom: 50px;
+    padding-left: 50px;
 }
 .popular__list{
     display: flex;
@@ -104,8 +106,11 @@
     cursor: pointer;
     box-shadow: 0px 12px 60px rgba(250, 0, 44, 0.4);
 }
+.swiper-wrapper{
+    display: flex;
+}
 @media (max-width: 1200px){
-    .popular__group{
+    .swiper-pagination{
         display: flex;
         justify-content: center;
         gap: 10px;

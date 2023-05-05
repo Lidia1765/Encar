@@ -48,8 +48,9 @@
     width: 449px;
     height: 72px;
     border-radius: 14px;
-    border-color: #C9C9C9;
+    border: 1px solid #C9C9C9;
     margin-bottom: 16px;
+    font-family: 'Montserrat', sans-serif;
   }
 
   .help__button{
@@ -118,9 +119,6 @@
     bottom: -150px;
     left: -85px;
   }
-  .group__backgrounds-mobile{
-    display: none;
-  }
  
 @media (max-width: 1400px){
   .help{
@@ -142,19 +140,13 @@
     }
   }
   .background__auto{
-    bottom: 40px;
+    display: none;
   }
   .background__road{
-    bottom: -100px;
+    display: none;
   }
 } 
 @media (max-width:1300px){
-  .background__auto{
-    display: none;
-  }
-  .background__road{
-    display: none;
-  }
   .help__list{
     gap: 30px 40px;
   }
@@ -206,14 +198,15 @@
     }
     &__list{
       grid-template-columns: 1fr;
-      padding: 0;
       gap: 10px;
       width: 100%;
-      margin: 0;
+      margin: 0 auto;
+      margin-left: 30px;
+      padding: 0;
     }
     &__item{
       width: 95%;
-      margin-left: 10px;
+      margin: 0;
       box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.12);
       border-radius: 16px;
       padding: 20px 10px 20px 20px;
@@ -256,46 +249,76 @@
   }
 }
 .group__backgrounds{
-  display: none;
-}
-.group__backgrounds-mobile{
-  display: block;
   position: absolute;
+  height: 200px;
+  left: 50%;
+  transform: translateX(-50%);
 }
-.background__landscape-mobile{
+.background__landscape{
   position: relative;
-  bottom: -600px;
+  top: -50px;
   left: 50%;
   transform: translateX(-50%);
   z-index: -3;
 }
-.background__road-mobile{
+.background__road{
+  display: block;
   position: relative;
-  bottom: -700px;
+  top: -180px;
   z-index: -2;  
-  left: -800px;
+  left: 50%;
+  transform: translateX(-50%);
 }
-.background__auto-mobile{
+.background__auto{
+  display: block;
   position: relative;
   z-index: -1;
-  bottom: -130px;
+  top: -740px;
   left: 50%;
   transform: translateX(-50%);
 }
 }
-@media (max-width:755px){
-  .group__backgrounds-mobile{
-    display: block;
-    position: absolute;
+@media(max-width:750px){
+  .help{
+    &__list{
+      margin-left: 20px;
+    }
+    }
+  .background__auto{
+    top: -600px;
   }
-  .background__landscape-mobile{
-    position: relative;
-    bottom: -830px;
-    z-index: -3;
+  .background__road{
+    top: -160px;
+  }
+}
+@media(max-width:630px){
+  .background__auto{
+    top: -570px;
+  }
+  .background__road{
+    top: -140px;
+  }
+}
+@media(max-width:530px){
+  .help{
+    &__list{
+      margin-left: 10px;
+    }
+  }
+  
+  .background__auto{
+    top: -480px;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+  }
+  .background__road{
+    top: -100px;
   }
 }
 @media (max-width:500px){
   .help{
+    margin-bottom: 0;
     &__form{
       padding: 10px;
       width: auto;
@@ -315,12 +338,15 @@
     }
     
   }
-  .background__road-mobile{
+  /*.background__road-mobile{
     left: 0;
-  }
+  }*/
 }
 @media (max-width:390px){
   .help{
+    &__list{
+      margin-left: 7px;
+    }
     &__container{
       margin-bottom: 60px;
     }
@@ -331,10 +357,7 @@
     bottom: -255px;
   }
 }
-.background__landscape-mobile{
-  bottom: -800px;
-}
-.background__road-mobile{
-  bottom: -680px;
+.background__auto{
+  top: -380px;
 }
 }
