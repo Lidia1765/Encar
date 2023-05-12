@@ -1357,8 +1357,7 @@
           type: 'custom',
           renderCustom(swiper, current) {
             const cars = document.querySelectorAll('.benefit__swiper-slide')
-            const title = cars[current - 1].querySelector('[data-title]').textContent
-            return title
+            return cars[current - 1].querySelector('[data-title]').textContent
           }
         },
         navigation: {
