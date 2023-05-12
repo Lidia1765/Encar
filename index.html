@@ -909,7 +909,7 @@
                               src="images/kia-white.png"
                               alt="KIA"
                       />
-                      <h1 class="benefit__text">Честный пробег</h1>
+                      <h1 class="benefit__text" data-title>Честный пробег</h1>
                       <p class="benefit__description">
                         Скрутить пробег в Корее нельзя, т.к. это уголовное
                         преступление и никто не будет с этим связываться + пробег
@@ -1357,6 +1357,12 @@
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev'
+        },
+        formatFractionCurrent(number) {
+          console.log('slide number', number)
+          const cars = document.querySelectorAll(“.benefit__swiper-slide”)
+          const title = cars[number].querySelector('[data-title]').textContent
+          return title
         }
       });
     </script>
