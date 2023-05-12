@@ -19,6 +19,21 @@ const swiper = new Swiper('.swiper', {
       el: '.swiper-scrollbar',
     },
   });
+  const benefitSwiper = new Swiper('.benefit-swiper', {
+    // Optional parameters
+    direction: 'vertical',
+    loop: true,
+    pagination: {
+      el: '.benefit__swiper-pagination',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
   import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -48,3 +63,7 @@ export default () => {
     </Swiper>
   );
 };
+$('.pagination__item').on('click', function() {
+  $(this).siblings().removeClass('.pagination--active');
+  $(this).addClass('.pagination--active');
+});

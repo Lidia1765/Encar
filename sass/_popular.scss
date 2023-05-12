@@ -110,18 +110,30 @@
     display: flex;
 }
 @media (max-width: 1200px){
-    .swiper-pagination{
+    .pagination{
         display: flex;
         justify-content: center;
-        gap: 10px;
-        padding-top: 34px;
     }
-    .group__span{
+    .pagination__item{
+        background-color: var(--red);
+        float: left;
+        margin: 26px 8px;
+        text-decoration: none;
         width: 10px;
         height: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+        }
+    .pagination--active{
         background-color: var(--red);
-        border-radius: 5px;
-    }
+        border-radius: 50%;
+        width: 14px;
+        height: 14px;
+        }
+    .pagination--active:hover:not(.active) {
+        background-color: var(--light__pink);
+        border-radius: 50%;
+        }
     .popular__price{
         display: flex;
         flex-direction: column;
