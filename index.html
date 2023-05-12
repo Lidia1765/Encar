@@ -1349,20 +1349,20 @@
     </script>
     <script type="module">
       import Swiper from "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js";
-      // const swiper = new Swiper(".swiper");
+
       const benefitSwiper = new Swiper(".benefit-swiper", {
         pagination: {
           el: '.benefit__swiper-pagination',
+          formatFractionCurrent(number) {
+            console.log('slide number', number)
+            const cars = document.querySelectorAll('.benefit__swiper-slide')
+            const title = cars[number].querySelector('[data-title]').textContent
+            return title
+          }
         },
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev'
-        },
-        formatFractionCurrent(number) {
-          console.log('slide number', number)
-          const cars = document.querySelectorAll('.benefit__swiper-slide')
-          const title = cars[number].querySelector('[data-title]').textContent
-          return title
         }
       });
     </script>
