@@ -1354,10 +1354,10 @@
         pagination: {
           el: '.benefit__swiper-pagination',
           clickable: true,
-          type: 'fraction',
-          formatFractionCurrent(number) {
+          type: 'custom',
+          renderCustom(swiper, current) {
             const cars = document.querySelectorAll('.benefit__swiper-slide')
-            const title = cars[number - 1].querySelector('[data-title]').textContent
+            const title = cars[current - 1].querySelector('[data-title]').textContent
             return title
           }
         },
