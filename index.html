@@ -1353,7 +1353,7 @@
       const benefitSwiper = new Swiper(".benefit-swiper", {
         pagination: {
           el: '.benefit__swiper-pagination',
-          formatFractionCurrent(number) {
+          formatFractionCurrent: function(number) {
             console.log('slide number', number)
             const cars = document.querySelectorAll('.benefit__swiper-slide')
             const title = cars[number].querySelector('[data-title]').textContent
