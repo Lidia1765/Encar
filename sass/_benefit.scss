@@ -18,6 +18,7 @@
         padding: 0;
         min-width: 800px;
         margin-right: 20px;
+        background-color: transparent;
 
     }
     &__item{
@@ -81,17 +82,7 @@
     &__button:hover{
         color: var(--accent-color);
     }
-    &__swiper-pagination{
-        bottom: var(--swiper-pagination-bottom,8px);
-    top: var(--swiper-pagination-top,auto);
-    left: 0;
-    width: 100%;    
-    position: absolute;
-    text-align: center;
-    transition: opacity .3s;
-    transform: translateZ(0);
-    z-index: 10;
-    }
+    
 }
 
 .button--left{
@@ -127,20 +118,16 @@
     position: relative;
     z-index: 1;
     display: flex;
-    transition-property: transform;
-    transition-timing-function: var(--swiper-wrapper-transition-timing-function,initial);
-    box-sizing: content-box;
     transform-origin: center bottom;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    overflow: hidden;
     height: 100%;
-    width: 461px;
+    width: 461px!important;
 }
 .benefit__swiper-slide{
     background-color: var(--white);    
     height: 559px;
-    width: 420px;
+    width: 460px;
     box-shadow: 0px 2px 50px rgba(0, 0, 0, 0.12);
     border-radius: 36px;
     padding: 20px;
@@ -150,22 +137,27 @@
   
 }
 .benefit__swiper-pagination{
-    left: -212%;
-    top: 15px;
-    z-index: -5;
+    left: -20%!important;
+    //bottom: 0!important;
+    //top: 15px!important;
+    z-index: 30!important;
     height: 86px;
+    overflow: visible!important;
+}
+li.swiper-slide.swiper-slide-active{
+    width: 460px!important;
 }
 .swiper-button-prev{
     z-index: 30;
     position: absolute;
-    width: 60px;
-    height: 60px;
+    width: 60px!important;
+    height: 60px!important;
     border: 1px solid var(--black);
     border-radius: 30px;
-    bottom: 120px;
-    left: 30px;
-    &::before{
-        content: "";
+    top: 500px!important;
+    left: 60px!important;
+    &::after{
+        content: ""!important;
         z-index: 30;
         position: absolute;
         width: 21px;
@@ -182,14 +174,14 @@
 .swiper-button-next{
     z-index: 30;
     position: absolute;
-    width: 60px;
-    height: 60px;
+    width: 60px!important;
+    height: 60px!important;
     border: 1px solid var(--black);
     border-radius: 30px;
-    bottom: 120px;
-    left: 100px;
-    &::before{
-        content: "";
+    top: 500px!important;
+    left: 130px!important;
+    &::after{
+        content: ""!important;
         z-index: 30;
         position: absolute;
         width: 23px;
