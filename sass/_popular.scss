@@ -104,10 +104,16 @@
     border-radius: 14px;
     color: var(--white);
     cursor: pointer;
-    box-shadow: 0px 12px 60px rgba(250, 0, 44, 0.4);
+    box-shadow: 0px 10px 40px rgba(250, 0, 44, 0.4);
 }
 .swiper-wrapper{
     display: flex;
+}
+.popular__swiper-wrapper{
+    padding-bottom: 30px;
+}
+.popular__swiper-pagination{
+   --swiper-theme-color: var(--red);
 }
 @media (max-width: 1200px){
     .pagination{

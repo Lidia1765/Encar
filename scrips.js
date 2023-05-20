@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+/*const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'vertical',
     loop: true,
@@ -66,4 +66,4 @@ export default () => {
 $('.pagination__item').on('click', function() {
   $(this).siblings().removeClass('.pagination--active');
   $(this).addClass('.pagination--active');
-});
+}); */

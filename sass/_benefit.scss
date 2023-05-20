@@ -9,6 +9,7 @@
     }
     &__wrap{
         display: flex;
+        justify-content: space-between;
     }
     &__list{
         display: grid;
@@ -16,6 +17,8 @@
         column-gap: 50px;
         padding: 0;
         min-width: 800px;
+        margin-right: 20px;
+        background-color: transparent;
 
     }
     &__item{
@@ -24,6 +27,9 @@
         height: 86px;
         border-bottom: solid 1px;
         position: relative;
+        width: 25vw;
+        display: flex;
+        justify-content: flex-start;
     }
     &__item::before{
         content: "";
@@ -76,17 +82,7 @@
     &__button:hover{
         color: var(--accent-color);
     }
-    &__swiper-pagination{
-        bottom: var(--swiper-pagination-bottom,8px);
-    top: var(--swiper-pagination-top,auto);
-    left: 0;
-    width: 100%;    
-    position: absolute;
-    text-align: center;
-    transition: opacity .3s;
-    transform: translateZ(0);
-    z-index: 10;
-    }
+    
 }
 
 .button--left{
@@ -116,60 +112,85 @@
     width: 461px;
 }
 .benefit__swiper-wrapper{
+    gap: 40px;
     position: relative;
     z-index: 1;
     display: flex;
-    transition-property: transform;
-    transition-timing-function: var(--swiper-wrapper-transition-timing-function,initial);
-    box-sizing: content-box;
     transform-origin: center bottom;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    overflow: hidden;
     height: 100%;
-    width: auto;
+    width: 461px!important;
 }
 .benefit__swiper-slide{
     background-color: var(--white);    
     height: 559px;
-    width: 420px;
+    width: 460px;
     box-shadow: 0px 2px 50px rgba(0, 0, 0, 0.12);
     border-radius: 36px;
     padding: 20px;
-    margin: 50px;
     flex-shrink: 0;
-    position: relative;
+    position: absolute;
     transition-property: transform;
-    display: block;
-    &:nth-child(1){
-        z-index: 5;
-        transform: translate3d(0px, 0px, 0px) rotateZ(0deg)
-          scale(1);
-        transition-duration: 0ms;
+  
+}
+.benefit__swiper-pagination{
+    left: -20%!important;
+    //bottom: 0!important;
+    //top: 15px!important;
+    z-index: 30!important;
+    height: 86px;
+    overflow: visible!important;
+}
+li.swiper-slide.swiper-slide-active{
+    width: 460px!important;
+}
+.swiper-button-prev{
+    z-index: 30;
+    position: absolute;
+    width: 60px!important;
+    height: 60px!important;
+    border: 1px solid var(--black);
+    border-radius: 30px;
+    top: 500px!important;
+    left: 60px!important;
+    &::after{
+        content: ""!important;
+        z-index: 30;
+        position: absolute;
+        width: 21px;
+        height: 20px;
+        background-image: url(images/arrow-left.svg);
+        background-repeat: no-repeat;
+        left: 18px;
+        bottom: 18px;
     }
-    &:nth-child(2){
-        z-index: 4;
-        transform: translate3d(calc(-510px + 7.25%), 0px, -100px)
-          rotateZ(2deg) scale(1);
+    &:hover{
+        border: 1px solid var(--red);
     }
-    &:nth-child(3){  
-        z-index: 3;
-        transform: translate3d(calc(-1010px + 13%), 0px, -200px)
-          rotateZ(4deg) scale(1);
+}
+.swiper-button-next{
+    z-index: 30;
+    position: absolute;
+    width: 60px!important;
+    height: 60px!important;
+    border: 1px solid var(--black);
+    border-radius: 30px;
+    top: 500px!important;
+    left: 130px!important;
+    &::after{
+        content: ""!important;
+        z-index: 30;
+        position: absolute;
+        width: 23px;
+        height: 20px;
+        background-image: url(images/arrow-right.svg);
+        background-repeat: no-repeat;
+        left: 18px;
+        bottom: 18px;
     }
-    &:nth-child(4){
-        z-index: 2;
-        transform: translate3d(
-            calc(-1510px + 17.25%),
-            0px,
-            -300px
-          )
-          rotateZ(6deg) scale(1);
-    }
-    &:nth-child(5){
-        z-index: 1;
-        transform: translate3d(calc(-2010px + 20%), 0px, -400px)
-          rotateZ(8deg) scale(1);
+    &:hover{
+        border: 1px solid var(--red);
     }
 }
 
