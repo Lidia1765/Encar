@@ -111,6 +111,9 @@
 .benefit-swiper{
     width: 461px;
 }
+.swiper-pagination{
+    position: relative;
+}
 .benefit__swiper-wrapper{
     gap: 40px;
     position: relative;
@@ -133,14 +136,6 @@
     position: absolute;
     transition-property: transform;
   
-}
-.benefit__swiper-pagination{
-    left: -20%!important;
-    //bottom: 0!important;
-    //top: 15px!important;
-    z-index: 30!important;
-    height: 86px;
-    overflow: visible!important;
 }
 li.swiper-slide.swiper-slide-active{
     width: 460px!important;

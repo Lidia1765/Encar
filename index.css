@@ -1698,6 +1698,10 @@ template {
   width: 461px;
 }
 
+.swiper-pagination {
+  position: relative;
+}
+
 .benefit__swiper-wrapper {
   gap: 40px;
   position: relative;
@@ -1719,13 +1723,6 @@ template {
   flex-shrink: 0;
   position: absolute;
   transition-property: transform;
-}
-
-.benefit__swiper-pagination {
-  left: -20% !important;
-  z-index: 30 !important;
-  height: 86px;
-  overflow: visible !important;
 }
 
 li.swiper-slide.swiper-slide-active {

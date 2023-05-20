@@ -891,7 +891,7 @@
           <div class="benefit__container container">
             <h2 class="benefit__title">Преимущества покупки авто из Кореи</h2>
             <div class="benefit__wrap">
-              <ul class="benefit__list list">
+              <ul class="benefit__swiper-pagination benefit__list list">
                 <li class="benefit__item">Честный пробег</li>
                 <li class="benefit__item">Сервисное обслуживание</li>
                 <li class="benefit__item">Выездная диагностика</li>
@@ -1106,7 +1106,7 @@
                     </article>
                   </li>
                 </ul>
-                <div class="swiper-pagination benefit__swiper-pagination"></div>
+
                 <div
                   class="swiper-button-prev benefit__swiper-button-prev"
                 ></div>
@@ -1347,7 +1347,7 @@
           clickable: true,
           type: "custom",
           renderCustom(swiper, current) {
-            const cars = document.querySelectorAll(" .benefit__swiper-slide ");
+            const cars = document.querySelectorAll(".benefit__swiper-slide");
             const title =
               cars[current - 1].querySelector("[data-title]").textContent;
             return `<div class="benefit__item">${title}</div>`;
