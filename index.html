@@ -1340,18 +1340,16 @@
     </script>
     <script type="module">
       import Swiper from "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js";
+      const cars = document.querySelectorAll(".benefit__swiper-slide");
 
       const benefitSwiper = new Swiper(".benefit-swiper", {
         pagination: {
           el: ".benefit__swiper-pagination",
           clickable: true,
-          type: "custom",
-          renderCustom(swiper, current) {
-            const cars = document.querySelectorAll(".benefit__swiper-slide");
-            const title =
-              cars[current - 1].querySelector("[data-title]").textContent;
+          renderBullet(index) {
+            const title = cars[index - 1].querySelector("[data-title]").textContent;
             return `<div class="benefit__item">${title}</div>`;
-          },
+          }
         },
         navigation: {
           nextEl: ".swiper-button-next",
