@@ -891,26 +891,10 @@
           <div class="benefit__container container">
             <h2 class="benefit__title">Преимущества покупки авто из Кореи</h2>
             <div class="benefit__wrap">
-              <ul class="benefit__swiper-pagination benefit__list list">
-                <li class="benefit__item">Честный пробег</li>
-                <li class="benefit__item">Сервисное обслуживание</li>
-                <li class="benefit__item">Выездная диагностика</li>
-                <li class="benefit__item">Прозрачная история а/м</li>
-                <li class="benefit__item">
-                  Разнообразие двигателей и трансмиссий
-                </li>
-                <li class="benefit__item">Выездная диагностика</li>
-                <li class="benefit__item">Стоимость автомобиля</li>
-                <li class="benefit__item">Качество сборки</li>
-                <li class="benefit__item">Богатые комплектации</li>
-                <li class="benefit__item">Европейские автомобили</li>
-                <li class="benefit__item">Американские автомобили</li>
-                <li class="benefit__item">Коммерческий транспорт</li>
-                <li class="benefit__item">Русификация меню</li>
-              </ul>
+              <ul class="benefit__swiper-pagination benefit__list list"></ul>
               <div class="swiper benefit-swiper">
                 <ul class="swiper-wrapper benefit__swiper-wrapper">
-                  <li class="swiper-slide">
+                  <li class="swiper-slide swiper-slide-wrap">
                     <article class="benefit__swiper-slide">
                       <img
                         class="benefit__img"
@@ -925,7 +909,7 @@
                       </p>
                     </article>
                   </li>
-                  <li class="swiper-slide">
+                  <li class="swiper-slide swiper-slide-wrap">
                     <article class="benefit__swiper-slide">
                       <img
                         class="benefit__img"
@@ -940,7 +924,7 @@
                       </p>
                     </article>
                   </li>
-                  <li class="swiper-slide">
+                  <li class="swiper-slide swiper-slide-wrap">
                     <article class="benefit__swiper-slide">
                       <img
                         class="benefit__img"
@@ -955,7 +939,7 @@
                       </p>
                     </article>
                   </li>
-                  <li class="swiper-slide">
+                  <li class="swiper-slide swiper-slide-wrap">
                     <article class="benefit__swiper-slide">
                       <img
                         class="benefit__img"
@@ -970,7 +954,7 @@
                       </p>
                     </article>
                   </li>
-                  <li class="swiper-slide">
+                  <li class="swiper-slide swiper-slide-wrap">
                     <article class="benefit__swiper-slide">
                       <img
                         class="benefit__img"
@@ -985,7 +969,7 @@
                       </p>
                     </article>
                   </li>
-                  <li class="swiper-slide">
+                  <li class="swiper-slide swiper-slide-wrap">
                     <article class="benefit__swiper-slide">
                       <img
                         class="benefit__img"
@@ -1000,7 +984,7 @@
                       </p>
                     </article>
                   </li>
-                  <li class="swiper-slide">
+                  <li class="swiper-slide swiper-slide-wrap">
                     <article class="benefit__swiper-slide">
                       <img
                         class="benefit__img"
@@ -1015,7 +999,7 @@
                       </p>
                     </article>
                   </li>
-                  <li class="swiper-slide">
+                  <li class="swiper-slide swiper-slide-wrap">
                     <article class="benefit__swiper-slide">
                       <img
                         class="benefit__img"
@@ -1030,7 +1014,7 @@
                       </p>
                     </article>
                   </li>
-                  <li class="swiper-slide">
+                  <li class="swiper-slide swiper-slide-wrap">
                     <article class="benefit__swiper-slide">
                       <img
                         class="benefit__img"
@@ -1045,7 +1029,7 @@
                       </p>
                     </article>
                   </li>
-                  <li class="swiper-slide">
+                  <li class="swiper-slide swiper-slide-wrap">
                     <article class="benefit__swiper-slide">
                       <img
                         class="benefit__img"
@@ -1060,7 +1044,7 @@
                       </p>
                     </article>
                   </li>
-                  <li class="swiper-slide">
+                  <li class="swiper-slide swiper-slide-wrap">
                     <article class="benefit__swiper-slide">
                       <img
                         class="benefit__img"
@@ -1075,7 +1059,7 @@
                       </p>
                     </article>
                   </li>
-                  <li class="swiper-slide">
+                  <li class="swiper-slide swiper-slide-wrap">
                     <article class="benefit__swiper-slide">
                       <img
                         class="benefit__img"
@@ -1090,7 +1074,7 @@
                       </p>
                     </article>
                   </li>
-                  <li class="swiper-slide">
+                  <li class="swiper-slide swiper-slide-wrap">
                     <article class="benefit__swiper-slide">
                       <img
                         class="benefit__img"
@@ -1347,9 +1331,9 @@
           el: ".benefit__swiper-pagination",
           clickable: true,
           renderBullet(index) {
-            const title = cars[index - 1].querySelector("[data-title]").textContent;
-            return `<div class="benefit__item">${title}</div>`;
-          }
+            const title = cars[index].querySelector("[data-title]").textContent;
+            return `<li class="benefit__item">${title}</li>`;
+          },
         },
         navigation: {
           nextEl: ".swiper-button-next",

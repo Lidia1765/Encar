@@ -1617,6 +1617,7 @@ template {
   width: 25vw;
   display: flex;
   justify-content: flex-start;
+  cursor: pointer;
 }
 .benefit__item::before {
   content: "";
@@ -1696,6 +1697,7 @@ template {
 
 .benefit-swiper {
   width: 461px;
+  flex-shrink: 0;
 }
 
 .swiper-pagination {
@@ -1703,30 +1705,25 @@ template {
 }
 
 .benefit__swiper-wrapper {
-  gap: 40px;
+  padding: 0;
   position: relative;
   z-index: 1;
   display: flex;
   transform-origin: center bottom;
   backface-visibility: hidden;
   height: 100%;
-  width: 461px !important;
 }
 
 .benefit__swiper-slide {
   background-color: var(--white);
   height: 559px;
-  width: 460px;
+  width: 100%;
   box-shadow: 0px 2px 50px rgba(0, 0, 0, 0.12);
   border-radius: 36px;
   padding: 20px;
   flex-shrink: 0;
   position: absolute;
   transition-property: transform;
-}
-
-li.swiper-slide.swiper-slide-active {
-  width: 460px !important;
 }
 
 .swiper-button-prev {
@@ -1790,6 +1787,10 @@ li.swiper-slide.swiper-slide-active {
   }
 }
 @media (max-width: 1100px) {
+  .benefit__container {
+    height: 500px;
+    overflow: visible;
+  }
   .benefit__list {
     display: none;
   }
@@ -1808,34 +1809,31 @@ li.swiper-slide.swiper-slide-active {
   .benefit__img {
     border-radius: 26px;
   }
+  .benefit-swiper {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    flex-shrink: 1;
+    display: flex !important;
+  }
+  .benefit__swiper-wrapper {
+    width: 300px !important;
+    height: 100%;
+    gap: 5px;
+  }
   .benefit__swiper-slide {
-    margin-left: 5px;
-    margin-right: 5px;
-    height: 418px;
+    height: 416px;
     width: 300px;
     border-radius: 26px;
     padding: 10px;
     padding-bottom: 24px;
+    position: relative;
+    flex-shrink: 1 !important;
   }
-  .benefit__swiper-slide:nth-child(1) {
-    transform: none;
-    transition-duration: 0ms;
-  }
-  .benefit__swiper-slide:nth-child(2) {
-    transform: none;
-    transition-duration: 0ms;
-  }
-  .benefit__swiper-slide:nth-child(3) {
-    transform: none;
-    transition-duration: 0ms;
-  }
-  .benefit__swiper-slide:nth-child(4) {
-    transform: none;
-    transition-duration: 0ms;
-  }
-  .benefit__swiper-slide:nth-child(5) {
-    transform: none;
-    transition-duration: 0ms;
+  .swiper-slide-wrap {
+    flex-shrink: 1 !important;
+    width: 300px !important;
   }
 }
 @media (max-width: 540px) {
