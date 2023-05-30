@@ -1340,6 +1340,23 @@
           prevEl: ".swiper-button-prev",
         },
       });
+
+      const paginationItems = document.querySelectorAll(".benefit__item");
+
+      function setActivePaginationItem(index) {
+        paginationItems.forEach(item => item.classList.remove('active'))
+        paginationItems[index].classList.add('active')
+      }
+
+      paginationItems.forEach((item, index) => {
+        item.addEventListener('click', () => {
+          benefitSwiper.slideTo(index)
+        })
+      })
+
+      benefitSwiper.on('slideChange', (swiper) => {
+        setActivePaginationItem(swiper.activeIndex)
+      })
     </script>
   </body>
 </html>
