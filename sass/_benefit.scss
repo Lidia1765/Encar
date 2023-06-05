@@ -31,6 +31,10 @@
         display: flex;
         justify-content: flex-start;
         cursor: pointer;
+
+        &.active {
+            color: var(--red);
+        }
     }
     &__item::before{
         content: "";
