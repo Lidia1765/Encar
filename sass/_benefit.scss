@@ -10,6 +10,7 @@
     &__wrap{
         display: flex;
         justify-content: space-between;
+        gap: 28px;
     }
     &__list{
         display: grid;
@@ -116,6 +117,7 @@
 .benefit-swiper{
     width: 461px;
     flex-shrink: 0;
+    
 }
 .swiper-pagination{
     position: relative;
@@ -164,6 +166,18 @@
     }
     &:hover{
         border: 1px solid var(--red);
+        color: red;
+    }
+    &:hover::after{        
+        content: ""!important;     
+        position: absolute;        
+        z-index: 35;
+        width: 23px;
+        height: 20px;
+        background-image: url(images/arrow1.png)!important;    
+        background-repeat: no-repeat;
+        left: 18px;
+        bottom: 18px;
     }
 }
 .swiper-button-next{
@@ -181,13 +195,24 @@
         position: absolute;
         width: 23px;
         height: 20px;
-        background-image: url(images/arrow-right.svg);
+        background: url(images/arrow2.png);
         background-repeat: no-repeat;
         left: 18px;
         bottom: 18px;
     }
     &:hover{
-        border: 1px solid var(--red);
+        border: 1px solid var(--red); 
+     }
+        &:hover::after{        
+        content: ""!important;     
+        position: absolute;        
+        z-index: 35;
+        width: 23px;
+        height: 20px;
+        background-image: url(images/arrow-right.png)!important;    
+        background-repeat: no-repeat;
+        left: 18px;
+        bottom: 18px;
     }
 }
 

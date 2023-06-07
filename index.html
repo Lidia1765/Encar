@@ -606,9 +606,7 @@
 
             <div class="popular-swiper swiper">
               <div class="swiper-wrapper popular__swiper-wrapper">
-                <div
-                  class="swiper-slide popular__swiper-slide"
-                >
+                <div class="swiper-slide popular__swiper-slide">
                   <article class="popular__item">
                     <img
                       class="popular__img"
@@ -666,9 +664,7 @@
                     </button>
                   </article>
                 </div>
-                <div
-                  class="swiper-slide popular__swiper-slide"
-                >
+                <div class="swiper-slide popular__swiper-slide">
                   <article class="popular__item">
                     <img
                       class="popular__img"
@@ -726,9 +722,7 @@
                     </button>
                   </article>
                 </div>
-                <div
-                  class="swiper-slide popular__swiper-slide"
-                >
+                <div class="swiper-slide popular__swiper-slide">
                   <article class="popular__item">
                     <img
                       class="popular__img"
@@ -1340,10 +1334,10 @@
           el: ".popular__swiper-pagination",
         },
         breakpoints: {
-          800: {
-            enabled: false
-          }
-        }
+          1200: {
+            enabled: false,
+          },
+        },
       });
 
       const cars = document.querySelectorAll(".benefit__swiper-slide");
@@ -1360,25 +1354,25 @@
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
-        }
+        },
       });
 
       const paginationItems = document.querySelectorAll(".benefit__item");
 
       function setActivePaginationItem(index) {
-        paginationItems.forEach(item => item.classList.remove('active'))
-        paginationItems[index].classList.add('active')
+        paginationItems.forEach((item) => item.classList.remove("active"));
+        paginationItems[index].classList.add("active");
       }
 
       paginationItems.forEach((item, index) => {
-        item.addEventListener('click', () => {
-          benefitSwiper.slideTo(index)
-        })
-      })
+        item.addEventListener("click", () => {
+          benefitSwiper.slideTo(index);
+        });
+      });
 
-      benefitSwiper.on('slideChange', (swiper) => {
-        setActivePaginationItem(swiper.activeIndex)
-      })
+      benefitSwiper.on("slideChange", (swiper) => {
+        setActivePaginationItem(swiper.activeIndex);
+      });
     </script>
   </body>
 </html>
