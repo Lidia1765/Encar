@@ -797,7 +797,7 @@
                   <p class="example__description">По курсу на день покупки</p>
                 </div>
                 <p class="example__price">
-                  <span class="item__number">50 млн вон</span>
+                  <span class="item__number">50</span> млн вон
                 </p>
               </li>
               <li class="example__item">
@@ -1108,6 +1108,7 @@
                 <div
                   class="swiper-button-next benefit__swiper-button-next"
                 ></div>
+                <div class="swiper-pagination benefit__mobile-pagination"></div>
               </div>
             </div>
           </div>
@@ -1343,6 +1344,9 @@
       const cars = document.querySelectorAll(".benefit__swiper-slide");
 
       const benefitSwiper = new Swiper(".benefit-swiper", {
+        pagination: {
+          el: ".benefit__mobile-pagination",
+        },
         pagination: {
           el: ".benefit__swiper-pagination",
           clickable: true,

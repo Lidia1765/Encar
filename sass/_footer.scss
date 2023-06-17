@@ -2,6 +2,7 @@
     background-color: var(--dark__gray);
     padding-bottom: 72px;
     padding-top: 50px;
+    border-radius: 36px 36px 0 0;
     &__container{
         display: flex;
     justify-content: space-between;
@@ -29,6 +30,8 @@
     &__link{
         text-decoration: none;
         color: var(--black);
+        font-size: 18px;
+        font-weight: 500;
     }
     &__text{
         font-style: normal;
@@ -58,7 +61,8 @@
         font-style: normal;
         text-align: center;
         width: 236px;
-        font-weight: 600;
+        font-size: 18px;
+        font-weight: 700;
         color: var(--white);
         background-color: var(--red);
     }
@@ -108,7 +112,7 @@
     }
 
 }
-@media (max-width:370px){
+@media (max-width:450px){
     .footer{
         &__phone{
             width: 100%;

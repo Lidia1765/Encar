@@ -47,6 +47,10 @@
 .example__description{
     font-size: 18px;
     font-weight: 400;
+    color: #666666;
+    &:hover{
+        color: white;
+    }
 }
 
 .example__price{
@@ -55,7 +59,8 @@
     margin: 0;
 }
 .item__number{
-    font-size: 50px;
+    font-size: 60px;
+    font-weight: 600;
 }
 
 .price__wrap{
