@@ -36,6 +36,11 @@
     width: 450px;
     height: 390px;
     background: linear-gradient(135deg, rgba(94, 107, 154, 1), rgba(94, 107, 154, 0)), url("images/example-background.png") ;
+    background-size: cover;
+    background-position: center center;
+    color: var(--white);
+}
+.example__item:hover .example__description{
     color: var(--white);
 }
 
@@ -48,9 +53,6 @@
     font-size: 18px;
     font-weight: 400;
     color: #666666;
-    &:hover{
-        color: white;
-    }
 }
 
 .example__price{

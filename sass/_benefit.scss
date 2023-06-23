@@ -200,7 +200,7 @@
         position: absolute;
         width: 23px;
         height: 20px;
-        background: url(images/arrow2.png);
+        background: url(images/Arrow2.png);
         background-repeat: no-repeat;
         left: 18px;
         bottom: 18px;
@@ -219,6 +219,9 @@
         left: 18px;
         bottom: 18px;
     }
+}
+.benefit-swiper-mobile{
+    display: none!important;
 }
 
 @media (max-width:1400px){
@@ -243,14 +246,14 @@
         &__container{
             height: 500px;
             overflow: visible;
-            padding-left: 16px;
+            padding-left: 0;
             padding-right: 0;
         }
-        &__list{
+        &__wrap{
             display: none;
         }
-        &__buttons{
-            display: none;
+        &__title{
+            padding-left: 16px;
         }
         &__text{
             margin-top: 20px;
@@ -265,29 +268,14 @@
             border-radius: 26px;
         }
     }
-    .benefit-swiper{
-        position: relative;
-        overflow: hidden;
-        display: block;
-        width: 100%;
-        flex-shrink: 1;
-        display: flex!important;
-       // margin: 0!important;
-        //overflow: visible!important;
-        box-shadow: none;
-    }
-    .benefit__swiper-wrapper{
-        width: 300px!important;
-        height: 100%;
-        //display: flex;
-        gap: 5px;
-       //overflow: visible;
-    }
-    .benefit__swiper-slide{
+    
+    
+    .benefit__swiper-slide-mobile{
         //margin: 0;
         height: 416px;  
         width:300px;
         border-radius: 26px;
+        box-shadow: 0px 2px 50px rgba(0, 0, 0, 0.12);
         padding: 10px;
         padding-bottom: 24px;
         position: relative;
@@ -299,13 +287,19 @@
         flex-shrink: 1!important;
         width: 310px!important;
     }
-    .swiper-button-next{
-        display: none!important;
+    .benefit-swiper-mobile{
+        display: block!important;
     }
-    .swiper-button-prev{
-        display: none!important;
+    .benefit__swiper-wrapper-mobile{
+        padding: 0;
+        margin-bottom: 30px;
     }
-    
+    .benefit__mobile-pagination{
+        margin-top: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     
 }
 @media (max-width:540px){
