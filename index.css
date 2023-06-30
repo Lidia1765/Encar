@@ -284,7 +284,7 @@ template {
 @media (max-width: 1150px) {
   .header__container {
     justify-content: space-between;
-    width: 80%;
+    max-width: 80%;
     top: 10px;
   }
   .nav {
@@ -307,6 +307,7 @@ template {
     background-color: transparent;
     border: none;
     cursor: pointer;
+    z-index: 10;
     padding: 0;
     left: 0;
   }
@@ -319,25 +320,38 @@ template {
     display: none;
     position: fixed;
     z-index: 20;
+  }
+  .menu__container {
+    position: fixed;
+    z-index: 20;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
     background-color: white;
-    padding: 0 500px;
+    padding: 100px 500px 0 500px;
     padding-bottom: 50px;
   }
   .menu__logo {
     top: 15px;
     z-index: 25;
   }
+  .menu__group {
+    position: relative;
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+  }
   .menu__button {
     position: relative;
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     background-image: url(images/menu-button.svg);
+    background-repeat: no-repeat;
+    background-color: white;
     border: none;
-    top: -20px;
+    top: 20px;
     cursor: pointer;
+    z-index: 25;
   }
   .menu__nav {
     display: flex;
@@ -689,10 +703,10 @@ template {
     font-size: 14px;
   }
   .help__button {
-    width: 328px;
+    width: 100%;
   }
   .help .form-input {
-    width: 328px;
+    width: 100%;
   }
   .background__auto {
     width: 360px;
@@ -1296,6 +1310,11 @@ template {
   display: flex;
 }
 
+.popular-swiper {
+  padding: 50px 36px 0 50px;
+  margin-top: -10px;
+}
+
 .popular__swiper-wrapper {
   padding-bottom: 30px;
   margin-bottom: 32px;
@@ -1840,6 +1859,7 @@ template {
     overflow: visible;
     padding-left: 0;
     padding-right: 0;
+    margin-bottom: 150px;
   }
   .benefit__wrap {
     display: none;
@@ -1888,9 +1908,16 @@ template {
     align-items: center;
   }
 }
+@media (max-width: 670px) {
+  .benefit__container {
+    margin-bottom: 220px;
+  }
+}
 @media (max-width: 540px) {
   .benefit__container {
-    margin-bottom: 40px;
+    margin-bottom: 78px;
+    padding-left: 0;
+    padding-right: 0;
   }
   .benefit__title {
     font-size: 24px;
@@ -1906,6 +1933,13 @@ template {
   }
   .benefit__button {
     display: none;
+  }
+  .benefit-swiper-mobile {
+    padding: 50px 44px 0 16px;
+    margin-top: -50px;
+  }
+  .benefit__swiper-slide-mobile {
+    flex-shrink: 0;
   }
 }
 .review {

@@ -113,6 +113,10 @@
 .swiper-wrapper{
     display: flex;
 }
+.popular-swiper{
+    padding: 50px 36px 0 50px;
+    margin-top: -10px;
+}
 .popular__swiper-wrapper{
     padding-bottom: 30px;
     margin-bottom: 32px;
@@ -126,6 +130,7 @@
 }
 .popular__swiper-slide{
    flex-shrink: 1!important;
+   
 }
 .swiper-pagination-bullet{
     background: var(--accent-color)!important;
