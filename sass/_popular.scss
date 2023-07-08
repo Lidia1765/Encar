@@ -26,6 +26,7 @@
     padding: 15px;
     margin-right: 25px;
     //width: 461px;
+    min-width: 308px;
 }
 
 .popular__item-title{
@@ -116,6 +117,7 @@
 .popular-swiper{
     padding: 50px 36px 0 50px;
     margin-top: -10px;
+    margin-left: -50px;
 }
 .popular__swiper-wrapper{
     padding-bottom: 30px;
@@ -141,6 +143,9 @@
     width: 14px!important;
     height: 14px!important;
 
+}
+.popular-swiper-mobile{
+    display: none;
 }
 @media (max-width: 1200px){
     .pagination{
@@ -185,6 +190,13 @@
         flex-shrink: 2;
     }
 }
+@media (max-width: 700px){
+    .popular{
+        &__title{
+            font-size: 24px;
+        }
+    }
+    }
 @media (max-width: 500px){
     .popular{
         &__container{
@@ -193,20 +205,24 @@
             padding-right: 0;
         }
         &__title{
-            font-size: 24px;
             padding-left: 16px;
         }
         &__item-title{
             font-size: 20px;
         }
         &__item{
-            margin-right: 0;
+            //margin-right: 0;
+            margin-right: 20px;
         }
     }
     .popular__swiper-wrapper{
         gap: 10px;
     }
     .popular-swiper{
+        display: none;
+    }
+    .popular-swiper-mobile{
+        display: block;
         padding: 50px 36px 0 16px;
         margin-top: -10px;
     }

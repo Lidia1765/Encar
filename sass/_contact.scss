@@ -108,13 +108,18 @@
         padding: 10px;
     }
 }
+@media (max-width:630px){
+    .contact{
+        &__title{
+            font-size: 24px;
+        }
+    }
+}
 
     @media (max-width:400px){
         .contact{
             margin-bottom: 30px;
-        &__title{
-            font-size: 24px;
-        }
+        
         &__map{
             border-radius: 12px;
         }

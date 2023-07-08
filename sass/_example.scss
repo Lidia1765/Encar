@@ -149,7 +149,6 @@
         margin: 0 auto;
     }
     .example__title{
-        font-size: 24px;
         width: auto;
     }
     .example__item{
@@ -164,6 +163,13 @@
     .example__price{
         margin-top: 30px;
         font-size: 24px;
+    }
+}
+@media (max-width:700px){
+    .example{
+        &__title{
+            font-size: 24px;
+        }
     }
 }
 @media (max-width:400px){

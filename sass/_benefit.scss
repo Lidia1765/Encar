@@ -118,10 +118,9 @@
 }
 .benefit-swiper{
     width: 461px;
-    height: 559px;
+    //height: 559px;
     flex-shrink: 0;
-    border-radius: 36px;
-    box-shadow: 0px 2px 50px rgba(0, 0, 0, 0.12);
+    padding: 25px;
     
 }
 .swiper-pagination{
@@ -141,7 +140,7 @@
     background-color: var(--white);    
     height: 559px;
     width: 100%;
-    box-shadow: 0px 2px 50px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 2px 35px rgba(0, 0, 0, 0.12);
     border-radius: 36px;
     padding: 20px;
     flex-shrink: 0;
@@ -223,7 +222,6 @@
 .benefit-swiper-mobile{
     display: none!important;
 }
-
 @media (max-width:1400px){
     .benefit{
         &__list{
@@ -297,9 +295,6 @@
     }
     .benefit__mobile-pagination{
         margin-top: 24px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
     
 }

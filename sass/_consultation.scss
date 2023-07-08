@@ -68,13 +68,17 @@
         &__container{
             height: auto;
         }
-        &__title{
-            font-size: 24px;
-        }
         &__description{
             width: auto;
         }
     }
+}
+@media(max-width:630px){
+    .consultation{
+    &__title{
+        font-size: 24px;
+    }
+}
 }
 @media (max-width:450px){
     .consultation{
