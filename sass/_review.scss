@@ -2,10 +2,6 @@
     background-color: #F4F6F8;
     padding-bottom: 140px;
     padding-top: 40px;
-    &__title{
-        font-size: 50px;
-        font-weight: 700;
-    }
     &__description{
         margin-bottom: 44px;
     }
@@ -60,14 +56,7 @@
         }
     }
 }
-@media (max-width: 700px){
-    .review__title{
-        font-size: 24px;
-    }
-    .review__description{
-        font-size: 16px;
-    }
-}
+
 @media (max-width:450px){   
     .review{
         padding-bottom: 70px;

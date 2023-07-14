@@ -23,15 +23,11 @@
   }
 
   .help__title{
-    font-size: 50px;
-    font-weight: 700;
     width: 490px;
     margin: 0;
   }
 
   .help__description{
-    font-size: 18px;
-    font-weight: 500;
     width: 350px;
     margin-bottom: 36px;
     margin-top: 24px;
@@ -39,8 +35,6 @@
 
   .help__text{
     margin-top: 16px;
-    font-size: 18px;
-    font-weight: 500;
   }
 
   .form-input{
@@ -275,13 +269,7 @@
   width: 450px;
 }
 }
-@media (max-width:700px){
-  .help{
-      &__title{
-          font-size: 24px;
-      }
-  }
-}
+
 @media (max-width:500px){
   .help{
     margin-bottom: 200px;
@@ -292,9 +280,6 @@
     }
     &__title{
       width: 305px;
-    }
-    &__description{
-      font-size: 14px;
     }
     &__button{
       width: 100%;

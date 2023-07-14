@@ -3,10 +3,6 @@
     margin-bottom: 126px;
     overflow: hidden;
     }
-    &__title{
-        font-size: 50px;
-        font-weight: 700;
-    }
     &__wrap{
         display: flex;
         justify-content: space-between;
@@ -297,7 +293,6 @@
         margin-top: 24px;
     }
     
-}
 @media(max-width:670px){
     .benefit{
         &__container{
@@ -305,16 +300,14 @@
         }
     }
 }
+
 @media (max-width:540px){
     .benefit{
         &__container{
             margin-bottom: 78px;
             padding-left: 0;
             padding-right: 0;
-        }
-        &__title{
-            font-size: 24px;
-        }
+        }        
         
         &__text{
             font-size: 20px;
@@ -336,4 +329,5 @@
     .benefit__swiper-slide-mobile{
         flex-shrink: 0;
     }
+}
 }

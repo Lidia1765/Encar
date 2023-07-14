@@ -4,15 +4,11 @@
   
   .order__title{
     padding-top: 100px;
-    font-size: 50px;
-    font-weight: 700;
     width: 610px;
     margin: 0;
   }
   
   .order__description{
-    font-size: 24px;
-    font-weight: 500;
     padding-bottom: 70px;
     padding-top: 16px;
   }
@@ -48,8 +44,6 @@
   
   .order__text{
     width: 280px;
-    font-size: 18px;
-    font-weight: 500;
     margin-top: 34px;
   }
 
@@ -156,15 +150,11 @@
     }
     &__title{
       position: relative;
-      font-size: 24px;
-      font-weight: 700;
       width: 280px;
       left: 0;
       padding-top: 50px;
     }
     &__description{
-      font-size: 14px;
-      font-weight: 500;
       padding-bottom: 32px;
     }
   }

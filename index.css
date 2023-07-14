@@ -10,6 +10,32 @@
   --accent-color: var(--red);
 }
 
+.title {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.text {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media (max-width: 700px) {
+  .title {
+    font-size: 24px;
+  }
+  .subtitle {
+    font-size: 14px;
+  }
+  .text {
+    font-size: 16px;
+  }
+}
 html {
   font-family: "Montserrat", sans-serif;
   line-height: 1.15;
@@ -442,15 +468,11 @@ template {
 }
 
 .help__title {
-  font-size: 50px;
-  font-weight: 700;
   width: 490px;
   margin: 0;
 }
 
 .help__description {
-  font-size: 18px;
-  font-weight: 500;
   width: 350px;
   margin-bottom: 36px;
   margin-top: 24px;
@@ -458,8 +480,6 @@ template {
 
 .help__text {
   margin-top: 16px;
-  font-size: 18px;
-  font-weight: 500;
 }
 
 .form-input {
@@ -690,11 +710,6 @@ template {
     width: 450px;
   }
 }
-@media (max-width: 700px) {
-  .help__title {
-    font-size: 24px;
-  }
-}
 @media (max-width: 500px) {
   .help {
     margin-bottom: 200px;
@@ -705,9 +720,6 @@ template {
   }
   .help__title {
     width: 305px;
-  }
-  .help__description {
-    font-size: 14px;
   }
   .help__button {
     width: 100%;
@@ -1039,15 +1051,11 @@ template {
 
 .order__title {
   padding-top: 100px;
-  font-size: 50px;
-  font-weight: 700;
   width: 610px;
   margin: 0;
 }
 
 .order__description {
-  font-size: 24px;
-  font-weight: 500;
   padding-bottom: 70px;
   padding-top: 16px;
 }
@@ -1084,8 +1092,6 @@ template {
 
 .order__text {
   width: 280px;
-  font-size: 18px;
-  font-weight: 500;
   margin-top: 34px;
 }
 
@@ -1183,21 +1189,16 @@ template {
   }
   .order__title {
     position: relative;
-    font-size: 24px;
-    font-weight: 700;
     width: 280px;
     left: 0;
     padding-top: 50px;
   }
   .order__description {
-    font-size: 14px;
-    font-weight: 500;
     padding-bottom: 32px;
   }
 }
 .popular__container {
   margin-bottom: 80px;
-  overflow: hidden;
   padding-bottom: 50px;
   padding-left: 50px;
   padding-right: 0;
@@ -1207,11 +1208,6 @@ template {
   display: flex;
   list-style: none;
   padding: 0;
-}
-
-.popular__title {
-  font-size: 50px;
-  font-weight: 700;
 }
 
 .popular__img {
@@ -1319,6 +1315,7 @@ template {
   padding: 50px 36px 0 50px;
   margin-top: -10px;
   margin-left: -50px;
+  overflow: visible;
 }
 
 .popular__swiper-wrapper {
@@ -1396,13 +1393,9 @@ template {
     flex-shrink: 2;
   }
 }
-@media (max-width: 700px) {
-  .popular__title {
-    font-size: 24px;
-  }
-}
 @media (max-width: 500px) {
   .popular__container {
+    overflow: hidden;
     margin-bottom: 40px;
     padding-left: 0;
     padding-right: 0;
@@ -1442,8 +1435,6 @@ template {
 
 .example__title {
   width: 800px;
-  font-size: 50px;
-  font-weight: 700;
 }
 
 .example__list {
@@ -1485,7 +1476,6 @@ template {
 }
 
 .example__description {
-  font-size: 18px;
   font-weight: 400;
   color: #666666;
 }
@@ -1601,11 +1591,6 @@ template {
     font-size: 24px;
   }
 }
-@media (max-width: 700px) {
-  .example__title {
-    font-size: 24px;
-  }
-}
 @media (max-width: 400px) {
   .example {
     margin-bottom: 40px;
@@ -1620,9 +1605,6 @@ template {
   .item__title {
     font-size: 20px;
   }
-  .example__description {
-    font-size: 16px;
-  }
   .item__price {
     font-size: 24px;
     font-weight: 600;
@@ -1636,10 +1618,6 @@ template {
 .benefit__container {
   margin-bottom: 126px;
   overflow: hidden;
-}
-.benefit__title {
-  font-size: 50px;
-  font-weight: 700;
 }
 .benefit__wrap {
   display: flex;
@@ -1925,19 +1903,16 @@ template {
     margin-top: 24px;
   }
 }
-@media (max-width: 670px) {
+@media (max-width: 1100px) and (max-width: 670px) {
   .benefit__container {
     margin-bottom: 220px;
   }
 }
-@media (max-width: 540px) {
+@media (max-width: 1100px) and (max-width: 540px) {
   .benefit__container {
     margin-bottom: 78px;
     padding-left: 0;
     padding-right: 0;
-  }
-  .benefit__title {
-    font-size: 24px;
   }
   .benefit__text {
     font-size: 20px;
@@ -1963,10 +1938,6 @@ template {
   background-color: #F4F6F8;
   padding-bottom: 140px;
   padding-top: 40px;
-}
-.review__title {
-  font-size: 50px;
-  font-weight: 700;
 }
 .review__description {
   margin-bottom: 44px;
@@ -2019,14 +1990,6 @@ template {
     height: 5px;
   }
 }
-@media (max-width: 700px) {
-  .review__title {
-    font-size: 24px;
-  }
-  .review__description {
-    font-size: 16px;
-  }
-}
 @media (max-width: 450px) {
   .review {
     padding-bottom: 70px;
@@ -2047,8 +2010,6 @@ template {
   margin-bottom: 100px;
 }
 .answer__title {
-  font-weight: 700;
-  font-size: 50px;
   margin: 0;
 }
 .answer__list {
@@ -2136,13 +2097,10 @@ details[open]::before {
     margin-left: -25px;
   }
 }
-@media (max-width: 630px) {
+@media (max-width: 700px) {
   .answer {
     padding-bottom: 20px;
     margin-bottom: 20px;
-  }
-  .answer__title {
-    font-size: 24px;
   }
   .answer__item {
     padding-right: 10px;
@@ -2189,12 +2147,7 @@ details[open]::before {
   bottom: -45px;
   right: -50px;
 }
-.consultation__title {
-  font-size: 50px;
-  font-weight: 700;
-}
 .consultation__description {
-  font-size: 16px;
   width: 550px;
   padding-bottom: 50px;
   margin: 0;
@@ -2232,11 +2185,6 @@ details[open]::before {
   }
   .consultation__description {
     width: auto;
-  }
-}
-@media (max-width: 630px) {
-  .consultation__title {
-    font-size: 24px;
   }
 }
 @media (max-width: 450px) {
@@ -2287,10 +2235,6 @@ details[open]::before {
 
 .contact {
   margin-bottom: 160px;
-}
-.contact__title {
-  font-size: 50px;
-  font-weight: 700;
 }
 .contact__wrap {
   display: flex;
@@ -2381,11 +2325,6 @@ details[open]::before {
     padding: 10px;
   }
 }
-@media (max-width: 630px) {
-  .contact__title {
-    font-size: 24px;
-  }
-}
 @media (max-width: 400px) {
   .contact {
     margin-bottom: 30px;
@@ -2442,8 +2381,6 @@ details[open]::before {
 .footer__link {
   text-decoration: none;
   color: var(--black);
-  font-size: 18px;
-  font-weight: 500;
 }
 .footer__text {
   font-style: normal;

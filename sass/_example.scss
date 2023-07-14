@@ -8,8 +8,6 @@
 }
 .example__title{
     width: 800px;
-    font-size: 50px;
-    font-weight: 700;
 }
 
 .example__list{
@@ -50,7 +48,6 @@
 }
 
 .example__description{
-    font-size: 18px;
     font-weight: 400;
     color: #666666;
 }
@@ -165,13 +162,6 @@
         font-size: 24px;
     }
 }
-@media (max-width:700px){
-    .example{
-        &__title{
-            font-size: 24px;
-        }
-    }
-}
 @media (max-width:400px){
     .example{
         margin-bottom: 40px;
@@ -185,9 +175,6 @@
     }
     .item__title{
         font-size: 20px;
-    }
-    .example__description{
-        font-size: 16px;
     }
     .item__price{
         font-size: 24px;

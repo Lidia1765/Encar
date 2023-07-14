@@ -3,8 +3,6 @@
     padding-bottom: 100px;
     margin-bottom: 100px;
     &__title{
-        font-weight: 700;
-        font-size: 50px;
         margin: 0;
     }
     &__list{
@@ -91,13 +89,10 @@ details[open]::before{
         margin-left: -25px;
     }
  }
- @media (max-width: 630px){
+ @media (max-width: 700px){
     .answer{
         padding-bottom: 20px;
         margin-bottom: 20px;
-        &__title{
-            font-size: 24px;
-        }
         &__item{
             padding-right: 10px;
             padding-left: 50px;
